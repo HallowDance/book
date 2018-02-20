@@ -20,7 +20,54 @@ In general the left and right cosets are not groups.
 A subgroup $H$ of $G$ is called \textit{normal} if and only if the left and right sets of cosets coincide, that is if $gH = Hg$ for all $g\in G$ 
 \end{definition}
 
+\begin{definition}[Representation]
+  A \textit{representation} of a group $G$ on a vector space $V$ over a filed
+  $K$ is a group homomorphism from $G$ to $GL(V)$, the general linear group on
+  $V$. That is, a representation is a map
+  \begin{equation}
+    \rho:G\rightarrow GL(V)
+  \end{equation}
+such that
+\begin{equation}
+  \rho(g_1g_2) = \rho(g_1)\rho(g_2), \quad \forall g_1,g_2 \in G.
+\end{equation}
+\end{definition}
 
+$V$ is often called the \textit{representation space} and the dimension of $V$
+is called the \textit{dimension} of the representation. It is common practice
+to refer to $V$ itself as the representation when the homomorphism is clear
+from the context.
+
+\begin{example}
+  Consider the complex number $u = e^{2\pi/3}$ which has the property $u^3=1$.
+  The cyclic group $C_3 = \{1,u,u^2\}$ has a representation $\rho$ on
+  $\mathbb{C}^2$ given by:
+  \begin{equation}
+    \rho(1) = \begin{bmatrix} 1 & 0\\ 0 & 1\end{bmatrix},\quad 
+    \rho(u) = \begin{bmatrix} 1 & 0\\ 0 & u\end{bmatrix},\quad
+    \rho(u^2) = \begin{bmatrix} 1 & 0\\ 0 & u^2\end{bmatrix},\quad.
+  \end{equation}
+Another representation for $C_3$ on $\mathbb{C}^2$, isomorphic to the previous
+one, is
+  \begin{equation}
+    \rho(1) = \begin{bmatrix} 1 & 0\\ 0 & 1\end{bmatrix},\quad 
+    \rho(u) = \begin{bmatrix} u & 0\\ 0 & 1\end{bmatrix},\quad
+    \rho(u^2) = \begin{bmatrix} u^2 & 0\\ 0 & 1\end{bmatrix},\quad.
+  \end{equation}
+\end{example}
+
+\begin{definition}[Subrepresentation]
+  A subspace $W$ of $V$ that is invariant under the group action is called
+  a subrepresentation.
+\end{definition}
+
+\begin{definition}[(Ir)reducible representation]
+  If $V$ has exactly two representations, namely the zero-dimensional subspace
+  and $V$ itself, then the representation is said to be \textit{irreducible};
+  if it has a proper representation of nonzero dimension, the representation is
+  said to be \textit{reducible}. The representation of dimension zero is
+  considered to be neither reducible nor irreducible.
+\end{definition}
 
 \begin{definition}[Quotent Group]
 Let $N$ be a normal subgroup of a group $G$. We define the set $G/N$ to be the set of all left cosets of $N$ in $G$, i.e., $G/N = \{aN:a\in G\}$. Define an operation on $G/N$ as follows. For each $aN$ and $bN$ in $G/N$, the product of $aN$ and $bN$ is $(aN)(bN)$. This defines an operation of $G/N$ if we impose $(aN)(bN) = (ab)N$, because $(ab)N$ does not depend on the choice of the representatives $a$ and $b$: if $xN=aN$ and $yN=bN$ for some $x,y \in G$, then:
