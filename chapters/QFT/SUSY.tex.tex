@@ -1,0 +1,127 @@
+\chapterauthor{Ivo Iliev}{Sofia University}
+%\chapterauthor{Second Author}{Second Author Affiliation}
+\chapter{Supersymmetry}
+\section{Supermultiplets}
+
+\begin{definition}[Supermultiplet]
+  Representations of the supersymmetric algebra (superalgebra) are called
+  supermultiplets.
+\end{definition}
+
+Indeed, these representations can be thought of as multiplets where we assemble
+together several different representations of the Lorentz algebra, since the
+latter is a subalgebra of the superalgebra.
+
+\subsection{Massless supermultiplets}
+If $P^2=0$, then we can take $P_\mu$ to a canonical form by applying boost and
+rotations until it reads
+
+\begin{equation}
+  \sigma^{\mu}_{\alpha\dot{\alpha}}P_\mu = \left(\sigma^0+\sigma^3\right)E = 
+  \begin{bmatrix}
+    0 & 0\\
+    0 & 2E
+  \end{bmatrix}
+\end{equation}
+
+The supersymmetric algebra becomes 
+\begin{equation}
+  \begin{bmatrix}
+    \{Q_1,\bar{Q}_{\dot{1}}\} & \{Q_1,\bar{Q}_{\dot{2}}\} \\
+
+    \{Q_2,\bar{Q}_{\dot{1}}\} & \{Q_2,\bar{Q}_{\dot{2}}\} \\
+
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    0 & 0\\
+    0 & 4E
+  \end{bmatrix}
+\end{equation}
+Svetlio e lainar
+\section{General}
+\begin{definition}[R-symmetry]
+In supersymmetric theories, an R-symmetry is the symmetry transforming different supercharges into each other. In the simplest case of the $\mathcal{N}=1$ supersymmetry, such R-symmetry is isomorphic to a global $U(1)$ group or it's discrete subgroup. For extended supersymmetry theories, the R-symmetry group becomes a global non-abelian group.  
+\end{definition}
+
+\begin{remark}
+In the case of the discrete subgroup $\mathbb{Z}_2$, the R-symmetry is called \textit{R-parity}
+\end{remark}
+
+\begin{definition}[Extended supersymmetry]
+In supersymmetric theories, when $\mathcal{N}>1$ the algebra is said to have
+\textit{extended supersymmetry}.
+\end{definition}
+
+\section{Bogomol'nyi-Prasad-Sommerfield (BPS) states}
+\begin{definition}[BPS state]
+A massive representation of an extended supersymmetry algebra that has mass
+equal to the supersymmetry central charge $Z$ is called an \textit{BPS} state.
+\end{definition}
+
+Quantum mechanically speaking, if the supersymmetry remains unbroken, exact
+solutions to the modulus of $Z$ exist. Their importance arises as the
+multiplets shorten for generic representations, with stability and mass formula
+exact.
+
+\begin{example}[$d=4$,$\mathcal{N}=2$]
+The generators for the odd part of the superalgebra have relations:
+\begin{gather}
+  \{Q_\alpha^A,\bar{Q}_{\dot{\beta}B}\} = 2\sigma^m_{\alpha\dot{\beta}}P_m\delta^A_B \\
+  \{Q_\alpha^A,Q_{\beta B}\} = 2\epsilon_{\alpha\beta}\epsilon^{AB}\bar{Z}\\
+  \{\bar{Q}_{\dot{\alpha}A},\bar{Q}_{\dot{\beta}B}\}
+  = -2\epsilon_{\dot{\alpha}\dot{\beta}}\epsilon_{AB}Z,
+\end{gather}
+where $\alpha\dot{\beta}$ are the Lorentz group indeces and $A,B$ are the
+$R$-symmerty indeces.
+If we take linear combinations of the above generators as follows:
+\begin{gather}
+  R_\alpha^A = \xi^{-1}Q_\alpha^A
+  + \xi\sigma^0_{\alpha\dot{\beta}}\bar{Q}^{\dot{\beta}B}\\
+  T_\alpha^A = \xi^{-1}Q_\alpha^A - \xi\sigma^0_{\alpha\dot{\beta}}\bar{Q}^{\dot{\beta}B}
+\end{gather}
+and consider a state $\psi$ which has momentum $(M,0,0,0)$, we have:
+\begin{equation}
+  \left(R_1^1+(R_1^1)^\dagger\right)^2\psi = 4(M+Re(Z\xi^2))\psi,
+\end{equation}
+but because this is the square of a Hermitian operator, the right hand side
+coefficient must be positive for all $\xi$. In particular, the strongest result from this is
+\begin{equation}
+  M\geq|Z|
+\end{equation}
+\end{example}
+%%%\begin{table}
+%%%    \tabletitle{Examples for illustrating attacks}
+%%%    \begin{tabular}{|c|c|c|c|}
+%%%        \hline
+%%%        \textbf{Job} & \textbf{Sex} & \textbf{Age} & \textbf{Disease} \\
+%%%        \hline
+%%%        Engineer & Male & 35 & Hepatitis \\
+%%%        Engineer & Male & 38 & Hepatitis \\
+%%%        Lawyer & Male & 38 & HIV \\
+%%%        Writer & Female & 30 & Flu \\
+%%%        Writer & Female & 30 & HIV \\
+%%%        Dancer & Female & 30 & HIV \\
+%%%        Dancer & Female & 30 & HIV \\
+%%%        \hline
+%%%    \end{tabular}
+%%%    \label{table:rawpatient}
+%%%\end{table}
+\section{Supersymmetric theories on curved manifolds}
+\textit{Remark:} Supersymmetric theories may be defined only on backgrounds admitting solutions to certain Killing spinor equations,
+
+\begin{align}
+\left(\nabla_\mu-iA_\mu\right)\zeta + iV_\mu\zeta + iV^\nu\sigma_{\mu\nu}\zeta = 0\\
+\left(\nabla_\mu+iA_\mu\right)\tilde{\zeta} - iV_\mu\tilde{\zeta} 0 iV^\nu\tilde{\sigma}_{\mu\nu}\tilde{\zeta} = 0
+\end{align}
+which in four dimensions and Euclidean signature are
+equivalent to the requirement that the manifold is complex and the metric Hermitian.
+
+
+%\section{Glossary}
+%\begin{Glossary}
+
+%\end{Glossary}
+
+
+

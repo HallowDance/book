@@ -1,0 +1,174 @@
+\chapterauthor{Ivo Iliev}{Sofia University}
+%\chapterauthor{Second Author}{Second Author Affiliation}
+\chapter{Differential Geometry}
+
+\section{General}
+\begin{definition}[Einstein Manifold]
+A Riemannian manifold $M$ is called an \textit{Einstein manifold} if its Ricci tensor is proportional to the metric, i.e.
+\begin{equation}
+Ric_g = \lambda g
+\end{equation}
+\end{definition}
+\begin{remark}
+An Einsteinian manifold, where $\lambda=0$ is called a \textit{Ricci-flat} manifold.
+\end{remark}
+
+
+\section{Contact Manifolds}
+\begin{definition}[Riemannian Cone]
+Given a Riemannian manifold $(M,g)$, its \textit{Riemannian cone} is a product
+\begin{equation}
+(M\times\mathbb{R}^{>0})
+\end{equation}
+of $M$ with the half-line $\mathbb{R}^{>0}$ equipped with the \textit{cone metric}
+\begin{equation}
+t^2g+dt^2,
+\end{equation}
+where t is a parameter in $\mathbb{R}^{>0}$
+\end{definition}
+
+\begin{definition}[Contact Manifold]
+A manifold $M$, equipped with a 1-form $\theta$ is contact if and only if the 2-form
+\begin{equation}
+t^2d\theta + 2tdt\cdot\theta
+\end{equation}
+on its cone is symplectic.
+\end{definition}
+
+\begin{definition}[Sasakian Manifold]
+A contact Riemannian manifold is called a Sasakian manifold, if its Riemannian cone with the cone metric is a K\"ahler manifold with K\"ahler form
+\begin{equation}
+t^2d\theta + 2t dt\cdot \theta .
+\end{equation}
+\end{definition}
+
+\begin{example}
+Consider the manifold $\mathbb{R}^{2n+1}$ with coordinates $(\vec{x},\vec{y},z)$, endowed with contact form 
+\begin{equation}
+\theta = \frac{1}{2}dz + \Sigma_i{y_idx_i}
+\end{equation}
+and Riemannian metric
+
+\begin{equation}
+g = \Sigma_i{(dx_i)^2 + (dy_i)^2 + \theta^2}
+\end{equation}
+\end{example}
+
+\begin{definition}[Sasaki-Einstein Manifold]
+A Sasaki-Einstein manifold is a Riemanian manifold $(S,g)$ that is both Sasakian and Einstein
+\end{definition}
+
+\begin{example}
+The odd dimensional sphere $S^{2n-1}$, equipped with its standard Einstein metric is a Sasaki-Einstein manifold. In this case, the K\"ahler cone is $\mathbb{C}^2\backslash\{0\}$, equipped with its flat metric.
+\end{example}
+
+\section{Symplectic Geometry}
+\begin{theorem}[Duistermaat-Heckman Formula]
+For a compact symplectic manifold $M$ of dimension $2n$ with symplectic form $\omega$ and with a Hamiltonian $U(1)$ action whose moment map is denoted by $\mu$, the following formula holds:
+\begin{equation}
+\int_M{\frac{\omega^n}{n!}e^{-\mu}} = \sum_i{\frac{e^{-\mu(x_i)}}{e(x_i)}}
+\end{equation}
+Here, $x_i$ are the fixed points of the $U(1)$ action and they are assumed to be isolated, and $e(x_i)$ is the product of the weights of the $U(1)$ action on the tangent space at $x_i$.
+
+\end{theorem}
+
+\section{Complex Manifolds}
+\begin{definition}[Hermitian Metric]
+If a Riemannian metric $g$ of a complex manifold $M$ satisfies 
+\begin{equation}
+g_p(J_pX, J_pY) = g_p(X,Y)
+\end{equation}
+at each point $p\in M$ and for any $X,Y\in T_p M$, $g$ is said to be a \textit{Hermitian metric}. Here, $J_p$ denotes the almost complex structure on $M$.
+\end{definition}
+
+\begin{definition}[Hermitian Manifold]
+The pair $(M,g)$ is called a \textit{Hermitian manifold}
+\end{definition}
+
+\begin{theorem}
+A complex manifold always admits a Hermitian metric.
+\end{theorem}
+
+\begin{proof}
+Let $g$ be any Riemannian metric of a complex manifold $M$. Define a new metric $\hat{g}$ by
+\begin{equation}
+\hat{g}_p(X,Y)\equiv \frac{1}{2}\left[g_p(X,Y) + g_p(J_pX, J_pY)\right].
+\end{equation}
+Clearly $\hat{g}_p(J_pX,J_pY) = \hat{g}_p(X,Y)$. Moreover, $\hat{g}$ is positive definite provided that $g$ is. Hence, $\hat{g}$ is a Hermitian metric on M
+\end{proof}
+
+\begin{definition}[K\"ahler Form]
+  Let $(M,g)$ be a Hermitian manifold. Define a tensor field $\Omega$ whose
+  action on $X,Y\in T_pM$ is
+\begin{equation}
+\Omega_p(X,Y) = g_p(J_pX,Y)
+\end{equation}
+Note that $\Omega$ is anti-symmetric, $\Omega(X,Y) = g(JX,Y) = g(J^2X,JY)
+= -g(JY,X) = -\Omega(Y,X)$. Hence, $\Omega$ defines a two-form, called the
+\textit{Kh\"aler form} of a Hermitian metric g.
+\end{definition}
+
+\begin{definition}[K\"ahler Manifold]
+  A \textit{K\"ahler manifold} is a Hermitian manifold $(M,g)$ whose K\"ahler
+  form $\Omega$ is closed, $d\Omega=0$. The metric $g$ is called the
+  \textit{K\"ahler metric} of M.
+\end{definition}
+
+\begin{remark}
+Not all complex manifolds admit K\"ahler metrics
+\end{remark}
+
+\begin{theorem}
+A Hermitian manifold $(M,g)$ is a K\"ahler manifold if and only if the almost
+  complex structure $J$ satisfies
+\begin{equation}
+\nabla_\mu J = 0
+\end{equation}
+where $\nabla_\mu$ is the Levi-Cevita connection associated with $g$.
+\end{theorem}
+
+\begin{proof}
+We first note that for any $r$-form $\omega$, d$\omega$ is written as
+\begin{equation}
+  d\omega = \nabla\omega \equiv
+  \frac{1}{r!}\nabla_\mu\omega_{\nu_1\cdots\nu_r}dx^\mu\wedge
+  dx^{\nu_1}\wedge\cdots\wedge dx^{\nu}    
+\end{equation}
+Now we prove that $\nabla_\mu J = 0$ if and only if $\nabla_\mu\Omega = 0$. We
+verify the following equalities:
+\begin{align}
+(\nabla_Z\Omega)(X,Y)
+  &= \nabla_Z\left[\Omega(X,Y)\right]-\Omega(\nabla_ZX,Y)-\Omega(X,\nabla_z Y)\\
+  &= \nabla_Z\left[g(JX,Y)\right] - g(J\nabla_Z X,Y) - g(JX, \nabla_Z Y)\\
+  &= (\nabla_Z g)(JX,Y) + g(\nabla_ZJX,Y) - g(J\nabla_ZX,Y)\\
+  &= g(\nabla_ZJX-J\nabla_ZX,Y) = g((\nabla_ZJ)X,y)
+\end{align}
+where $\nabla_Z g = 0$ has been used. Since this is true for any $X,Y,Z$, if
+  follows that $\nabla_Z\Omega = 0$ if and only if $\nabla_Z J = 0$.
+\end{proof}
+The last theorem shows that the Riemann structure is compatable with the
+Hermitian structure in the K\"ahler manifold.
+
+We can also characterize K\"ahler manifolds as Hermitian manifolds for which
+the Cristoffel symbols of the Levi-Chevita connection are pure. In other words,
+$\Gamma_{jk}^i$ and $\Gamma_{\bar{j}\bar{k}}^{\bar{i}}$ may be non zero, but
+all "mixed" symbols like $\Gamma_{jk}^{\bar{i}}$, for example, vanish. This
+means that (anti-)holomorphic vectors get parallel transported to
+(anti-)holomorphic vectors.
+
+K\"ahler manifolds are manifolds on which we can always find
+a \textit{holomorphic} change of coordinates which, at some given point, sets
+the metric to its cannonical form, and its first derivatives to zero.
+
+Equivalently, an $n$-dimensional K\"ahler manifold are precisely
+$2n$-dimensional Riemannian manifolds with holonomy group contained in $U(1)$
+\begin{definition}[Hopf Surface]
+Let $\mathbb{Z}$ act on $\mathbb{C}^n \backslash \{0\}$ by $\left(z_1,\cdots,z_n\right)\rightarrow \left(\lambda^k z_1,\cdots,\lambda^k z_n\right)$ for $k\in\mathbb{Z}$. For $0 < \lambda < 1$ the action is free and discrete. The quotient complex manifold $X = \left(\mathbb{C}^n\backslash\{0\}\right)/\mathbb{Z}$ is diffeomorphic to $S^1\times S^{2n-1}$. For $n=1$ this manifold is isomorphic to a complex torus $\mathbb{C}/\Gamma$. The lattice $\Gamma$ can be determined explicitly.\\
+In other words,  a Hopf manifold is obtained as a quotient of the complex vector space (with zero deleted) $\mathbb{C}^n \backslash \{0\}$ by a free action of the group $\Gamma \cong \mathbb{Z}$ of integers, with the generator $\gamma$ of $\Gamma$ acting by holomorphic contractions.
+\end{definition}
+
+
+%\section{Glossary}
+%\begin{Glossary}
+
+%\end{Glossary}

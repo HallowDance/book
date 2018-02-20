@@ -1,0 +1,31 @@
+\chapterauthor{Ivo Iliev}{Sofia University}
+%\chapterauthor{Second Author}{Second Author Affiliation}
+\chapter{Group Theory}
+\section{Basic Definitions}
+
+\begin{definition}[(Group) Homomorphism]
+Let $(G, *)$ and $(H,\cdot)$ be two groups. A (group) homomorphism from $G$ to $H$ is a function $h:G\rightarrow H$ such that for all $x,y$ in $G$ it holds that
+$h(x*y) = h(u)\cdot h(v)$
+\end{definition}
+
+\begin{definition}[Coset]
+Let $G$ be a group and $H$ is a subgroup of $G$. Consider an element $g \in G$. Then, $gH = \{ gh : h\in H\}$ is the \textit{left coset} of $H$ in $G$ with respect to $g$, and $Hg = \{hg : h\in H\}$ is the \textit{right coset} of $H$ in $G$ with respect to $g$
+\end{definition}
+
+\begin{remark}
+In general the left and right cosets are not groups.
+\end{remark}
+
+\begin{definition}[Normal Subgroup]
+A subgroup $H$ of $G$ is called \textit{normal} if and only if the left and right sets of cosets coincide, that is if $gH = Hg$ for all $g\in G$ 
+\end{definition}
+
+
+
+\begin{definition}[Quotent Group]
+Let $N$ be a normal subgroup of a group $G$. We define the set $G/N$ to be the set of all left cosets of $N$ in $G$, i.e., $G/N = \{aN:a\in G\}$. Define an operation on $G/N$ as follows. For each $aN$ and $bN$ in $G/N$, the product of $aN$ and $bN$ is $(aN)(bN)$. This defines an operation of $G/N$ if we impose $(aN)(bN) = (ab)N$, because $(ab)N$ does not depend on the choice of the representatives $a$ and $b$: if $xN=aN$ and $yN=bN$ for some $x,y \in G$, then:
+
+(ab)N = a(bN) = a(yN) = a(Ny) = (aN)y = (xN)y = x(Ny) = x(yN) = (xy)N
+
+Here it was used in an important way that $N$ is a normal subgroup. It can be shown that this operation on $G/N$ is associative, has identity element $N$ and the inverse of an element $aN \in G/N$ is $a^{-1}N$. Therefore, the set $G/N$ together with the defined operation forms a group; this is known as the \textit{quotient group} or \textit{factor group} of $G$ by $N$
+\end{definition}
