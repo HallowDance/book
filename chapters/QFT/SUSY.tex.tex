@@ -55,8 +55,48 @@ and thus
 \end{equation}
 This means that as operators $Q_1$ and $\bar{Q}_{\dot{1}}$ anihilate the
 multiplet. 
+\par The only nontrivial anticommutation relation that is left is:
+\begin{equation}
+  \{Q_2,\bar{Q}_{\dot{2}}\} = 1
+\end{equation}
+If we call
+\begin{equation}
+  \alpha = \frac{1}{2\sqrt{E}}Q_2,\quad \alpha^\dagger
+  = \frac{1}{2E}\bar{Q}_{\dot{2}}
+\end{equation}
+then the anticommutation relation that is left is:
+\begin{equation}
+  \{\alpha,\alpha^\dagger\} = 1
+\end{equation}
+with $\{\alpha,\alpha\} = 0$.
 
-
+We can build the representation starting from a state $|\lambda\rangle$ such
+that
+\begin{equation}
+  \alpha|\lambda\rangle = 0
+\end{equation}
+Lets suppose that it has \textit{helicity} $\lambda$:
+\begin{equation}
+  M_{12}\lambda \equiv J_3|\lambda\rangle = \lambda|\lambda\rangle.
+\end{equation}
+It is easy to compute the helicity of $\alpha^{\dagger}|\lambda\rangle$:
+\begin{equation}
+  M_{12} \bar{Q}_{\dot{2}}|\lambda\rangle
+  = \left(\bar{Q}_{\dot{2}}M_{12}+\frac{1}{2}\bar{Q}_{\dot{2}}\right)|\lambda\rangle
+  = (\lambda+\frac{1}{2}\bar{Q}_{\dot{2}})|\lambda\rangle 
+\end{equation}
+In the last line, we have used the fact that
+$\left[M_{12},\bar{Q}_{\dot{2}}\right]=\frac{1}{2}\bar{Q}_{\dot{2}}$. Thus we
+found out that
+\begin{equation}
+  \alpha^\dagger|\lambda\rangle  = |\lambda+ \frac{1}{2}\rangle 
+\end{equation}
+Since $(\alpha^\dagger)^2 = 0$, this stops here. Hence we have
+\begin{equation}
+  \alpha^\dagger|\lambda+\frac{1}{2}\rangle = 0.
+\end{equation}
+\par
+Massless multiplets are thus composed of one boson and one 1
 \section{General}
 \begin{definition}[R-symmetry]
 In supersymmetric theories, an R-symmetry is the symmetry transforming different supercharges into each other. In the simplest case of the $\mathcal{N}=1$ supersymmetry, such R-symmetry is isomorphic to a global $U(1)$ group or it's discrete subgroup. For extended supersymmetry theories, the R-symmetry group becomes a global non-abelian group.  
