@@ -12,9 +12,9 @@
 \contentsline {chapter}{\numberline {3}Supersymmetry}{7}
 \contentsline {section}{\numberline {3.1}Supermultiplets}{7}
 \contentsline {subsection}{\numberline {3.1.1}Massless supermultiplets}{7}
-\contentsline {section}{\numberline {3.2}General}{8}
-\contentsline {section}{\numberline {3.3}Bogomol'nyi-Prasad-Sommerfield (BPS) states}{9}
-\contentsline {section}{\numberline {3.4}Supersymmetric theories on curved manifolds}{9}
+\contentsline {section}{\numberline {3.2}General}{9}
+\contentsline {section}{\numberline {3.3}Bogomol'nyi-Prasad-Sommerfield (BPS) states}{10}
+\contentsline {section}{\numberline {3.4}Supersymmetric theories on curved manifolds}{10}
 \contentsline {part}{II\hspace {1em}Mathematics}{11}
 \author {Ivo Iliev}{}
 \contentsline {chapter}{\numberline {4}Group Theory}{13}
