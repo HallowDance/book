@@ -2,9 +2,51 @@
 %\chapterauthor{Second Author}{Second Author Affiliation}
 \chapter{Quantum Field Theory}
 
-\section{Sample Section}
-Sample text
-
+\section{Rarita-Schwinger equation}
+Consider the following Lagrangian
+\begin{equation}
+  \mathcal{L} = -\frac{1}{2}\bar{\psi}_\mu\left(\epsilon^{\mu\kappa\rho\nu}\gamma_5\gamma_\kappa\partial_\rho-im\sigma^{\mu\nu}\right)\psi_\nu
+\end{equation}
+This equation obviously controls the propagation of the wave function of
+a spin- object such as the gravitino. The equation of motion for
+this Lagrangian are known as the \textit{Rarita-Schwinger equation}:
+\begin{equation}
+\left(\epsilon^{\mu\kappa\rho\nu}\gamma_5\gamma_\kappa\partial_\rho
+  -im\sigma^{\mu\nu}\right)\psi_\nu
+\end{equation}
+In the massless case, the Rarita-Schwinger equation has a fermionic gauge
+symmertrty, it is invariant under the gauge transformation:
+\begin{equation}
+  \psi_\mu\rightarrow\psi_\mu + \partial_\mu\epsilon,
+\end{equation}
+where $\epsilon\equiv\epsilon_\alpha$ is an arbitrary spinor field. 
+\subsection{Massless case}
+Consider a massless Rarita-Schwinger field, described by the Lagrangian
+\begin{equation}
+  \mathcal{L}_{RS} = \bar{\psi}_\mu\gamma^{\mu\nu\rho}\partial_\nu\psi_{\rho}
+\end{equation}
+where the sum over spin indices is implicit, $\psi_\mu$ are Majorana spinors
+and the quantity $\gamma^{\mu\nu\rho}$ is equal to
+\begin{equation}
+  \gamma^{\mu\nu\rho}\equiv\frac{1}{3!}\gamma^{[\mu}\gamma^\nu\gamma^{\rho]}
+\end{equation}
+Varying the Lagrangian yealds after some calculation
+\begin{equation}
+  \delta\mathcal{L_{RS}}
+  = 2\delta\bar{\psi}_\mu\gamma^{\mu\nu\rho}\partial_\nu\psi_\rho
+  + \text{boundary terms}
+\end{equation}
+Now imposing that $\mathcal{L}_{RS} =0$ we get the equation of motion for
+a massless Majorana Rarita-Schwinger spinor:
+\begin{equation}
+  \gamma^{\mu\nu\rho}\partial_\nu\psi_\rho = 0
+\end{equation}
+\subsection{Massive case}
+The description of massive, higher-spin fields through the Rarita-Schwinger
+equation is not well defined physically. Coupling the RS Largrangian to
+electromagnetism leads to an equation with solutions representing wavefronts,
+some of which propagate faster than light. However, it was shown by Das and
+Freedman that local supersymmetry can circumvent this problem.
 %%%\begin{table}
 %%%    \tabletitle{Examples for illustrating attacks}
 %%%    \begin{tabular}{|c|c|c|c|}

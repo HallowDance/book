@@ -24,7 +24,7 @@ rotations until it reads
   \end{bmatrix}
 \end{equation}
 
-The supersymmetric algebra becomes 
+The supersymmetric algebra becomes,
 \begin{equation}
   \begin{bmatrix}
     \{Q_1,\bar{Q}_{\dot{1}}\} & \{Q_1,\bar{Q}_{\dot{2}}\} \\
@@ -53,7 +53,7 @@ and thus
 \begin{equation}
   Q_1|\omega\rangle = 0 = \bar{Q}_{\dot{1}}|\omega\rangle.
 \end{equation}
-This means that as operators $Q_1$ and $\bar{Q}_{\dot{1}}$ anihilate the
+This means that as operators $Q_1$ and $\bar{Q}_{\dot{1}}$ annihilate the
 multiplet. 
 \par The only nontrivial anticommutation relation that is left is:
 \begin{equation}
@@ -133,9 +133,145 @@ helicities are flipped.
       graviton, as was just shown.
   \end{itemize}
 \end{example}
+\subsection{Supermultiplets of extended supersymmetry}
+Very briefly we will mention that having extended SUSY, the massless
+supermultiplets are longer. Let's take the algebra to be:
+\begin{equation}
+  \{Q_\alpha^I,\bar{Q}_{\dot{\alpha}}^J\} = 2\sigma_{\alpha\dot{\alpha}}^\mu
+  P_\mu\delta^{IJ},
+\end{equation}
+where for simplicity we suppose that $Z^{IJ}=0$ for these states. For massless
+states, $P_\mu = (E,0,0,E)$ and therefore as before we have that
+\begin{equation}
+  \{Q_1^I,\bar{Q}_{\dot{1}}^J\} = 0,
+\end{equation}
+which implies the (operator) equations $Q_1^I=0$ and $\bar{Q}_{\dot{1}}^I=0$,
+for $I=1,\cdots,\sn$. The nontrivial relations are then:
+\begin{equation}
+\{Q_2^I, \bar{Q}_{\dot{2}}^J\} = 4E\delta^{IJ}
+\end{equation}
+Of course we can define
+\begin{equation}
+  \alpha_I = \frac{1}{2\sqrt{E}}Q_2^I
+\end{equation}
+and obtain the canonical anticommutation relations for $\sn$ fermionic
+oscillators
+\begin{equation}
+  \{\alpha_I,\alpha_J^\dagger\} = \delta_{IJ}
+\end{equation}
+\par If we now start with a state $\ket{\lambda}$ with helicity $\lambda$ which
+satisfies $\alpha_I\ket{\lambda} = 0$, we build a multiplet as follows:
+\begin{gather}
+  \alpha_I^\dagger\ket{\lambda} = \ket{\lambda + \frac{1}{2}}_I,\nonumber\\
+  \alpha_I\dagger\alpha_J\dagger\ket{\lambda} = \ket{\lambda
+  + 1}_{[IJ]},\nonumber\\
+  \vdots\nonumber\\
+  \alpha_1^\dagger\cdots\alpha_{\sn}^\dagger\ket{\lambda}
+  = \ket{\lambda+\frac{\sn}{2}}
+\end{gather}
+It is very important to note that there are $\sn$ states with helicity
+$\lambda + \frac{1}{2}, \frac{1}{2}\sn(\sn-1)$ states with
+helicity $\lambda + 1$ and so on, until we reach a single state with helicity $\lambda
++\frac{\sn}{2}$ (it is totally antisymmetric in $\sn$ indices
+I). In total, the supermultiplet is composed of $2^\sn$ states, half of
+them bosonic and half of them fermionic.
+\par Interestingly, in this case we can now have self-CPT conjugate multiplets.
+Take for example $\sn = 4$ and start from $\lambda = -1$. Then $\lambda
++ \frac{\sn}{2} = 1$ and the multiplet spans states of opposite helicities,
+thus filling complete representations of the Lorenz group. Indeed, it contains
+one pair of states with $\lambda\pm1$ (a vector, i.e a gauge boson), 4 pairs of
+states with $\lambda=\pm\frac{1}{3}$ (4 Weyl Fermions) and 6 states with
+$\lambda = 0$ (6 real scalars, or equivalently 3 complex scalars).
+\par Another example is $\sn = 8$ supersymmetry. Here if we start with $\lambda
+= -2$ we end up with $\lambda + \frac{\sn}{2} = 2$. Thus in this case we have
+the graviton in the self-CPT conjugate multiplet, corresponding to the pair of
+states with $\lambda\pm2$. In addition, we have 8 massless gravitini with
+$\lambda\pm\frac{3}{2}$, 28 massless vectors with $\lambda = \pm 1$, 56
+massless Weyl fermions with $\lambda = \pm\frac{1}{2}$ and finally 70 real
+scalars with $\lambda = 0$. This is the content of $\sn = 8$
+\textit{supergravity}, which is the only multiplet of $\sn = 8$ supersymmetry
+with $|\lambda|<2$. The latter condition is necessary in order to have
+consistent couplings (higher spin fields cannot be coupled in a consistent way
+with gravity and lower spin fields).
+\par From the theoretical standpoint, this is a very nice result, because we
+have a theory where \textit{everything is determined} from symmetry alone: the
+complete spectrum and all the couplings. Unfortunately, this theory is also
+completely unphysical. To mention one problem, it has no room for fermions in
+complex representations of the gauge group, which are present in the Standard
+Model.
+
+\subsection{Massive supermultiplets}
+When $P^2=M^2>0$, by boosts and rotation $P_\mu$ can be put in the following
+form
+\begin{equation}
+  P_\mu = (M,0,0,0)
+\end{equation}
+Then we have
+\begin{equation}
+  \sigma_{\alpha\dot{\alpha}}^\mu P_\mu = M\sigma^0 = 
+  \begin{bmatrix} 
+    M & 0\\
+    0 & M
+  \end{bmatrix}
+\end{equation}
+so that the superalgebra reads
+\begin{equation}
+  \{Q_\alpha, \bar{Q}_{\dot{\alpha}}\} = 2 M\delta_{\alpha\dot{\alpha}}
+\end{equation}
+Note that $[M_{12}, Q_1] = i(\sigma_{12})_1\ ^1Q_1= \frac{1}{2}Q_1$, thus it is
+$Q_1$ that raises the helicity, in the same way as $\bar{Q}_{\dot{2}}$. We make
+the redefinition
+\begin{gather}
+  \alpha_1 = \frac{1}{\sqrt{2M}}\bar{Q}_{\dot{1}},\quad \alpha_1^\dagger
+  = \frac{1}{\sqrt{2M}}Q_1, \\
+  \alpha_2 = \frac{1}{\sqrt{2M}}Q_2,\quad \alpha_2^\dagger
+  = \frac{1}{\sqrt{2M}}\bar{Q}_\dot{2},
+\end{gather}
+so that we have the canonical anticommutation relations of two fermionic
+oscillators:
+\begin{equation}
+  \{\alpha_a,\alpha_b^\dagger\}=\delta_{ab},\quad a,b = 1,2.
+\end{equation}
+\par If we start with $\alpha_a\ket{\lambda} = 0$, $M_{12}\ket{\lambda}
+= \lambda\ket{\lambda}$, then we build the multiplet as:
+\begin{gather}
+  \alpha_1^\dagger\ket{\lambda} = \ket{\lambda + \frac{1}{2}}_1,\\
+  \alpha_2^\dagger\ket{\lambda} = \ket{\lambda+\frac{1}{2}}_2,\\
+  \alpha_1^\dagger\alpha_2^\dagger\ket{\lambda} = \ket{\lambda+1}.
+\end{gather}
+There are 4 states now (compared to the 2 in the massless case), two bosons and
+two fermions. 
+\begin{example}[Examples of massive supermultiplets]
+  \mbox{}
+  \begin{itemize}
+    \item In the case of the \textit{massive scalar multiplet}, we start from
+      $\lambda =  -\frac{1}{2}$ and obtain two states with $\lambda=0$ and one
+      state with $\lambda=\frac{1}{2}$. These are the degrees of freedom of one
+      massive complex scalar and one massive Weyl fermion. Note that the latter
+      might not be familiar. Indeed, one cannot write the usual Dirac mass term
+      for a Weyl fermion. Instead, one can write what is called a Majorana mass
+      term:
+      \begin{equation}
+        \mathcal{L}\supset m\epsilon^{\alpha\beta}\psi_\alpha\psi_\beta + h.c.
+      \end{equation}
+      Note that the total degrees of freedom of a massless scalar multiplet is
+      the same as that of a massive one.
+    \item For a \textit{massive vector multiplet}, start from $\lambda = 0$ to
+      obtain 2 states with $\lambda = \frac{1}{2}$ and one state with $\lambda
+      = 1$. To this we add the CPT conjugate multiplet so that in the end we
+      have one pair with $\lambda = \pm1$, two pairs with
+      $\lambda=\pm\frac{1}{2}$ and two states with $\lambda = 0$. According to
+      the massive little group, this corresponds to 1 massive vector (with
+      $\lambda = \pm1,0)$, 1 real scalar and 1 massive Dirac fermion. Note
+      however that the content in degrees of freedom is the same as that of one
+      massless vector multiplet together with one massless scalar multiplet.
+      This hints that the consistent way to treat massive vectors in
+      a supersymmetric field theory will be through a SUSY version of the
+      Brout-Englert-Higgs mechanism.
+    \end{itemize}
 \section{General}
 \begin{definition}[R-symmetry]
-In supersymmetric theories, an R-symmetry is the symmetry transforming different supercharges into each other. In the simplest case of the $\mathcal{N}=1$ supersymmetry, such R-symmetry is isomorphic to a global $U(1)$ group or it's discrete subgroup. For extended supersymmetry theories, the R-symmetry group becomes a global non-abelian group.  
+In supersymmetric theories, an R-symmetry is the symmetry transforming different supercharges into each other. In the simplest case of the $\sn=1$ supersymmetry, such R-symmetry is isomorphic to a global $U(1)$ group or it's discrete subgroup. For extended supersymmetry theories, the R-symmetry group becomes a global non-abelian group.  
 \end{definition}
 
 \begin{remark}
@@ -143,7 +279,7 @@ In the case of the discrete subgroup $\mathbb{Z}_2$, the R-symmetry is called \t
 \end{remark}
 
 \begin{definition}[Extended supersymmetry]
-In supersymmetric theories, when $\mathcal{N}>1$ the algebra is said to have
+In supersymmetric theories, when $\sn>1$ the algebra is said to have
 \textit{extended supersymmetry}.
 \end{definition}
 
@@ -158,7 +294,7 @@ solutions to the modulus of $Z$ exist. Their importance arises as the
 multiplets shorten for generic representations, with stability and mass formula
 exact.
 
-\begin{example}[$d=4$,$\mathcal{N}=2$]
+\begin{example}[$d=4$,$\sn=2$]
 The generators for the odd part of the superalgebra have relations:
 \begin{gather}
   \{Q_\alpha^A,\bar{Q}_{\dot{\beta}B}\} = 2\sigma^m_{\alpha\dot{\beta}}P_m\delta^A_B \\
@@ -166,8 +302,8 @@ The generators for the odd part of the superalgebra have relations:
   \{\bar{Q}_{\dot{\alpha}A},\bar{Q}_{\dot{\beta}B}\}
   = -2\epsilon_{\dot{\alpha}\dot{\beta}}\epsilon_{AB}Z,
 \end{gather}
-where $\alpha\dot{\beta}$ are the Lorentz group indeces and $A,B$ are the
-$R$-symmerty indeces.
+where $\alpha\dot{\beta}$ are the Lorentz group indices and $A,B$ are the
+$R$-symmerty indices.
 If we take linear combinations of the above generators as follows:
 \begin{gather}
   R_\alpha^A = \xi^{-1}Q_\alpha^A

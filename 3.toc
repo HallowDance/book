@@ -1,5 +1,7 @@
 \chapcontentsline{chapsection}{\raggedright \ssubnumberline {3.1}Supermultiplets}{7}
 \chapcontentsline{chapsubsection}{\raggedright \subnumberline {3.1.1}Massless supermultiplets}{7}
-\chapcontentsline{chapsection}{\raggedright \ssubnumberline {3.2}General}{9}
-\chapcontentsline{chapsection}{\raggedright \ssubnumberline {3.3}Bogomol'nyi-Prasad-Sommerfield (BPS) states}{9}
-\chapcontentsline{chapsection}{\raggedright \ssubnumberline {3.4}Supersymmetric theories on curved manifolds}{10}
+\chapcontentsline{chapsubsection}{\raggedright \subnumberline {3.1.2}Supermultiplets of extended supersymmetry}{9}
+\chapcontentsline{chapsubsection}{\raggedright \subnumberline {3.1.3}Massive supermultiplets}{11}
+\chapcontentsline{chapsection}{\raggedright \ssubnumberline {3.2}General}{12}
+\chapcontentsline{chapsection}{\raggedright \ssubnumberline {3.3}Bogomol'nyi-Prasad-Sommerfield (BPS) states}{13}
+\chapcontentsline{chapsection}{\raggedright \ssubnumberline {3.4}Supersymmetric theories on curved manifolds}{14}

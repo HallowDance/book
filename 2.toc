@@ -1,1 +1,3 @@
-\chapcontentsline{chapsection}{\raggedright \ssubnumberline {2.1}Sample Section}{5}
+\chapcontentsline{chapsection}{\raggedright \ssubnumberline {2.1}Rarita-Schwinger equation}{5}
+\chapcontentsline{chapsubsection}{\raggedright \subnumberline {2.1.1}Massless case}{5}
+\chapcontentsline{chapsubsection}{\raggedright \subnumberline {2.1.2}Massive case}{6}
