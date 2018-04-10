@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Run_This.aux
+A level-1 auxiliary file: frontmatter/dedication.aux
+A level-1 auxiliary file: frontmatter/foreword.aux
+A level-1 auxiliary file: frontmatter/preface.aux
+A level-1 auxiliary file: frontmatter/contributor.aux
+A level-1 auxiliary file: chapters/Gravity/GR.aux
+A level-1 auxiliary file: chapters/QFT/QFT.tex.aux
+A level-1 auxiliary file: chapters/QFT/SUSY.tex.aux
+A level-1 auxiliary file: chapters/Strings/stringsCFT.aux
+A level-1 auxiliary file: chapters/Mathematics/grouptheory.aux
+A level-1 auxiliary file: chapters/Mathematics/diferentialgeometry.aux
+The style file: plain.bst
+Database file #1: biblio.bib.bib
+Warning--empty journal in IntegrableSystems
+Warning--empty publisher in CardyCFT
+Warning--empty year in CardyCFT
+Warning--empty journal in Kitaev16
+You've used 34 entries,
+            2118 wiz_defined-function locations,
+            697 strings with 8796 characters,
+and the built_in function-call counts, 7615 in all, are:
+= -- 718
+> -- 328
+< -- 0
++ -- 137
+- -- 98
+* -- 340
+:= -- 1420
+add.period$ -- 102
+call.type$ -- 34
+change.case$ -- 145
+chr.to.int$ -- 0
+cite$ -- 38
+duplicate$ -- 357
+empty$ -- 620
+format.name$ -- 98
+if$ -- 1540
+int.to.chr$ -- 0
+int.to.str$ -- 34
+missing$ -- 40
+newline$ -- 173
+num.names$ -- 68
+pop$ -- 186
+preamble$ -- 1
+purify$ -- 117
+quote$ -- 0
+skip$ -- 243
+stack$ -- 0
+substring$ -- 175
+swap$ -- 32
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 124
+warning$ -- 4
+while$ -- 68
+width$ -- 36
+write$ -- 339
+(There were 4 warnings)

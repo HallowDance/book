@@ -1,0 +1,125 @@
+\chapterauthor{Ivo Iliev}{Sofia University}
+
+\chapter{Introduction to Conformal Field Theory}
+
+\section{String theory as a CFT}
+\par String theories in the conformal gauge are two-dimensional
+conformal field theories. Thus, instead of the operatorial analysis, one can give an equivalent description
+by using the language of conformal field theory in which one works with the
+OPE rather then commutators or anticommutators and that contributes to
+simplify many calculations. 
+\subsection{Variables and coordinates in the CFT formulation}
+In the case of a closed string it is convenient to
+introduce the variables $z$ and $\bar{z}$ that are related to the world sheet variables
+$\tau$ and $\sigma$ through a conformal transformation:
+\begin{equation}
+ z=e^{2i(\tau-\sigma)}\quad;\quad \bar{z} = e^{2i(\tau + \sigma)}
+\end{equation}
+\par In the case of an euclidean world sheet ($\tau \rightarrow  -i\tau$), $z$
+and $\bar{z}$ are complex conjugates of each other. In terms of them we can write the bosonic coordinate $X^\mu$ as follows:
+\begin{equation}
+X^\mu =\left(z,\bar{z}\right) = \frac{1}{2}\left[X^\mu\left(z\right)+\tilde{X}^\mu\left(\bar{z}\right)\right]
+\end{equation}
+where
+\begin{equation}
+X^\mu\left(z\right) = \hat{q}^\mu - i\sqrt{2\alpha'}\log{z}\alpha_0^\mu
++ i\sqrt{2\alpha'}\sum_{n\neq 0}{\frac{\alpha_n^\mu}{n}z^{-n}} 
+\label{1} 	
+\end{equation}
+and 
+\begin{equation}
+\tilde{X}^\mu\left(\bar{z}\right) = \hat{q}^\mu - i\sqrt{2\alpha'}\log{\bar{z}}\tilde{\alpha}_0^\mu + i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\tilde{\alpha}_n^\mu}{n}\bar{z}^{-n}  	
+\end{equation}
+with $\alpha_0^\mu = \tilde{\alpha}_0^\mu = \sqrt{\frac{\alpha'}{2}}\hat{p}^\mu$ 
+\par In the case of \textbf{an open string theory} one can
+introduce the variables:
+\begin{equation}
+ z=e^{i(\tau-\sigma)};\quad \bar{z} = e^{i(\tau+\sigma)}
+\end{equation}
+and the string coordinate can be written as
+\begin{equation}
+	X^\mu\left(z,\bar{z}\right) = \frac{1}{2}\left[X^\mu\left(z\right)+X^\mu\left(\bar{z}\right)\right]
+\end{equation}
+where $X^\mu$ is given in \eqref{1} and $\alpha_0^\mu = \sqrt{2\alpha'}\hat{p}^\mu$. In superstring theory
+we must also introduce a conformal field with conformal dimension equal
+to 1/2 corresponding to the fermionic coordinate. 
+\par\textbf{In the closed string case}
+we have two in-dependent fields for the holomorphic and anti-holomorphic
+sectors which are obtained through the Wick
+rotation  (\(\tau \rightarrow -i\tau)\) and the conformal transformation  (\(\tau,\sigma)\rightarrow\left(z,\bar{z}\right)\)
+\begin{equation}
+	\Psi^\mu\left(z\right) \sim \sum_t{\psi_tz^{-t-1/2}};\quad \tilde{\Psi}^\mu\left(\bar{z}\right) \sim \sum_t{\tilde{\psi}_t\bar{z}^{-t-1/2}}
+\label{2}
+\end{equation}
+In the open string case, applying the same operations we get again eqs\eqref{2}, but this time with the same oscillators.
+\par
+In what follows we will explicitly consider only the \textbf{holomorphic sector for the closed string}. In the case of an open string it is sufficient to consider the string
+coordinate at the string endpoint $\sigma = 0$. In both cases it is convenient to introduce a \textit{bosonic dimensionless variable}:
+\begin{equation}
+	x^\mu\left(z\right)\equiv \frac{X^\mu\left(z\right)}{\left(\sqrt{2\alpha'}\right)} = \tilde{q}^\mu -i\alpha_0^\mu\log z + i\sum_{n \neq 0}{\frac{\alpha_n}{n}z^{-n}}
+\end{equation}
+where $\tilde{q} = \hat{q}/\sqrt{2\alpha'}$ and a \textit{fermionic} one:
+\begin{equation}
+	\psi^\mu\left(z\right) = -i\sum_t{\psi_tz^{-t-1/2}}
+\end{equation}
+\subsection{Operator Product Expansion}
+The theory can be quantized by imposing the following OPEs
+\begin{equation}
+	x^\mu\left(z\right)x^\nu\left(\omega\right) = -\eta^{\mu\nu}\log\left(z-\omega\right)+\cdots;\quad \psi^\mu\left(z\right)\psi^\nu\left(\omega\right) = -\frac{\eta^{\mu\nu}}{z-\omega}+\cdots ,
+\end{equation}
+where the dots denote finite terms for $z\rightarrow \omega$. In terms of the previous conformal fields we can define the generators
+of superconformal transformations:
+\begin{equation}
+	G\left(z\right) = -\frac{1}{2}\psi.\partial x\quad; T\left(z\right) = T^x\left(z\right) + T^\psi\left(z\right) = -\frac{1}{2}\left(\partial x\right)^2 - \frac{1}{2}\partial\psi.\psi
+\end{equation}
+These conformal fields satisfy the following OPEs:
+\begin{equation}
+	T\left(z\right)T\left(\omega\right) = \frac{\frac{d}{d\omega}T\left(\omega\right)}{z-\omega} + 2\frac{T\left(\omega\right)}{\left(z-\omega\right)^2} + \frac{c/2}{\left(z-\omega\right)^4}+\cdots
+\end{equation}
+\begin{equation}
+	T\left(z\right)G\left(\omega\right) = \frac{\partial/\partial\omega G\left(\omega\right)}{z-\omega} + \frac{3}{2}\frac{G\left(\omega\right)}{\left(z-\omega\right)^2} +\cdots
+\end{equation}
+\begin{equation}
+	G\left(z\right)G\left(\omega\right) = \frac{2T\left(z\right)}{z-\omega} + \frac{d}{\left(z-\omega\right)^3}+\cdots
+\end{equation}
+We have to translate the $L_0$ operator in the R sector by a constant:
+\begin{equation}
+	L_0 \rightarrow L_0^{conf} \equiv L_0 + \frac{d}{16} = \sum_{n=1}^{\infty}{\left(\alpha_{-n}.\alpha_{n}+n\psi_{-n}.\psi_n\right)} +\alpha'p^2 + \frac{d}{16}
+	\label{3}
+\end{equation}
+Therefore in the R sector we have two $L_0$ operators that are related by
+eq.\eqref{3}. $L_0$ determines the spectrum of superstring while $L_0^{conf}$ encodes the correct conformal properties of the R sector.
+\subsection{Primary fields \& Highest weight states}
+In conformal field theory one introduces the concept of conformal or
+\textit{primary field} 
+\begin{definition}[Primary field]
+  A conformal field $\Phi(z)$ is called a \textit{primary} field with dimension
+  $h$ if it satisfies the following OPE with the energy-momentum tensor:
+\begin{equation}
+	T\left(z\right)\Phi\left(\omega\right) = \frac{\partial_\omega\Phi\left(\omega\right)}{z-\omega} + h\frac{\Phi\left(\omega\right)}{\left(z-\omega\right)^2}
+\end{equation}
+\end{definition}
+From it one can compute the corresponding \textit{highest weight state} $\ket{\Phi}$ by means of the following limiting procedure
+\begin{equation}
+\ket{\Phi} = \lim_{z\rightarrow 0}\Phi\left(z\right)\ket{0}\quad,\quad\bra{\Phi} = \lim_{z\rightarrow 0}\bra{0}\Phi^{\dagger}\left(z\right)\sim\ \lim_{z\rightarrow \infty}\bra{0}\left(z^2\right)^h\Phi\left(z\right)
+\end{equation}
+The hermitian conjugate field $\Phi^{\dagger}$ in the previous expression has been defined as the field transformed under the conformal transformation $z\rightarrow 1/z$. It is easy to show that:
+\begin{equation}
+	L_0\ket{\Phi} = h\ket{\Phi}\quad;\quad L_n\ket{\Phi} = 0
+\end{equation}
+\subsection{BRST charge \& Vertex operators}
+\par With the introduction of ghosts, the string action in the conformal gauge becomes invariant under the BRST transformations and the physical states are characterized by the fact that they are annihilated by the BRST charge that in the bosonic case is given by
+\begin{equation}
+	Q\equiv \oint{\frac{dz}{2\pi i }c\left(z\right)J_{BRST}} \equiv \oint{\frac{dz}{2\pi i }c\left(z\right)\left[T^x\left(z\right)  \frac{1}{2}T^{bc}\left(z\right)\right]}
+\end{equation}
+where $T^x\left(z\right)= -1/2\left(\partial x\right)^2$ and $T^{bc}\left(z\right) = \sum_n{L_n z^{-n-2}}$. The physical states are annihilated by the BRST charge
+\begin{equation}
+	Q\ket{\phi_{phys}} = 0
+\end{equation}
+By using the OPE it can be shown that in the bosonic string the most general BRST invariant \textit{vertex operator} has the following form
+\begin{equation}
+	\mathcal{W}= c\left(z\right)\mathcal{V}_\alpha^x\left(z\right)
+\end{equation}
+where $\mathcal{V}_\alpha^x\left(z\right)$ is a conformal field with dimension
+equal to 1 that depends only on the string coordinate $x^\mu$.
+

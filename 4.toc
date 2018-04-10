@@ -1,1 +1,5 @@
-\chapcontentsline{chapsection}{\raggedright \ssubnumberline {4.1}Basic Definitions}{17}
+\chapcontentsline{chapsection}{\raggedright \ssubnumberline {4.1}String theory as a CFT}{15}
+\chapcontentsline{chapsubsection}{\raggedright \subnumberline {4.1.1}Variables and coordinates in the CFT formulation}{15}
+\chapcontentsline{chapsubsection}{\raggedright \subnumberline {4.1.2}Operator Product Expansion}{16}
+\chapcontentsline{chapsubsection}{\raggedright \subnumberline {4.1.3}Primary fields \& Highest weight states}{17}
+\chapcontentsline{chapsubsection}{\raggedright \subnumberline {4.1.4}BRST charge \& Vertex operators}{18}

@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.15)  8 MAR 2018 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.26)  2 APR 2018 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Run_This.tex
 (./Run_This.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
 (./krantz.cls
 Document Class: krantz 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
@@ -102,20 +102,6 @@ File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \concolwidth=\dimen124
 \stempbox=\box50
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
-Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
-
-
-Package fixltx2e Warning: fixltx2e is not required with releases after 2015
-(fixltx2e)                All fixes are now in the LaTeX kernel.
-(fixltx2e)                See the latexrelease package for details.
-
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
-Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-))
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
@@ -185,7 +171,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
-(/home/hallowdance/texmf/tex/latex/physics/physics.sty
+(/usr/local/share/texmf/tex/latex/physics/physics.sty
 Package: physics 
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -1425,70 +1411,15 @@ Writing index file Run_This.idx
 (./frontmatter/preamble.tex
 \c@theorem=\count154
 \c@exercise=\count155
-
-
-! LaTeX Error: Command \* already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \newtheorem*{example}{
-                          Example}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \newtheorem*{example}{E
-                           xample}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-\c@definition=\count156
-
-! LaTeX Error: Command \* already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 \newtheorem*{proof}{
-                        Proof}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \* already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \newtheorem*{remark}{
-                         Remark}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-] (./Run_This.aux
-(./frontmatter/dedication.aux) (./frontmatter/foreword.aux)
-(./frontmatter/preface.aux) (./frontmatter/contributor.aux)
-(./chapters/Gravity/GR.aux) (./chapters/QFT/QFT.tex.aux)
-(./chapters/QFT/SUSY.tex.aux) (./chapters/Mathematics/grouptheory.aux)
+\c@example=\count156
+\c@definition=\count157
+\c@proof=\count158
+\c@remark=\count159
+) (./Run_This.aux (./frontmatter/dedication.aux)
+(./frontmatter/foreword.aux) (./frontmatter/preface.aux)
+(./frontmatter/contributor.aux) (./chapters/Gravity/GR.aux)
+(./chapters/QFT/QFT.tex.aux) (./chapters/QFT/SUSY.tex.aux)
+(./chapters/Strings/stringsCFT.aux) (./chapters/Mathematics/grouptheory.aux)
 (./chapters/Mathematics/diferentialgeometry.aux))
 \openout1 = `Run_This.aux'.
 
@@ -1504,8 +1435,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
@@ -1518,16 +1447,16 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count157
+\scratchcounter=\count160
 \scratchdimen=\dimen182
 \scratchbox=\box94
-\nofMPsegments=\count158
-\nofMParguments=\count159
+\nofMPsegments=\count161
+\nofMParguments=\count162
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count160
+\MPscratchCnt=\count163
 \MPscratchDim=\dimen183
-\MPnumerator=\count161
-\makeMPintoPDFobject=\count162
+\MPnumerator=\count164
+\makeMPintoPDFobject=\count165
 \everyMPtoPDFconversion=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1553,7 +1482,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count163
+\c@section@level=\count166
 )
 LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
@@ -1564,46 +1493,15 @@ LaTeX Info: Redefining \nameref on input line 19.
 \openout5 = `Run_This.out'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/sl' in size <24> not available
+(Font)              size <24.88> substituted on input line 25.
 
 
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sl' in size <24> not available
+(Font)              size <24.88> substituted on input line 25.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[2
-
-
-]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1633,19 +1531,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
  []
 
 [1
 
-]
+
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `frontmatter/dedication.aux'.
 
- (./frontmatter/dedication.tex
+
+(./frontmatter/dedication.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1675,11 +1573,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
  []
 
 [2
@@ -1717,11 +1610,6 @@ Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
  []
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
 [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1752,11 +1640,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
  []
 
 [4
@@ -1792,11 +1675,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
  []
 
 [8
@@ -1838,9 +1716,12 @@ Overfull \hbox (336.25pt too wide) detected at line 30
  []
 
 
-Underfull \hbox (badness 10000) detected at line 30
-[]
- []
+LaTeX Font Warning: Font shape `OT1/cmr/m/sl' in size <18> not available
+(Font)              size <17.28> substituted on input line 30.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sl' in size <18> not available
+(Font)              size <17.28> substituted on input line 30.
 
 (./Run_This.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 9.
@@ -1851,12 +1732,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[9])
+) [9])
 \tf@toc=\write6
 \openout6 = `Run_This.toc'.
 
@@ -1916,19 +1792,9 @@ Overfull \hbox (336.25pt too wide) detected at line 1
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1
-[]
- []
-
-
 Package hyperref Warning: bookmark level for unknown fm defaults to 0.
 
-)
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[11
+) [11
 
 
 
@@ -1965,11 +1831,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
  []
 
 [12
@@ -2012,17 +1873,7 @@ Overfull \hbox (336.25pt too wide) detected at line 1
 []
  []
 
-
-Underfull \hbox (badness 10000) detected at line 1
-[]
- []
-
-)
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[13
+) [13
 
 ]
 \openout2 = `frontmatter/contributor.aux'.
@@ -2057,11 +1908,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
  []
 
 [14
@@ -2104,17 +1950,7 @@ Overfull \hbox (336.25pt too wide) detected at line 2
 []
  []
 
-
-Underfull \hbox (badness 10000) detected at line 2
-[]
- []
-
-)
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[15
+) [15
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2146,11 +1982,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
  []
 
 [16
@@ -2224,11 +2055,6 @@ Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
  []
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
 [1
 
 ]
@@ -2263,17 +2089,7 @@ Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
  []
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.40 \part{Physics}
-                    [2]
+[2]
 \openout2 = `chapters/Gravity/GR.aux'.
 
  (./chapters/Gravity/GR.tex
@@ -2313,15 +2129,18 @@ Overfull \hbox (336.25pt too wide) detected at line 3
  []
 
 Chapter 1.
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <24> not available
+(Font)              size <24.88> substituted on input line 3.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <24> not available
+(Font)              size <24.88> substituted on input line 3.
+
 (./1.toc)
 \openout3 = `1.toc'.
 
-)
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[3
+) [3
 
 
 
@@ -2358,11 +2177,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (336.25pt too wide) has occurred while \output is active
 []
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
  []
 
 [4
@@ -2409,12 +2223,7 @@ Chapter 2.
 (./2.toc)
 \openout3 = `2.toc'.
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[5
+ [5
 
 ]) [6]
 \openout2 = `chapters/QFT/SUSY.tex.aux'.
@@ -2459,531 +2268,23 @@ Chapter 3.
 (./3.toc)
 \openout3 = `3.toc'.
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[7
+ [7
 
 
 
 
-]
-
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 \begin{example}
-                     [Examples of massless supermultiplets]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+] [8]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
-[8]
-
-! LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 \end{example}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.149 for $I=1,\cdots,\sn
-                         $. The nontrivial relations are then:
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.157 ...onical anticommutation relations for $\sn
-                                                  $ fermionic
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[9]
-! Undefined control sequence.
-<argument> ...lpha _1^\dagger \cdots \alpha _{\sn 
-                                                  }^\dagger \ket {\lambda } ...
-l.171 \end{gather}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \sn 
-               
-l.171 \end{gather}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...lpha _1^\dagger \cdots \alpha _{\sn 
-                                                  }^\dagger \ket {\lambda } ...
-l.171 \end{gather}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \sn 
-               
-l.171 \end{gather}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.172 ...ery important to note that there are $\sn
-                                                  $ states with helicity
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.173 $\lambda + \frac{1}{2}, \frac{1}{2}\sn
-                                            (\sn-1)$ states with
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.173 $\lambda + \frac{1}{2}, \frac{1}{2}\sn(\sn
-                                                -1)$ states with
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \sn 
-               
-l.175 +\frac{\sn}{2}
-                    $ (it is totally antisymmetric in $\sn$ indices
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.175 ...{2}$ (it is totally antisymmetric in $\sn
-                                                  $ indices
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.176 ... the supermultiplet is composed of $2^\sn
-                                                  $ states, half of
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing { inserted.
-<to be read again> 
-                   $
-l.176 ...the supermultiplet is composed of $2^\sn$
-                                                   states, half of
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.176 ...the supermultiplet is composed of $2^\sn$
-                                                   states, half of
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.179 Take for example $\sn
-                            = 4$ and start from $\lambda = -1$. Then $\lambda
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \sn 
-               
-l.180 + \frac{\sn}{2}
-                      = 1$ and the multiplet spans states of opposite helici...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.185 \par Another example is $\sn
-                                   = 8$ supersymmetry. Here if we start with...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \sn 
-               
-l.186 ...$ we end up with $\lambda + \frac{\sn}{2}
-                                                   = 2$. Thus in this case w...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.191 ...\lambda = 0$. This is the content of $\sn
-                                                   = 8$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.192 ...ity}, which is the only multiplet of $\sn
-                                                   = 8$ supersymmetry
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[10]
-
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \begin{example}
-                     [Examples of massive supermultiplets]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[11]
-
-! LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273   \end{example}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.277 ...h other. In the simplest case of the $\sn
-                                                  =1$ supersymmetry, such R-...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
+ [9] [10] [11]
 Overfull \hbox (0.70175pt too wide) in paragraph at lines 277--278
 []\OT1/cmr/m/it/10 In su-per-sym-met-ric the-o-ries, an R-symmetry
  []
 
+[12] [13]) [14]
+\openout2 = `chapters/Strings/stringsCFT.aux'.
 
-! LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.282 \end{remark}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.285 In supersymmetric theories, when $\sn
-                                           >1$ the algebra is said to have
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.300 \begin{example}
-                     [$d=4$,$\sn=2$]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-<recently read> \sn 
-                    
-l.300 \begin{example}[$d=4$,$\sn
-                                =2$]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[12]
-
-! LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.325 \end{example}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [13]
-Underfull \vbox (badness 10000) detected at line 46
- []
-
-
-Overfull \hbox (336.25pt too wide) detected at line 46
-[]
- []
-
-
-Underfull \vbox (badness 10000) detected at line 46
- []
-
-
-Overfull \hbox (336.25pt too wide) detected at line 46
-[]
- []
-
-
-Underfull \vbox (badness 10000) detected at line 46
- []
-
-
-Overfull \hbox (336.25pt too wide) detected at line 46
-[]
- []
-
-
-Underfull \vbox (badness 10000) detected at line 46
- []
-
-
-Overfull \hbox (336.25pt too wide) detected at line 46
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[14
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[16]
-\openout2 = `chapters/Mathematics/grouptheory.aux'.
-
- (./chapters/Mathematics/grouptheory.tex
+ (./chapters/Strings/stringsCFT.tex
 Underfull \vbox (badness 10000) detected at line 3
  []
 
@@ -3023,73 +2324,118 @@ Chapter 4.
 (./4.toc)
 \openout3 = `4.toc'.
 
+ [15
 
 
-! LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 \begin{remark}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 \end{remark}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
+] [16] [17]) [18]
+Underfull \vbox (badness 10000) detected at line 46
  []
 
-[17
 
+Overfull \hbox (336.25pt too wide) detected at line 46
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 46
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 46
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 46
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 46
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 46
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 46
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+[19
 
 
 ]
-
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.42 \begin{example}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-! LaTeX Error: \begin{document} ended by \end{example}.
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 \end{example}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
-) [18]
-\openout2 = `chapters/Mathematics/diferentialgeometry.aux'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- (./chapters/Mathematics/diferentialgeometry.tex
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+[20]
+\openout2 = `chapters/Mathematics/grouptheory.aux'.
+
+ (./chapters/Mathematics/grouptheory.tex
 Underfull \vbox (badness 10000) detected at line 3
  []
 
@@ -3129,76 +2475,92 @@ Chapter 5.
 (./5.toc)
 \openout3 = `5.toc'.
 
-
-
-! LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \begin{remark}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 \end{remark}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[19
+ [21
 
 
 
+] [22]) [23]
+\openout2 = `chapters/Mathematics/diferentialgeometry.aux'.
 
-] [20]
-Underfull \hbox (badness 1867) in paragraph at lines 67--69
-[]\OT1/cmr/m/it/10 An ex-te-rior prod-uct of $\OML/cmm/m/it/10 k$ \OT1/cmr/m/it
-/10 1-forms
+ (./chapters/Mathematics/diferentialgeometry.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
  []
 
 
-! LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 \begin{remark}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-! LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 \end{remark}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+[24
+
+
+
+]
+Underfull \vbox (badness 10000) detected at line 3
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 3
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 3
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 3
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 3
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 3
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 3
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 3
+[]
+ []
+
+Chapter 6.
+(./6.toc)
+\openout3 = `6.toc'.
+
+ [25
+
+] [26]
 Overfull \hbox (5.20935pt too wide) in paragraph at lines 87--89
 []\OT1/cmr/m/it/10 The ex-
  []
@@ -3212,65 +2574,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-! LaTeX Error: Environment proof undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103 \begin{proof}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+[27]
 ! Double superscript.
 l.111    \omega\wedge\omega = (-1)^k^
                                      2\omega\wedge\omega = -\omega\wedge\omega
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-
-! LaTeX Error: \begin{document} ended by \end{proof}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 \end{proof}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[21]
-
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 \begin{example}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{example}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[22]
+[28]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 179.
@@ -3287,14 +2597,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 179.
 
-
-Underfull \hbox (badness 1342) in paragraph at lines 191--194
-[]\OT1/cmr/m/it/10 A $\OML/cmm/m/it/10 k$\OT1/cmr/m/it/10 -dimensional cell $\O
-ML/cmm/m/it/10 ^^[$ \OT1/cmr/m/it/10 of an $\OML/cmm/m/it/10 n$\OT1/cmr/m/it/10
- -
- []
-
-[23]
+[29] [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 255.
@@ -3320,34 +2623,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[24]
-
-! LaTeX Error: Environment proof undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.277 \begin{proof}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{proof}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.293 \end{proof}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[25]
+[31]
 ! Undefined control sequence.
 l.327   \int_{\patial
                       c_{k+1}}{\omega^k} = 0\quad\text{if }dw^k=0.
@@ -3357,6 +2633,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[32]
 ! Undefined control sequence.
 l.331 ...a$ on a manifold $M$ is said to be \texit
                                                   {exact}
@@ -3365,32 +2642,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.336 \begin{example}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.349 \end{example}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 ! Undefined control sequence.
 l.362     A \texit
@@ -3401,7 +2652,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[26]
 ! Undefined control sequence.
 <recently read> \parital 
                          
@@ -3413,6 +2663,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[33]
 ! Undefined control sequence.
 l.393 ...sion of $H^k$ is called the $k$-th \texit
                                                   {Betti number} of $M$.
@@ -3423,7 +2674,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.402   Such cycles are called \texit
+l.401   Such cycles are called \texit
                                      {homologous}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3431,198 +2682,321 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[27]
-Overfull \hbox (12.35365pt too wide) in paragraph at lines 438--439
+[34]
+Overfull \hbox (7.65865pt too wide) in paragraph at lines 438--439
 []\OT1/cmr/m/it/10 Given a Rie-man-nian man-i-fold $\OT1/cmr/m/n/10 (\OML/cmm/m
 /it/10 M; g\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 ,
  []
 
-[28]
-
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.464 \begin{example}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{definition} on input line 411 ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.474 \end{example}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 477--478
-[]\OT1/cmr/m/it/10 A Sasaki-Einstein man-i-
+[35] [36] [37]) [38] (./Run_This.bbl
+Underfull \vbox (badness 10000) detected at line 1
  []
 
 
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.480 \begin{example}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{definition} on input line 411 ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.482 \end{example}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[29]
-
-! LaTeX Error: Environment proof undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.511 \begin{proof}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{definition} on input line 411 ended by \end{proof}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.517 \end{proof}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.536 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{definition} on input line 411 ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.538 \end{remark}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment proof undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.549 \begin{proof}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{definition} on input line 411 ended by \end{proof}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.567 \end{proof}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[30]
-Underfull \hbox (badness 3803) in paragraph at lines 582--584
-[]\OT1/cmr/m/it/10 Equivalently, an $\OML/cmm/m/it/10 n$\OT1/cmr/m/it/10 -dimen
-sional K^^?ahler man-i-fold are pre-cisely $\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 n
-$\OT1/cmr/m/it/10 -
+Overfull \hbox (336.25pt too wide) detected at line 1
+[]
  []
 
-) [31] (./Run_This.ind)
 
-! LaTeX Error: \begin{definition} on input line 411 ended by \end{document}.
+Underfull \vbox (badness 10000) detected at line 1
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 1
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 1
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 1
+[]
+ []
+
+Missing character: There is no ‚ in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no ú in font cmti10!
+Missing character: There is no ‚ in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no ù in font cmti10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+[39
+
+
+
+]
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no ‚ in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no ì in font cmti10!
+ [40]
+Missing character: There is no – in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no õ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ± in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ¥ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ° in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ü in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ñ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ü in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ö in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∂ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no è in font cmti10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no É in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ¥ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∑ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ¥ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∑ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no π in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no µ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no É in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no ã in font cmr10!
+) (./Run_This.ind)
+
+! LaTeX Error: \begin{subsubsection} on input line 377 ended by \end{document}.
+
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55 \end{document}
+l.57 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
-(./Run_This.aux (./frontmatter/dedication.aux) (./frontmatter/foreword.aux)
-(./frontmatter/preface.aux) (./frontmatter/contributor.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+[41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+ (./Run_This.aux (./frontmatter/dedication.aux) (./frontmatter/foreword.aux) (.
+/frontmatter/preface.aux) (./frontmatter/contributor.aux)
 (./chapters/Gravity/GR.aux) (./chapters/QFT/QFT.tex.aux)
-(./chapters/QFT/SUSY.tex.aux) (./chapters/Mathematics/grouptheory.aux)
+(./chapters/QFT/SUSY.tex.aux) (./chapters/Strings/stringsCFT.aux)
+(./chapters/Mathematics/grouptheory.aux)
 (./chapters/Mathematics/diferentialgeometry.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
-Package rerunfilecheck Info: File `Run_This.out' has not changed.
-(rerunfilecheck)             Checksum: 27213652353A46BF52784052043EE2D4;3195.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
- )
-(\end occurred inside a group at level 4)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 
-### semi simple group (level 4) entered at line 411 (\begingroup)
-### semi simple group (level 3) entered at line 399 (\begingroup)
+
+Package rerunfilecheck Warning: File `Run_This.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Run_This.out':
+(rerunfilecheck)             Before: 19240EE08FDD4E6BA688B960B2CC161D;3708
+(rerunfilecheck)             After:  B9A479D62CC09C28BE5530D1A8A65CE3;3763.
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.88pt have occurred.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
+ )
+(\end occurred inside a group at level 2)
+
 ### semi simple group (level 2) entered at line 377 (\begingroup)
 ### semi simple group (level 1) entered at line 360 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14750 strings out of 494953
- 254648 string characters out of 6180977
- 306705 words of memory out of 5000000
- 17587 multiletter control sequences out of 15000+600000
- 17819 words of font info for 63 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 40i,10n,42p,10405b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14552 strings out of 494440
+ 248512 string characters out of 6173198
+ 307688 words of memory out of 5000000
+ 17305 multiletter control sequences out of 15000+600000
+ 16603 words of font info for 60 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
+ 40i,11n,42p,10405b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{UNDEFINED} has been referenced but 
 does not exist, replaced by a fixed one
 
@@ -3630,25 +3004,26 @@ does not exist, replaced by a fixed one
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Run_This.pdf (46 pages, 351122 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb>
+Output written on Run_This.pdf (54 pages, 388016 bytes).
 PDF statistics:
- 713 PDF objects out of 1000 (max. 8388607)
- 638 compressed objects within 7 object streams
- 242 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 879 PDF objects out of 1000 (max. 8388607)
+ 794 compressed objects within 8 object streams
+ 332 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

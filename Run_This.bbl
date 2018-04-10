@@ -1,0 +1,187 @@
+\begin{thebibliography}{10}
+
+\bibitem{Alekseev90}
+A.~Alekseev and S.~L. Shatashvili.
+\newblock Path integral quantization of the coadjoint orbits of the virasoro
+  group and 2d gravity.
+\newblock {\em Nucl. Phys. B 323, 719 (1989); “From geometric quantization to
+  conformal field theory,” Commun. Math. Phys. 128, 197}, 1990.
+
+\bibitem{BCFTBranes}
+Volker~Schomerus Andreas~Recknagel.
+\newblock {\em Boundary Conformal Field Theory and the Worldsheet Approach to
+  D-Branes}.
+\newblock Cambridge University Press, 2013.
+
+\bibitem{IntegrableSystems}
+O.~Babelon.
+\newblock A short introduction to classical and quantum integrable sytems.
+\newblock 2007.
+
+\bibitem{Bachas95}
+C.~Bachas.
+\newblock D-brane dynamics.
+\newblock {\em hep-th/9511043}, 1995.
+
+\bibitem{CardyCFT}
+John Cardy.
+\newblock Boundary conformal field theory.
+\newblock In {\em Encyclopedia of Mathematical Physics}.
+
+\bibitem{ComtetHouston85}
+A.~Comtet and P.~J. Houston.
+\newblock Effective action on the hyperbolic plane in a constant external
+  field.
+\newblock {\em J. Math. Phys. 26, 185}, 1985.
+
+\bibitem{Comtet85}
+A.~Comtet and P.~J. Houston.
+\newblock On the landau levels on the hyperbolic plane.
+\newblock {\em Annals Phys. 173, 185}, 1987.
+
+\bibitem{Bagrets16}
+A.~Altland D.~Bagrets and A.~Kamenev.
+\newblock “sachdev-ye-kitaev model as liouville quantum mechanics.
+\newblock {\em Nucl. Phys. B 911, 191 (2016) arXiv:1607.00694
+  [cond-mat.str-el]}, 2016.
+
+\bibitem{Duistermaat82}
+J.~J. Duistermaat and G.~J. Heckman.
+\newblock On the variation in the cohomology of the symplectic form of the
+  reduced phase space.
+\newblock {\em Invent. Math. 69, 259}, 1982.
+
+\bibitem{Bateman53}
+H.~Bateman (ed.) A. Erdélyi (ed.) et~al. (ed.).
+\newblock {\em Higher transcendental functions , 2. Bessel functions, parabolic
+  cylinder functions, orthogonal polynomials}.
+\newblock McGraw-Hill, 1953.
+
+\bibitem{Whittaker52}
+G.N.~Watson E.T.~Whittaker.
+\newblock {\em A course of modern analysis}.
+\newblock Cambridge Univ. Press, 1952.
+
+\bibitem{Mandal17}
+P.~Nayak G.~Mandal and S.R. Wadia.
+\newblock Virasoro coadjoint orbits of syk/tensor-models and emergent
+  two-dimensional quantum gravity.
+\newblock {\em arXiv:1702.04266 [hep-th]}, 2017.
+
+\bibitem{Rationality}
+Greg~Moore Greg~Anderson.
+\newblock Rationality in conformal field theory.
+\newblock {\em Commun. Math. Phys. 117, 441-450}, 1988.
+
+\bibitem{Ishibashi}
+Nobuyuki Ishibashi.
+\newblock The boundary and crosscap states in conformal field theories.
+\newblock {\em hep-th 88080101}, 1988.
+
+\bibitem{Gesser08}
+J.A.~Gesser J.~Ambjørn.
+\newblock The nature of zz branes.
+\newblock {\em Physics Letters B 659 (2008) 718–722}, 2008.
+
+\bibitem{Kirilov81}
+A.~A. Kirillov.
+\newblock Orbits of the group of diffeomorphisms of a circle and local lie
+  superalgebras.
+\newblock {\em Functional Analysis and Its Applications 15 no. 2}, 1981.
+
+\bibitem{Kitaev16}
+A.~Kitaev.
+\newblock Talk given ias chaos workshop.
+\newblock Oct. 18, 2016.
+
+\bibitem{DBRANES1}
+PAOLO DI VECCHIA \&~ANTONELLA LICCARDO.
+\newblock D branes in string theory i.
+\newblock {\em hep-th 9912161}, 1999.
+
+\bibitem{DBRANES2}
+PAOLO DI VECCHIA \&~ANTONELLA LICCARDO.
+\newblock D branes in string theory ii.
+\newblock {\em hep-th 9912275}, 1999.
+
+\bibitem{HandbookFunc}
+I.~Stegun M.~Abramowitz.
+\newblock {\em Handbook of Mathematical Functions With Formulas, Graphs, and
+  Mathematical Tables}.
+\newblock National Bureau of Standards, Aplied Mathematics Series, 1972.
+
+\bibitem{Frau97}
+S.~Sciuto A.~Lerda M.~Frau, I.~Pesando and R.~Russo.
+\newblock Scattering of closed strings from many d-branes.
+\newblock {\em Phys. Lett. B400 52, hep-th/9702037}, 1997.
+
+\bibitem{Maldacena16}
+Juan Maldacena and Douglas Stanford.
+\newblock Remark on the sachdev-ye-kitaev model.
+\newblock {\em Physical Review Letters D, 94.106002}, 2016.
+
+\bibitem{BoundaryGepner}
+Mastoshi~Nozaki Michihiro~Naka.
+\newblock Boundary states in gepner models.
+\newblock {\em hep-th 0001037v2}, 2000.
+
+\bibitem{NonPeriodicIshibashi}
+Olivier~Verhoeven Philippe~Ruelle.
+\newblock Non periodic ishibashi states : the su(2) and su(3) affine theories.
+\newblock {\em hep-th 0201190v1}, 2002.
+
+\bibitem{Polchinski16}
+Joseph Polchinski and Vladimir Rosenhaus.
+\newblock The spectrum in the sachdev-ye-kitaev model.
+\newblock {\em JHEP 04}, 2016.
+
+\bibitem{IntroCFT}
+E.~Plauschinn R.~Blumenhagen.
+\newblock {\em Introduction to Conformal Field Theory With Applications to
+  String Theory}.
+\newblock Springer, 2009.
+
+\bibitem{SYK93}
+Subir Sachdev and Jinwu Y.
+\newblock Gapless spin-fluid ground state in a random quantum heisenberg
+  magnet.
+\newblock {\em Physical Review Letters .70.3339}, 1993.
+
+\bibitem{Shih04}
+Nathan Seiberg and David Shih.
+\newblock Branes, rings and matrix models in minimal (super)string theory.
+\newblock {\em arXiv:hep-th/0312170v2}, 2004.
+
+\bibitem{RationalCFT}
+Cumrun~Vafa Sergei~Gukov.
+\newblock Rational conformal field theories and complex multiplication.
+\newblock {\em hep-th/0203213}, 2002.
+
+\bibitem{Witten17}
+D.~Stanford and E.~Witten.
+\newblock Fermionic localization of the schwarzian theory.
+\newblock {\em arXiv:1703.04612 [hep-th]}, 2017.
+
+\bibitem{Mertens17}
+T.G. Mertens~G.J. Turiachi and H.L Verlinde.
+\newblock Solving the schwarzian via the conformal bootstrap.
+\newblock {\em arXiv:1705.08408v3 [hep-th]}, 2017.
+
+\bibitem{Fateev00}
+A.~Zamolodchikov V.~Fateev and Al. Zamolodchikov.
+\newblock Liouville field theory on a pseudosphere.
+\newblock {\em hep-th/0001012}, 2000.
+
+\bibitem{Zamolodchikov01}
+A.~Zamolodchikov and Al. Zamolodchikov.
+\newblock Liouville field theory on a pseudosphere.
+\newblock {\em arXiv:hep-th/0101152v1}, 2001.
+
+\bibitem{SpecFunc}
+Н.Н. Лебедев.
+\newblock {\em Специальные функции и их
+  приложения}.
+\newblock Государственное издательство
+  физико-математической литературы, 1963.
+
+\end{thebibliography}
