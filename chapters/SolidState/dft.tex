@@ -1,0 +1,69 @@
+\chapterauthor{Ivo Iliev}{Sofia University}
+
+\chapter{Introduction to Density Functional Theory}
+ 
+Density functional theory (DFT) is a computational quantum mechanical modelling
+method used in physics, chemistry and materials science to investigate the
+electronic structure (principally the ground state) of many-body systems, in
+particular atoms, molecules, and the condensed phases. Let us consider
+a $N$-electron system (atom, molecule or solid) in the Born-Oppenheimer and
+non-relativistic approximations:
+
+\begin{gather}
+  \psi_{total} = \psi_{electronic} \otimes \psi_{nuclear}\nonumber\\
+  v<<c
+\end{gather}
+
+We can write the electronic Hamiltonian of such a system in the position
+representation and atomic units as:
+
+\begin{equation}
+  \mathcal{H}(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_n)
+  = -\frac{1}{2}\sum_{i=1}^{N}{\nabla_{r_i}^2
+    + \frac{1}{2}\sum_{i=1}^N\sum_{\substack{j=0\\j\neq
+      i}}^N{\frac{1}{\abs{\vec{r}_i-\vec{r}_j}}
+        + \sum_{i=1}^N{v_{\mathrm{ne}}(\vec{r}_i}),
+
+\end{equation}
+where $v_{\mathrm{ne}}=-\sum_{\apha}Z_\alpha/\abs{\vec{r}_i-\vec{R}_\alpha}$ is
+the nuclei-electron interaction ($\vec{R}_\alpha$ and $Z_\alpha$ are the
+position and charges of the nuclei, respectively). From now on we will omit the
+vector symbols for ease of notation. The stationary states are determined by
+the time-independent Schrodinger equation
+
+\begin{equation}
+
+  \mathcal{H}(r_1,r_2,\cdots,r_N)\Psi(x_1,x_2,\cdots,x_N)
+  = E\Psi(x_1,x_2,\cdots,x_N),
+
+\end{equation}
+where $\Psi(x_1,x_2,\cdots,x_N)$ is a wave function written with space spin
+coordinates $x_i=(r_i,\sigma_i)$(with $r_i\in\mathbb{R}^3$ and $\sigma_i
+=\uparrow\mathrm{ or }\downarrow$) which is antisymmetric with respect to the
+change of two coordinates, and $E$ is the associated energy.
+
+Using Dirac notation, the Schrodinger equation can be rewritten in
+a representation-independent formalism
+
+\begin{equation}
+  \hat{\mathcal{H}}\bra{\Psi}=E\bra{\Psi},
+\end{equation}
+where the Hamiltonian is formally written as
+
+\begin{equation}
+  \hat{\mathcal{H}}=\hat{T}+\hat{W}_{ee}+\hat{V}_{ne},
+
+\end{equation}
+where $\hat{T}$ is the kinetic-energy operator, $\hat{W}_{ee}$ is the
+electron-electron interaction operator, and $\hat{V}_{ne}$ is the
+nuclei-electron interaction operator. These operators can be expressed in
+convinient ways in second quantization because of the fact that they will be
+independent of the number of electrons (i.e. we work in Fock space). The
+kinetic-energy operator becomes:
+\begin{equation}
+  \hat{T}
+  = - \frac{1}{2}\sum_{\sigma=\uparrow,\downarrow}\int{\hat{\psi}^\dagger_\sigma(r)\nabla^2\hat{\psi}_\sigma(r)dr
+
+\end{equation}
+
+In `

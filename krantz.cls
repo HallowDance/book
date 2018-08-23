@@ -222,7 +222,7 @@
 %
 % SIDE MARGINS:
 %
-\oddsidemargin  6pc %5pc
+\oddsidemargin  0pc %5pc
 \evensidemargin 5.7pc %5pc
 \marginparwidth 4pc
 \marginparsep   1pc

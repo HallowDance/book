@@ -9,6 +9,7 @@ A level-1 auxiliary file: chapters/Gravity/GR.aux
 A level-1 auxiliary file: chapters/QFT/QFT.tex.aux
 A level-1 auxiliary file: chapters/QFT/SUSY.tex.aux
 A level-1 auxiliary file: chapters/Strings/stringsCFT.aux
+A level-1 auxiliary file: chapters/SolidState/dft.aux
 A level-1 auxiliary file: chapters/Mathematics/grouptheory.aux
 A level-1 auxiliary file: chapters/Mathematics/diferentialgeometry.aux
 The style file: plain.bst
@@ -19,7 +20,7 @@ Warning--empty year in CardyCFT
 Warning--empty journal in Kitaev16
 You've used 34 entries,
             2118 wiz_defined-function locations,
-            697 strings with 8796 characters,
+            698 strings with 8823 characters,
 and the built_in function-call counts, 7615 in all, are:
 = -- 718
 > -- 328

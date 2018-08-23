@@ -14,44 +14,46 @@
 \contentsline {chapter}{\numberline {3}Supersymmetry}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Supermultiplets}{7}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Massless supermultiplets}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Supermultiplets of extended supersymmetry}{10}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Massive supermultiplets}{11}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}General}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Bogomol'nyi-Prasad-Sommerfield (BPS) states}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Supersymmetric theories on curved manifolds}{14}{section.3.4}
+\contentsline {subsection}{\numberline {3.1.2}Supermultiplets of extended supersymmetry}{9}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Massive supermultiplets}{10}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}General}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Bogomol'nyi-Prasad-Sommerfield (BPS) states}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Supersymmetric theories on curved manifolds}{13}{section.3.4}
 \author {Ivo Iliev}{}
 \contentsline {chapter}{\numberline {4}Introduction to Conformal Field Theory}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}String theory as a CFT}{15}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Variables and coordinates in the CFT formulation}{15}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Operator Product Expansion}{17}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Operator Product Expansion}{16}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Primary fields \& Highest weight states}{17}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}BRST charge \& Vertex operators}{18}{subsection.4.1.4}
-\contentsline {part}{II\hspace {1em}Mathematics}{19}{part.2}
+\contentsline {subsection}{\numberline {4.1.4}BRST charge \& Vertex operators}{17}{subsection.4.1.4}
 \author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {5}Group Theory}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Basic Definitions}{21}{section.5.1}
+\contentsline {chapter}{\numberline {5}Introduction to Density Functional Theory}{19}{chapter.5}
+\contentsline {part}{II\hspace {1em}Mathematics}{21}{part.2}
 \author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {6}Differential Geometry}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}General}{26}{section.6.1}
-\contentsline {section}{\numberline {6.2}Differential Forms}{26}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Exterior forms}{26}{subsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.1.1}Definitions}{26}{subsubsection.6.2.1.1}
-\contentsline {subsubsection}{\numberline {6.2.1.2}Exterior Products}{27}{subsubsection.6.2.1.2}
-\contentsline {subsubsection}{\numberline {6.2.1.3}Behaviour under mappings}{28}{subsubsection.6.2.1.3}
-\contentsline {subsection}{\numberline {6.2.2}Differential Forms}{28}{subsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.1}Behaviour under mappings}{29}{subsubsection.6.2.2.1}
-\contentsline {subsection}{\numberline {6.2.3}Integration of Differential Forms over Chains}{29}{subsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.3.1}Integration of $k$-form over $k$-dimensional cell}{29}{subsubsection.6.2.3.1}
-\contentsline {subsubsection}{\numberline {6.2.3.2}Chains and the Boundary Operator}{30}{subsubsection.6.2.3.2}
-\contentsline {subsubsection}{\numberline {6.2.3.3}Integration of a $k$-form over a $k$-chain}{31}{subsubsection.6.2.3.3}
-\contentsline {subsection}{\numberline {6.2.4}Exterior Differentiation and Stokes Formula}{31}{subsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.4.1}Stokes' Formula}{32}{subsubsection.6.2.4.1}
-\contentsline {subsection}{\numberline {6.2.5}Homologies and Cohomologies}{32}{subsection.6.2.5}
-\contentsline {subsubsection}{\numberline {6.2.5.1}Closed and Exact Forms}{32}{subsubsection.6.2.5.1}
-\contentsline {subsubsection}{\numberline {6.2.5.2}Cycles and Boundaries}{33}{subsubsection.6.2.5.2}
-\contentsline {subsubsection}{\numberline {6.2.5.3}Homologies and Cohomologies}{34}{subsubsection.6.2.5.3}
-\contentsline {subsection}{\numberline {6.2.6}Homologies and Homotopies}{35}{subsection.6.2.6}
-\contentsline {section}{\numberline {6.3}Contact Manifolds}{35}{section.6.3}
-\contentsline {section}{\numberline {6.4}Symplectic Geometry}{36}{section.6.4}
-\contentsline {section}{\numberline {6.5}Complex Manifolds}{36}{section.6.5}
-\contentsline {fm}{Bibliography}{39}{chapter*.4}
+\contentsline {chapter}{\numberline {6}Group Theory}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Basic Definitions}{25}{section.6.1}
+\author {Ivo Iliev}{}
+\contentsline {chapter}{\numberline {7}Differential Geometry}{29}{chapter.7}
+\contentsline {section}{\numberline {7.1}General}{29}{section.7.1}
+\contentsline {section}{\numberline {7.2}Differential Forms}{29}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Exterior forms}{29}{subsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.1.1}Definitions}{29}{subsubsection.7.2.1.1}
+\contentsline {subsubsection}{\numberline {7.2.1.2}Exterior Products}{30}{subsubsection.7.2.1.2}
+\contentsline {subsubsection}{\numberline {7.2.1.3}Behaviour under mappings}{31}{subsubsection.7.2.1.3}
+\contentsline {subsection}{\numberline {7.2.2}Differential Forms}{31}{subsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2.1}Behaviour under mappings}{32}{subsubsection.7.2.2.1}
+\contentsline {subsection}{\numberline {7.2.3}Integration of Differential Forms over Chains}{33}{subsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.3.1}Integration of $k$-form over $k$-dimensional cell}{33}{subsubsection.7.2.3.1}
+\contentsline {subsubsection}{\numberline {7.2.3.2}Chains and the Boundary Operator}{33}{subsubsection.7.2.3.2}
+\contentsline {subsubsection}{\numberline {7.2.3.3}Integration of a $k$-form over a $k$-chain}{34}{subsubsection.7.2.3.3}
+\contentsline {subsection}{\numberline {7.2.4}Exterior Differentiation and Stokes Formula}{34}{subsection.7.2.4}
+\contentsline {subsubsection}{\numberline {7.2.4.1}Stokes' Formula}{35}{subsubsection.7.2.4.1}
+\contentsline {subsection}{\numberline {7.2.5}Homologies and Cohomologies}{36}{subsection.7.2.5}
+\contentsline {subsubsection}{\numberline {7.2.5.1}Closed and Exact Forms}{36}{subsubsection.7.2.5.1}
+\contentsline {subsubsection}{\numberline {7.2.5.2}Cycles and Boundaries}{37}{subsubsection.7.2.5.2}
+\contentsline {subsubsection}{\numberline {7.2.5.3}Homologies and Cohomologies}{37}{subsubsection.7.2.5.3}
+\contentsline {subsection}{\numberline {7.2.6}Homologies and Homotopies}{38}{subsection.7.2.6}
+\contentsline {section}{\numberline {7.3}Contact Manifolds}{38}{section.7.3}
+\contentsline {section}{\numberline {7.4}Symplectic Geometry}{39}{section.7.4}
+\contentsline {section}{\numberline {7.5}Complex Manifolds}{40}{section.7.5}
+\contentsline {fm}{Bibliography}{43}{chapter*.4}
