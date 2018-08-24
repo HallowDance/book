@@ -1,59 +1,71 @@
-\contentsline {fm}{Foreword}{xi}{chapter*.1}
-\contentsline {fm}{Preface}{xiii}{chapter*.2}
-\contentsline {fm}{Contributors}{xv}{chapter*.3}
-\contentsline {part}{I\hspace {1em}Physics}{1}{part.1}
-\author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {1}General Relativity}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Anti De Sitter Space (AdS)}{3}{section.1.1}
-\author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {2}Quantum Field Theory}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Rarita-Schwinger equation}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Massless case}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Massive case}{6}{subsection.2.1.2}
-\author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {3}Supersymmetry}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Supermultiplets}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Massless supermultiplets}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Supermultiplets of extended supersymmetry}{9}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Massive supermultiplets}{10}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}General}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Bogomol'nyi-Prasad-Sommerfield (BPS) states}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}Supersymmetric theories on curved manifolds}{13}{section.3.4}
-\author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {4}Introduction to Conformal Field Theory}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}String theory as a CFT}{15}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Variables and coordinates in the CFT formulation}{15}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Operator Product Expansion}{16}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Primary fields \& Highest weight states}{17}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}BRST charge \& Vertex operators}{17}{subsection.4.1.4}
-\author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {5}Introduction to Density Functional Theory}{19}{chapter.5}
-\contentsline {part}{II\hspace {1em}Mathematics}{21}{part.2}
-\author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {6}Group Theory}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Basic Definitions}{25}{section.6.1}
-\author {Ivo Iliev}{}
-\contentsline {chapter}{\numberline {7}Differential Geometry}{29}{chapter.7}
-\contentsline {section}{\numberline {7.1}General}{29}{section.7.1}
-\contentsline {section}{\numberline {7.2}Differential Forms}{29}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Exterior forms}{29}{subsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.1.1}Definitions}{29}{subsubsection.7.2.1.1}
-\contentsline {subsubsection}{\numberline {7.2.1.2}Exterior Products}{30}{subsubsection.7.2.1.2}
-\contentsline {subsubsection}{\numberline {7.2.1.3}Behaviour under mappings}{31}{subsubsection.7.2.1.3}
-\contentsline {subsection}{\numberline {7.2.2}Differential Forms}{31}{subsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.2.1}Behaviour under mappings}{32}{subsubsection.7.2.2.1}
-\contentsline {subsection}{\numberline {7.2.3}Integration of Differential Forms over Chains}{33}{subsection.7.2.3}
-\contentsline {subsubsection}{\numberline {7.2.3.1}Integration of $k$-form over $k$-dimensional cell}{33}{subsubsection.7.2.3.1}
-\contentsline {subsubsection}{\numberline {7.2.3.2}Chains and the Boundary Operator}{33}{subsubsection.7.2.3.2}
-\contentsline {subsubsection}{\numberline {7.2.3.3}Integration of a $k$-form over a $k$-chain}{34}{subsubsection.7.2.3.3}
-\contentsline {subsection}{\numberline {7.2.4}Exterior Differentiation and Stokes Formula}{34}{subsection.7.2.4}
-\contentsline {subsubsection}{\numberline {7.2.4.1}Stokes' Formula}{35}{subsubsection.7.2.4.1}
-\contentsline {subsection}{\numberline {7.2.5}Homologies and Cohomologies}{36}{subsection.7.2.5}
-\contentsline {subsubsection}{\numberline {7.2.5.1}Closed and Exact Forms}{36}{subsubsection.7.2.5.1}
-\contentsline {subsubsection}{\numberline {7.2.5.2}Cycles and Boundaries}{37}{subsubsection.7.2.5.2}
-\contentsline {subsubsection}{\numberline {7.2.5.3}Homologies and Cohomologies}{37}{subsubsection.7.2.5.3}
-\contentsline {subsection}{\numberline {7.2.6}Homologies and Homotopies}{38}{subsection.7.2.6}
-\contentsline {section}{\numberline {7.3}Contact Manifolds}{38}{section.7.3}
-\contentsline {section}{\numberline {7.4}Symplectic Geometry}{39}{section.7.4}
-\contentsline {section}{\numberline {7.5}Complex Manifolds}{40}{section.7.5}
-\contentsline {fm}{Bibliography}{43}{chapter*.4}
+\contentsline {part}{I\hspace {1em}Physics}{13}{part.1}
+\contentsline {chapter}{\numberline {1}General Relativity}{14}{chapter.1}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Ivo Iliev\\Sofia University}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {1.1}Anti De Sitter Space (AdS)}{14}{section.1.1}
+\contentsline {xpart}{Physics}{14}{part.1}
+\contentsline {chapter}{\numberline {2}Quantum Field Theory}{15}{chapter.2}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Ivo Iliev\\Sofia University}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {2.1}Rarita-Schwinger equation}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Massless case}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Massive case}{16}{subsection.2.1.2}
+\contentsline {chapter}{\numberline {3}Supersymmetry}{17}{chapter.3}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Ivo Iliev\\Sofia University}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {3.1}Supermultiplets}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Massless supermultiplets}{17}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Supermultiplets of extended supersymmetry}{19}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Massive supermultiplets}{20}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}General}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}Bogomol'nyi-Prasad-Sommerfield (BPS) states}{22}{section.3.3}
+\contentsline {section}{\numberline {3.4}Supersymmetric theories on curved manifolds}{23}{section.3.4}
+\contentsline {chapter}{\numberline {4}Introduction to Conformal Field Theory}{24}{chapter.4}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Ivo Iliev\\Sofia University}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {4.1}String theory as a CFT}{24}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Variables and coordinates in the CFT formulation}{24}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Operator Product Expansion}{25}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Primary fields \& Highest weight states}{26}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}BRST charge \& Vertex operators}{26}{subsection.4.1.4}
+\contentsline {chapter}{\numberline {5}Introduction to Density Functional Theory}{28}{chapter.5}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Ivo Iliev\\Sofia University}{}{}
+\vskip 5pt
+\contentsline {part}{II\hspace {1em}Mathematics}{31}{part.2}
+\contentsline {chapter}{\numberline {6}Group Theory}{32}{chapter.6}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Ivo Iliev\\Sofia University}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {6.1}Basic Definitions}{32}{section.6.1}
+\contentsline {xpart}{Mathematics}{32}{part.2}
+\contentsline {chapter}{\numberline {7}Differential Geometry}{34}{chapter.7}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Ivo Iliev\\Sofia University}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {7.1}General}{34}{section.7.1}
+\contentsline {section}{\numberline {7.2}Differential Forms}{35}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Exterior forms}{35}{subsection.7.2.1}
+\contentsline {subsubsection}{Definitions}{35}{section*.5}
+\contentsline {subsubsection}{Exterior Products}{36}{section*.6}
+\contentsline {subsubsection}{Behaviour under mappings}{36}{section*.7}
+\contentsline {subsection}{\numberline {7.2.2}Differential Forms}{37}{subsection.7.2.2}
+\contentsline {subsubsection}{Behaviour under mappings}{37}{section*.8}
+\contentsline {subsection}{\numberline {7.2.3}Integration of Differential Forms over Chains}{37}{subsection.7.2.3}
+\contentsline {subsubsection}{Integration of $k$-form over $k$-dimensional cell}{37}{section*.9}
+\contentsline {subsubsection}{Chains and the Boundary Operator}{38}{section*.10}
+\contentsline {subsubsection}{Integration of a $k$-form over a $k$-chain}{39}{section*.11}
+\contentsline {subsection}{\numberline {7.2.4}Exterior Differentiation and Stokes Formula}{39}{subsection.7.2.4}
+\contentsline {subsubsection}{Stokes' Formula}{40}{section*.12}
+\contentsline {subsection}{\numberline {7.2.5}Homologies and Cohomologies}{40}{subsection.7.2.5}
+\contentsline {subsubsection}{Closed and Exact Forms}{40}{section*.13}
+\contentsline {subsubsection}{Cycles and Boundaries}{41}{section*.14}
+\contentsline {subsubsection}{Homologies and Cohomologies}{41}{section*.15}
+\contentsline {subsection}{\numberline {7.2.6}Homologies and Homotopies}{42}{subsection.7.2.6}
+\contentsline {section}{\numberline {7.3}Contact Manifolds}{42}{section.7.3}
+\contentsline {section}{\numberline {7.4}Symplectic Geometry}{43}{section.7.4}
+\contentsline {section}{\numberline {7.5}Complex Manifolds}{43}{section.7.5}

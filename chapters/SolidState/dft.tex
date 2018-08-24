@@ -1,7 +1,8 @@
-\chapterauthor{Ivo Iliev}{Sofia University}
 
 \chapter{Introduction to Density Functional Theory}
- 
+\chapterauthor{Ivo Iliev\\Sofia University}
+\adjustmtc
+\minitoc
 Density functional theory (DFT) is a computational quantum mechanical modelling
 method used in physics, chemistry and materials science to investigate the
 electronic structure (principally the ground state) of many-body systems, in
@@ -48,11 +49,9 @@ a representation-independent formalism
 \begin{equation}
   \hat{\mathcal{H}}\bra{\Psi}=E\bra{\Psi},
 \end{equation}
-where the Hamiltonian is formally written as
-
+where the Hamiltonian is formally written as:
 \begin{equation}
   \hat{\mathcal{H}}=\hat{T}+\hat{W}_{ee}+\hat{V}_{ne},
-
 \end{equation}
 where $\hat{T}$ is the kinetic-energy operator, $\hat{W}_{ee}$ is the
 electron-electron interaction operator, and $\hat{V}_{ne}$ is the
@@ -62,8 +61,16 @@ independent of the number of electrons (i.e. we work in Fock space). The
 kinetic-energy operator becomes:
 \begin{equation}
   \hat{T}
-  = - \frac{1}{2}\sum_{\sigma=\uparrow,\downarrow}\int{\hat{\psi}^\dagger_\sigma(r)\nabla^2\hat{\psi}_\sigma(r)dr
-
+  = - \frac{1}{2}\sum_{\sigma=\uparrow,\downarrow}\int{\hat{\psi}^\dagger_\sigma(r)\nabla^2\hat{\psi}_\sigma(r)dr}
 \end{equation}
-
-In `
+$\hat{W}_{ee}$, the electron-electron operator, becomes:
+\begin{equation}
+  \hat{W}_{ee}
+  = \frac{1}{2}\sum_{\sigma_1=\uparrow,\downarrow}\sum_{\sigma_2=\uparrow,\downarrow}\int\int\hat{\psi}^\dagger_{\sigma_2}(r_2)\hat{\psi}^\dagger_{\sigma_1}(r_1)w_{ee}(r_1,r_2)\hat{\psi}^\dagger_{\sigma_1}(r_1)\hat{\psi}^\dagger_{\sigma_2}(r_2)dr_1dr_2,
+\end{equation}
+with $w_{ee}(r_1,r_2) = \frac{1}{\abs{r_1-r_2}}$, and $\hat{V}_{ne}$ is the
+nuclei-electron operator:
+\begin{equation}
+  \hat{V}_{ne}
+  = \sum_{\sigma=\uparrow,\downarrow}\int\hat{\psi}^\dagger_\sigma(r)v_{ne}(r)\hat{\psi}_{\sigma}(r)dr.
+\end{equation}

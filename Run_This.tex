@@ -1,39 +1,60 @@
 %This file is just a wrapper. Please, edit the files for your chapter in chapters/chapter1/.
 %Don't worry, we will put your chapter in the correct place when assemble the book.
-\documentclass[a4paper]{krantz}
+\documentclass[a4paper]{report}
 %\usepackage{fixltx2e,fix-cm}
 \usepackage{amssymb}
 \usepackage{amsmath}
 %\usepackage{amsthm}
 \usepackage{physics}
+\usepackage{geometry}
 \usepackage{graphicx}
+\usepackage{xcolor}
 \usepackage{subfigure}
 \usepackage{makeidx}
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage{epigraph}
+\usepackage{minitoc}% for TOCs at the begining of each chapter
 \frenchspacing
 \tolerance=5000
 \makeindex
 \include{frontmatter/preamble}
 \begin{document}
 
-\frontmatter
-\title{Essential Knowledge for Modern Theoretical Physics}
-\author{\Large IVO ILIEV}
-\maketitle
 
+%%%% TITLE PAGE %%%%%%%%%%%%%%
+\begin{titlepage}
+  \newgeometry{left=7.5cm} %defines the geometry for the titlepage
+  \pagecolor{titlepagecolor}
+  \noindent
+  \includegraphics[width=2cm]{logo.jpg}\\[-1em]
+  \color{white}
+  \makebox[0pt][l]{\rule{1.3\textwidth}{1pt}}
+  \par
+  \noindent
+  \textbf{\textsf{Sofia University}}
+  \textcolor{namecolor}{\textsf{Faculty of Physics}}
+  \vfill
+  \noindent
+  {\huge \textsf{My Journey Through Theoretical Physics}
+  \vskip\baselineskip
+  \noindent
+  \textsf{IVO ILIEV}
+\end{titlepage}
+\restoregeometry % restores the geometry
+\nopagecolor% Use this to restore the color pages to white
+%%%% END TITLE PAGE %%%%
 \include{frontmatter/dedication}
 \cleardoublepage
 \setcounter{page}{8} %previous pages will be reserved for frontmatter to be added in later.
 
+\doparttoc
+\dominitoc
+
 \tableofcontents
 \include{frontmatter/foreword}
 \include{frontmatter/preface}
-%\listoffigures
-%\listoftables
 \include{frontmatter/contributor}
-%\include{frontmatter/symbollist}
 
 \mainmatter
 
@@ -43,6 +64,8 @@
 \include{chapters/QFT/SUSY.tex}
 \include{chapters/Strings/stringsCFT}
 \include{chapters/SolidState/dft}
+
+\newpage\null\thispagestyle{empty}\newpage
 
 \part{Mathematics}
 \include{chapters/Mathematics/grouptheory}
