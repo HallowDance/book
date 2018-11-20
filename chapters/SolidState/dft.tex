@@ -15,6 +15,7 @@ non-relativistic approximations:
   v<<c
 \end{gather}
 
+\section{The many-body problem}
 We can write the electronic Hamiltonian of such a system in the position
 representation and atomic units as:
 
@@ -22,21 +23,18 @@ representation and atomic units as:
   \mathcal{H}(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_n)
   = -\frac{1}{2}\sum_{i=1}^{N}{\nabla_{r_i}^2
     + \frac{1}{2}\sum_{i=1}^N\sum_{\substack{j=0\\j\neq
-      i}}^N{\frac{1}{\abs{\vec{r}_i-\vec{r}_j}}
-        + \sum_{i=1}^N{v_{\mathrm{ne}}(\vec{r}_i}),
-
+      i}}^N\frac{1}{\abs{\vec{r}_i-\vec{r}_j}}
+    + \sum_{i=1}^N{v_{\mathrm{ne}}(\vec{r}_i}),
 \end{equation}
-where $v_{\mathrm{ne}}=-\sum_{\apha}Z_\alpha/\abs{\vec{r}_i-\vec{R}_\alpha}$ is
+where $v_{\mathrm{ne}}=-\sum_{\alpha}Z_\alpha/\abs{\vec{r}_i-\vec{R}_\alpha}$ is
 the nuclei-electron interaction ($\vec{R}_\alpha$ and $Z_\alpha$ are the
 position and charges of the nuclei, respectively). From now on we will omit the
 vector symbols for ease of notation. The stationary states are determined by
 the time-independent Schrodinger equation
 
 \begin{equation}
-
   \mathcal{H}(r_1,r_2,\cdots,r_N)\Psi(x_1,x_2,\cdots,x_N)
   = E\Psi(x_1,x_2,\cdots,x_N),
-
 \end{equation}
 where $\Psi(x_1,x_2,\cdots,x_N)$ is a wave function written with space spin
 coordinates $x_i=(r_i,\sigma_i)$(with $r_i\in\mathbb{R}^3$ and $\sigma_i
@@ -74,3 +72,184 @@ nuclei-electron operator:
   \hat{V}_{ne}
   = \sum_{\sigma=\uparrow,\downarrow}\int\hat{\psi}^\dagger_\sigma(r)v_{ne}(r)\hat{\psi}_{\sigma}(r)dr.
 \end{equation}
+In these expressions, $\hat{\psi}^\dagger_\sigma(r)$ and
+$\hat{\psi}^\dagger_\sigma(r)$ are the creation and annihilation field
+operators, repsectively, which obey fermionic anticommutation rules:
+\begin{gather}
+  \{\hat{\psi}^\dagger_\sigma(r),\hat{\psi}^\dagger_{\sigma '}(r')\}=0\\
+\{\hat{\psi}_\sigma(r),\hat{\psi}_{\sigma '}(r')\} = 0\\
+\left\{\hat{\psi}^\dagger_\sigma(r),\hat{\psi}^\dagger_{\sigma'}(r')\right\}
+= \delta(r-r')\delta_{\sigma\sigma'}
+\end{gather}
+It is also convinient to define the density operator
+\begin{equation}
+  \hat{n}(r)
+  = \sum_{\sigma=\uparrow,\downarrow}\hat{\psi}^\dagger_\sigma(r)\hat{\psi}_\sigma(r),
+\end{equation}
+the one-particle density-matrix operator
+\begin{equation}
+  \hat{n}_1(r,r')
+  = \sum_{\sigma=\uparrow,\downarrow}{\hat{\psi}^\dagger_\sigma(r')\hat{\psi}_\sigma(r)}
+\end{equation}
+and the pair-density operator
+\begin{align}
+  \hat{n}_2(r_1,r_2) &=
+\sum_{\sigma_1=\uparrow,\downarrow}\sum_{\sigma_2=\uparrow,\downarrow}\hat{\psi}^\dagger_{\sigma_2}(r_2)\hat{\psi}^\dagger_{\sigma_1}(r_1)\hat{\psi}_{\sigma_1}(r_1)\hat{\psi}_{\sigma_2}(r_2)\nonumber\\
+&= \hat{n}(r_2)\hat{n}(r_1) - \hat{r_1}\delta(r_1-r_2)\nonumber\\
+&= \hat{n}(r_1)\hat{n}(r_2) - \hat{n}(r_1)\delta(r_1 - r_2)
+\end{align}
+Now we can write a compact form for the kinetic and interaction operators in
+thethe Hamiltonian:
+\begin{gather}
+  \hat{T}
+  = -\frac{1}{2}\int\left[\nabla^2_r\hat{n}_1(r,r')\right]_{r'=r}\mathrm{d}r,\\
+  \hat{W}_{ee}
+  = \frac{1}{2}\int\int\omega_{ee}(r_1,r_2)\hat{n}_2(r_1,r_2)\mathrm{d}r_1\mathrm{d}r_2,\\
+  \hat{V}_{ne} = \int v_{ne}(r)\hat{n}(r)\mathrm{d}r.
+\end{gather}
+We can also use the second-quantization formalism in an orthonormal
+spin-orbital basis $\{\psi_p(x)\}$, where $x=(r,\sigma)$. For this, we expand
+the field operators as
+\begin{equation}
+  \hat{\psi}^\dagger_\sigma(r) = \sum_p{\psi_p^*(x)\hat{a}^\dagger_{p}}
+\end{equation}
+and
+\begin{equation}
+\hat{\psi}_\sigma(r) = \sum_p \psi_p(x)\hat{a}_p
+\end{equation}
+where $\hat{a}_p^\dagger$ and $\hat{a}_p$ are the creation and annihilation
+operators in this basis, which still obey anticommutation rules:
+$\left\{\hat{a}_p^\dagger, \hat{a}_q^\dagger\right\}
+= \left\{\hat{a}_p,\hat{a}_q\right\} = 0$ and $\left\{\hat{a}_p^\dagger,
+\hat{a}_q\right\} = \delta_{pq}$. The expressions of the operators are then
+\begin{gather}
+  \hat{T} = \sum_{pq}t_{pq}\hat{a}_p^\dagger\hat{a}_q\\
+  \hat{W}_{ee}
+  = \frac{1}{2}\sum_{pqrs}\bra{\psi_p\psi_q}\ket{\psi_r\psi_s}\hat{a}_p^\dagger\hat{a}_q^\dagger\hat{a}_s\hat{a}_r'\\
+    \hat{V}_{ne} = \sum_{pq}v_{ne,pq}\hat{a}^\dagger_p\hat{a}_q
+  \end{gather}
+  where $t_{pq}$ and $v_{\mathrm{ne},pq}$ are the one-electron kinetic and
+  nuclei-electron integrals, respectively, and
+  $\bra{\psi_p\psi_q}\ket{\psi_r\psi_s}$ are the two-electron integrals.
+\par The quantity of primary interest is the ground-state energy $E_0$. The
+variational theorem establishes that $E_0$ can be obtained by the following
+minimization
+\begin{equation}
+  E_0 = \mathrm{min}_{\Psi}\mel{\Psi}{\hat{H}}{\Psi},
+\end{equation}
+where the search is over all $N$-electron antisymmetric wave functions $\Psi$,
+normalized to unity $\bra{\Psi}\ket{\Psi}= 1$. DFT is based on a reformulation of
+the variational theorem in terms of the one-electron density defined
+as\footnote{The integration over the spin coordinate $\sigma$ in the following
+equation just means a sum over the two values $\sigma = \uparrow$ and $\sigma
+= \downarrow$}
+\begin{equation}
+  n(r) = N\int\cdots\int
+\abs{\Psi(x,x_2,\cdots,x_N}^2\mathrm{d}\sigma\mathrm{d}x_2\cdots\mathrm{d}x_N),
+\end{equation}
+which is normalized to the electron number, $\int n(r)\mathrm{d}r = N.$
+\section{The universal density functional}
+\subsection{The Hohenberg-Kohn theorem}
+Consider an electronic system with an arbitrary external local potential $v(r)$
+in place of $v_{\mathrm{ne}}(r)$. A corresponding ground-state wave function
+$\Psi$ (there can be several of them if the ground staate is degenerate) can be
+obtained by solving the Schrodinger equation, from which the associated
+ground-state density $n(r)$ can be deduced. Therefore, one has a mapping from
+the potential $v(r)$ to the considered ground-state density $n(r)$
+\begin{equation}
+  v(r)\rightarrow n(r).
+\end{equation}
+In 1964, Hohenberg and Kohn showed that this mapping can be inverted, i.e. the
+ground-state density $n(r)$ determines the potential $v(r)$ up to an arbitrary
+additive constant
+\begin{equation}
+  \boxed{
+  n(r)\xrightarrow{Hohenberg-Kohn} v(r) + \mathrm{const}.}
+\end{equation}
+\begin{proof}
+  The two-step proof by contradiction proceeds as follows. We consider two
+  locallocal potentials $v_1(r)$ and $v_2(r)$ differing by more than an
+  additive constant, $v_1(r) \neq v_2(r) +\mathrm{const}$, and we denote by
+  $E_1$ and $E_2$ the ground-state energies of the Hamiltonians $\hat{H}_1
+  = \hat{T} + \hat{W}_{ee} + \hat{V}_1$ and $\hat{H}_2 = \hat{T} + \hat{W}_{ee}+
+  \hat{V}_2$, respectively.
+  Now, assume that $\hat{H}_1$ and $\hat{H}_2$ have the same ground-state wave
+  functions $\Psi$, i.e. $\hat{H}_1\ket{\Psi} = E_1\ket{\Psi}$ and
+  $\hat{H}_2\ket{\Psi} = E_2\ket{\Psi}$. Then, substacting these two equations
+  gives
+  \begin{equation}
+    (\hat{V}_1 - \hat{V}_2)\ket{\Psi} = (E_1 - E_2)\ket{\Psi},
+  \end{equation}
+  or, in position representation
+  \begin{equation}
+    \sum_{i=1}^{N}\left[v_1(r_i) - v_2(r_i)\right]\Psi(x_1,x_2,\cdots,x_N)
+  = \left(E_1 - E_2\right)\Psi(x_1,x_2,\cdots,x_N)
+  \end{equation}
+\end{proof}
+which implies $v_1(r) - v_2(r) = \mathrm{const}$, in contradiction with the
+initial hypothesis. Note that, to eliminate $\Psi$ it was assumed that 
+$\Psi(x_1,x_2,\cdots,x_N)\neq 0$ for all spatial coordinates
+$(r_1,r_2,\cdots,r_N)$ and at least one fixed set of spin coordinates
+$(\sigma_1,\sigma_2,\cdots,\sigma_N)$. This is in fact true "almost everywhere"
+for "reasonably well behaved" potentials. In this case, we thus conclude that
+two local potentials differing by more than an additive constant cannot share
+the same ground-state wave function.
+\par Let then $\Psi_1$ and $\Psi_2$ be (necessarily different) ground-state
+wave functions of $\hat{H}_1$ and $\hat{H}_2$, respectively, and assume that
+$\Psi_1$ and $\Psi_2$ have the same ground-state density $n(r)$. The
+variational theorem leads to the following inequality. 
+\begin{equation}
+  E_1= \mel{\Psi_1}{\hat{H}_1}{\Psi_1}<\mel{\Psi_2}{\hat{H}_1}{\Psi_2}
+  = \mel{\Psi_2}{\hat{H}_2 + \hat{V}_1 - \hat{V}_2}{\Psi_2} = E_2
+  + \int\left[v_1(r) - v_2(r)\right]n(r)\mathrm{d}r,
+\end{equation}
+where the strict inequality comes from the fact that $\Psi_2$ cannot be
+a ground-state
+wave function of $\hat{H}_1$, as shown in the first step of the proof.
+Symmetrically, by exchanging the role of system 1 and 2, we have the stict
+inequality
+\begin{equation}
+  E_2 < E_1 + \int\left[v_2(r) - v_1(r)\right]n(r)\mathrm{d}r.
+\end{equation}
+Adding the two previous equations, we get
+\begin{equation}
+E_1 + E_2 < E_1 + E_2,
+\end{equation}
+which finally leads to the conclusion that there cannot exist two local
+potentials differing by more than an additive constant which have the same
+ground-state density. Note that this proof does not assume non-degenerate
+ground states (contrary to the original Hohenberg-Kohn proof) \blacksquare
+
+So, the ground-state density $n(r)$ determinese the potential $v(r)$, which in
+turn determines the Hamiltonian, and thus everything about the many-body
+problem. In other words, the potential $v$ is a unique (up to an additive
+constant) functional of the ground-state density $n$, and all other properties
+as well. The ground-state wave function $\Psi$ for the potential $v(r)$ is
+itself a functional of $n$, denoted by $\Psi[n]$, which was exploited by
+Hohenberg-Kohn to define the universal (i.e., independent from the external
+potential) density functional
+\begin{equation}
+  F[n] = \bra{\Psi[n]}\hat{T} + \hat{W}_{ee}\ket{\Psi[n]},
+\end{equation}
+which can be used to define the total electronic energy functional
+\begin{equation}
+  E[n] = F[n] + \int v_{ne}(r)n(r)\mathrm{d}r,
+\end{equation}
+for the specific potential $v_{ne}(r)$ of the  system considered. Note that,
+forfor degenerate ground states, $\Psi[n]$ is not unique but stands for any
+degenerate ground-state wave function. However, all $\Psi[n]$ give te same
+$F[n]$, which is thus a unique functional of $n$.
+\par Hohenberg and Kohn further showed that the density functional $E[n]$
+satisfies a variational property: the ground-state energy $E_0$ of the system
+considered is obtained by minimizing this functional with respecst to
+$N$-electr-electron densities $n$ that are ground-state densities associated
+with some local potential (referred to as $v$-representable densities).
+\begin{equation}
+  E_0 = \underset{n}{\mathrm{min}}\left\{F[n] + \int
+  v_{ne}(r)n(r)\mathrm{d}r\right\},
+\end{equation}
+the minimum being reached for a ground-state density $n_0(r)$ corresponding to
+the potential $v_{ne}(r)$.
+The existance of a mapping from a ground-state density to a local potential,
+the existance of the universal density functional, and the variational property
+with respect to the density constitutes the \textit{Hohenberg-Kohn theorem}.

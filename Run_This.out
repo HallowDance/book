@@ -5,33 +5,63 @@
 \BOOKMARK [1][-]{section.2.1}{Rarita-Schwinger equation}{chapter.2}% 5
 \BOOKMARK [2][-]{subsection.2.1.1}{Massless case}{section.2.1}% 6
 \BOOKMARK [2][-]{subsection.2.1.2}{Massive case}{section.2.1}% 7
-\BOOKMARK [0][-]{chapter.3}{Supersymmetry}{part.1}% 8
-\BOOKMARK [1][-]{section.3.1}{Supermultiplets}{chapter.3}% 9
-\BOOKMARK [2][-]{subsection.3.1.1}{Massless supermultiplets}{section.3.1}% 10
-\BOOKMARK [2][-]{subsection.3.1.2}{Supermultiplets of extended supersymmetry}{section.3.1}% 11
-\BOOKMARK [2][-]{subsection.3.1.3}{Massive supermultiplets}{section.3.1}% 12
-\BOOKMARK [1][-]{section.3.2}{General}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Bogomol'nyi-Prasad-Sommerfield \(BPS\) states}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.4}{Supersymmetric theories on curved manifolds}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Introduction to Conformal Field Theory}{part.1}% 16
-\BOOKMARK [1][-]{section.4.1}{String theory as a CFT}{chapter.4}% 17
-\BOOKMARK [2][-]{subsection.4.1.1}{Variables and coordinates in the CFT formulation}{section.4.1}% 18
-\BOOKMARK [2][-]{subsection.4.1.2}{Operator Product Expansion}{section.4.1}% 19
-\BOOKMARK [2][-]{subsection.4.1.3}{Primary fields \046 Highest weight states}{section.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.1.4}{BRST charge \046 Vertex operators}{section.4.1}% 21
-\BOOKMARK [0][-]{chapter.5}{Introduction to Density Functional Theory}{part.1}% 22
-\BOOKMARK [-1][-]{part.2}{II Mathematics}{}% 23
-\BOOKMARK [0][-]{chapter.6}{Group Theory}{part.2}% 24
-\BOOKMARK [1][-]{section.6.1}{Basic Definitions}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Differential Geometry}{part.2}% 26
-\BOOKMARK [1][-]{section.7.1}{General}{chapter.7}% 27
-\BOOKMARK [1][-]{section.7.2}{Differential Forms}{chapter.7}% 28
-\BOOKMARK [2][-]{subsection.7.2.1}{Exterior forms}{section.7.2}% 29
-\BOOKMARK [2][-]{subsection.7.2.2}{Differential Forms}{section.7.2}% 30
-\BOOKMARK [2][-]{subsection.7.2.3}{Integration of Differential Forms over Chains}{section.7.2}% 31
-\BOOKMARK [2][-]{subsection.7.2.4}{Exterior Differentiation and Stokes Formula}{section.7.2}% 32
-\BOOKMARK [2][-]{subsection.7.2.5}{Homologies and Cohomologies}{section.7.2}% 33
-\BOOKMARK [2][-]{subsection.7.2.6}{Homologies and Homotopies}{section.7.2}% 34
-\BOOKMARK [1][-]{section.7.3}{Contact Manifolds}{chapter.7}% 35
-\BOOKMARK [1][-]{section.7.4}{Symplectic Geometry}{chapter.7}% 36
-\BOOKMARK [1][-]{section.7.5}{Complex Manifolds}{chapter.7}% 37
+\BOOKMARK [1][-]{section.2.2}{Wilson Loops and Large N}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.1}{Wilson Loops}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.2}{Yang-Mills Theories}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.3}{1/N Expansion}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.4}{Planar and Nonplanar Graphs}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.5}{Large-N factorization}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.6}{Conclusion}{section.2.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Supersymmetry}{part.1}% 15
+\BOOKMARK [1][-]{section.3.1}{Supermultiplets}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.1.1}{Massless supermultiplets}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.2}{Supermultiplets of extended supersymmetry}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.3}{Massive supermultiplets}{section.3.1}% 19
+\BOOKMARK [1][-]{section.3.2}{General}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Bogomol'nyi-Prasad-Sommerfield \(BPS\) states}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Supersymmetric theories on curved manifolds}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Entaglement Entropy}{part.1}% 23
+\BOOKMARK [1][-]{section.4.1}{Introduction to Entaglement entropy}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.2}{Classical Term in the Continuum Limit}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.2.1}{U\(1\) Abelian Theory}{section.4.2}% 26
+\BOOKMARK [1][-]{section.4.3}{Entanglement and Dualities}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Conclusions}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Introduction to Conformal Field Theory}{part.1}% 29
+\BOOKMARK [1][-]{section.5.1}{String theory as a CFT}{chapter.5}% 30
+\BOOKMARK [2][-]{subsection.5.1.1}{Variables and coordinates in the CFT formulation}{section.5.1}% 31
+\BOOKMARK [2][-]{subsection.5.1.2}{Operator Product Expansion}{section.5.1}% 32
+\BOOKMARK [2][-]{subsection.5.1.3}{Primary fields \046 Highest weight states}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.4}{BRST charge \046 Vertex operators}{section.5.1}% 34
+\BOOKMARK [0][-]{chapter.6}{Strings in Curved Backgrounds}{part.1}% 35
+\BOOKMARK [1][-]{section.6.1}{You moma}{chapter.6}% 36
+\BOOKMARK [0][-]{chapter.7}{Introduction to Density Functional Theory}{part.1}% 37
+\BOOKMARK [1][-]{section.7.1}{The many-body problem}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.2}{The universal density functional}{chapter.7}% 39
+\BOOKMARK [2][-]{subsection.7.2.1}{The Hohenberg-Kohn theorem}{section.7.2}% 40
+\BOOKMARK [-1][-]{part.2}{II Mathematics}{}% 41
+\BOOKMARK [0][-]{chapter.8}{Group Theory}{part.2}% 42
+\BOOKMARK [1][-]{section.8.1}{Basic Definitions}{chapter.8}% 43
+\BOOKMARK [1][-]{section.8.2}{Lie groups and representations}{chapter.8}% 44
+\BOOKMARK [2][-]{subsection.8.2.1}{Representations}{section.8.2}% 45
+\BOOKMARK [2][-]{subsection.8.2.2}{Some noteworthy points}{section.8.2}% 46
+\BOOKMARK [2][-]{subsection.8.2.3}{Example}{section.8.2}% 47
+\BOOKMARK [2][-]{subsection.8.2.4}{More points}{section.8.2}% 48
+\BOOKMARK [2][-]{subsection.8.2.5}{Certain Types of Representations}{section.8.2}% 49
+\BOOKMARK [2][-]{subsection.8.2.6}{Usefulness of Lie group representations}{section.8.2}% 50
+\BOOKMARK [0][-]{chapter.9}{Differential Geometry}{part.2}% 51
+\BOOKMARK [1][-]{section.9.1}{General}{chapter.9}% 52
+\BOOKMARK [1][-]{section.9.2}{Differential Forms}{chapter.9}% 53
+\BOOKMARK [2][-]{subsection.9.2.1}{Exterior forms}{section.9.2}% 54
+\BOOKMARK [2][-]{subsection.9.2.2}{Differential Forms}{section.9.2}% 55
+\BOOKMARK [2][-]{subsection.9.2.3}{Integration of Differential Forms over Chains}{section.9.2}% 56
+\BOOKMARK [2][-]{subsection.9.2.4}{Exterior Differentiation and Stokes Formula}{section.9.2}% 57
+\BOOKMARK [2][-]{subsection.9.2.5}{Homologies and Cohomologies}{section.9.2}% 58
+\BOOKMARK [2][-]{subsection.9.2.6}{Homologies and Homotopies}{section.9.2}% 59
+\BOOKMARK [1][-]{section.9.3}{Contact Manifolds}{chapter.9}% 60
+\BOOKMARK [1][-]{section.9.4}{Symplectic Geometry}{chapter.9}% 61
+\BOOKMARK [1][-]{section.9.5}{Complex Manifolds}{chapter.9}% 62
+\BOOKMARK [1][-]{section.9.6}{Gauss-Bonet Theorem}{chapter.9}% 63
+\BOOKMARK [2][-]{subsection.9.6.1}{Topological preliminaries}{section.9.6}% 64
+\BOOKMARK [2][-]{subsection.9.6.2}{Local Gauss-Bonnet Theorem}{section.9.6}% 65
+\BOOKMARK [2][-]{subsection.9.6.3}{Global Gauss-Bonnet Theorem}{section.9.6}% 66
+\BOOKMARK [2][-]{subsection.9.6.4}{Applications}{section.9.6}% 67

@@ -1,0 +1,192 @@
+%\chapterauthor{Second Author}{Second Author Affiliation}
+\chapter{Entaglement Entropy}
+\chapterauthor{Ivo Iliev\\Sofia University}
+\adjustmtc
+\minitoc
+\section{Introduction to Entaglement entropy}
+Entaglement entropy is an important way to quantify quantum correlations in
+a system. For gauge theories, the definition of entaglement entropy 
+turns out to be subtle. Physicall, this is because there are non-local
+excitations in the system - for example, loops of electric or magnetic
+flux created by Wilson or 't Hooft loop operators, which can cut across
+the boundary of the region of interest. More precisely, it is because
+the Hilbert space of gauge invariant states, $\hilspace_{g\mathrm{inv}}$, does
+not admit a tensor product decomposition between the region of interest
+and its complement.
+\par A definition of the entaglement entropy has been given for a general gauge
+theory based on an extended Hilbert space (EHS) construction. For a non-Abelian
+theory without matter, on a spatial latice, this takes the rather compact form
+\begin{equation}
+  S_{\mathrm{EE}} = -\sum_i{p_i\log p_i}+\sum_i{\log(d^i_a)
+    -\sum_i{p_i\mathrm{Tr}_{\hilspace_i}\bar{\rho}_i\log(\bar{\rho}_i)}.
+    }
+    \label{eq:entanglemententropy}
+\end{equation}
+The index $i$ in the summation denotes various sectors which are determined
+by the value of the normal component of the electric field at all the
+boundary points. The probability to be in the sector $i$ is given by $p_i$
+,and $d_a^i$, with index $a$ denoting the particular boundary point, is the
+dimension of the representation specifying the outgoing electric flux at that
+boundary point in the $i^{\mathrm{th}}$ sector. The last term is a weighted sum
+with $\bar{\rho}_i$ being the reduced density matrix in the $i^{\mathrm{th}}$
+sector and the trace being taken over the Hilbert space $\hilspace_i$ in this
+sector. It has been argued that this EHS definition agrees with the
+replica trick method of calculating the entaglement entropy. In the discussion
+below, we will sometimes refer to the first two terms in
+\eqref{eq:entanglemententropy} as the classical terms and the last term as the
+quantum term.
+\par It should be obvious that the middle term in
+\eqref{eq:entanglemententropy}, the one depending on $d_a^i$ is absent in the
+Abelian theory. One can argue that the lack of a tensor product decomposition
+of the Hilbert space is related to the presence of a non-trivial centre. While
+the Hilbert of gauge-invariant states does not admit a  tensor product
+decomposition, it could be written as a sum of tensor product terms,
+\begin{equation}
+  \hilspace_{g\mathrm{inv}} = \bigoplus_i\hilspace_i\otimes\hilspace_i',
+\end{equation}
+where each factor $\hilspace_i\otimes\hilspace_i'$ is the Hilbert space in 
+a sector corresponding to a particular value for the centre. Different choices
+for the algebra of gauge-invariant operators lead to different choices of
+centres and to a different value of the entaglement entropy in general. In
+particular, keeping all gauge-invariant operators in the region of interest in
+the algebra gives rise to the electric centre which is specified by the normal
+component of the electric field along the boundary. It is this definition
+which agrees with the EHS definition for the Abelian case. Other choices of
+centres can also be made. In particular, removing all the tangental components
+of the electric field at the boundary from the algebra gives rise to a magnetic
+centre.
+\par Here, we are interested in studying the behaviour of the first two terms 
+of \eqref{eq:entanglemententropy}, which correspond to the non-extractable
+contributions to the entanglement entropy, in the continuum limit. These terms
+depend on the distribution $p_i$ which determines the probability for being in
+the various superselection sectors. For the electric centre case\footnote{In
+  the non-Abelian case, the electric centre definition is sometimes taken to be
+  different from the EHS definition with the middle term in
+  \eqref{eq:entanglemententropy} being absent. We will not be very careful
+  about such distinctions. Our considerations, studying the probability
+distribution $p_i$ will apply to both of these cases.}, by studying the
+correlation functions of the electric field on the boundary, we will find, both
+for the Abelian and non-Abelian cases, that the distribution is typically 
+determined by very high momentum modes localized close to the boundary. As
+a result, we will argue that the contribution form these terms drops out of the
+mutual information of disjoint regions or the relative entropy between two
+states which only have finite energy excitations about the vacuum.
+\section{Classical Term in the Continuum Limit}
+\subsection{$U(1)$ Abelian Theory}
+Let us begin by considering a  3+1-dimensional free $U(1)$ theory. Since the
+theory is free, the classical term is determined by the two-point function of
+the normal component of the electric field,
+\begin{equation}
+  G_{rr} = \langle E_rE_r\rangle,
+\end{equation}
+with the two electric fields $E_r$ being inserted at two different points on
+the boundary which is an $S^2$ of radius $R$. The classical term is then given
+by
+\begin{equation}
+  -\sum p_i\log(p_i) = \alpha_1\frac{A}{\epsilon^2}
+  - \frac{1}{2}\log(\mathrm{det}G^{-1}_{rr}),
+  \label{eq:classicalu1}
+\end{equation}
+with $\epsilon$ being a short distance cut-off. Thus, up to a non-universal
+area lawa divergence, $G_{rr}$ determines the classical term. Let us note in
+passing that the first term on the RHS of \eqref{eq:classicalu1} depends on the
+measure for the sum over over all electric field configurations. Starting from
+the lattice and passing to the continuum gives a well defined measure.
+\par Since the two electric fields in $G_{rr}$ are inserted at points on the
+boundary $S^2$ it is a function of the angular separation of the two points.
+In fact, it turns out to be divergent and some care needs to be exercised in 
+regulating this divergence and defining it. After introducing a short distance
+cut-off $\Delta$ for the radial momentum, the resulting answer was shown to be
+\begin{equation}
+  G_{rr}^{lm} = \frac{1}{\pi R^4}\left(\log\frac{R^2}{\Delta^2}\right)l(l+1).
+\end{equation}
+Here we have carried out a Fourier transform to go from the angular separation
+variables to the angular momentum variables labelled by the integers $(l,m)$,
+as per standard conventions. Note that the result diverges as
+$\Delta\rightarrow 0$, due to the contribution of modes with very high values
+of the radial momentum, which dominate the result in this limit. The factor of
+$l(l+1)$ means that the Green function is proportional to the two-dimenstional
+Laplacian for a free scalar on the boundary. 
+\par From $G_{rr}$, we can calculate the classical piece \eqref{eq:classicalu1}
+which turns out to be,
+\begin{equation}
+  -\sum_i p_i\log(p_i) = \alpha_2\frac{A}{\epsilon^2}
+  - \frac{1}{6}\log\left(\frac{A}{\epsilon^2}\right) + \cdots,
+  \label{classicalu1full}
+\end{equation}
+where the ellipsis refer to non-universal finite pieces. The logarithmic term
+arises from the two-dimenstional scalar Laplacian mentioned above, while
+the pre-factor $\log(R^2/\Delta^2)/\pi R^4$ contributes to the non-universal
+area law divergent pieces above.
+\par It is important to emphasise that we have introduced two cut-offs above,
+$\Delta$ and $\epsilon$, and worked in the limit where $\Delta$ goes to zero
+first. This was true in \eqref{eq:classicalu1full}, for example, since the
+angular momentum $l$ along the $S^2$ was being kept fixed while
+$\Delta\rightarrow 0$. It is in this limit that $G_{rr}$ depends on the
+two-dimenstional Laplacian for a free scalar with a logarithmic dependence on
+the radial cut-off $\Delta$. The behaviour of modes whose momentum along $S^2$
+is comparable to the radial cutoff is more complicated and less universal. In
+the discussion below, when we analyse the contribution of the classical term to
+the mutual information and relative entropy, we will comment on such modes as
+well and show that their contribution too drops out from these quantities.
+\par Having understood the case of a spherical region, we can now turn to the 
+more general situation. Let us begin by first considering the half space $z<0$,
+with the remaining spatial coordinates, $(x,y)$ taking values in
+$(-\infty,\infty)$. The boundary of this region is the two-plane $z=0$. The
+normal component of the electric field is along the $z$ direction. It is easy
+to see by standard quantisation of the electromagnetic field that 
+\begin{equation}
+  \langle E_z(\mathbf{x_1})E_z(\mathbf{x_2})\rangle = \int
+  \frac{d^3k}{(2\pi)^2}\frac{\omega_k}{2}\left(1-\frac{k_z^2}{k^2}\right)e^{i\mathbf{k}\cdot(\mathbf{x}_1
+    - \mathbf{x}_2)}
+\end{equation}
+(The two-point function is computed at equal time.) Here $\omega_k
+= k = \sqrt{k^2_z + k^2_x + k^2_y}$. Setting the two points to be at the
+boundary, $z=0$, we get
+\begin{equation}
+  \langle E_z(\mathbf{k}_{\|})\E_z(\mathbf{k}_{\|}')\rangle
+  = (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}
+  + \mathbf{k}_{\|}')k^2_{\|}\int{\frac{dk_z}{4\pi}\frac{1}{k}}.
+\end{equation}
+We see that the integral on the RHS is logarithmically divergent since $k\sim
+k_z$ for large $k_z$. Thus, as noted above, the result needs to be regulated by
+introducing a cut-off for momentum along the $z$ direction, normal to the
+boundary. One efficient way to do this is to take the two points located at
+slightly different values in the $z$ direction, with $\Delta z = \delta$,
+instead of both of them being exactly at the boundary. Repeating the 
+calculation above now gives,
+\begin{equation}
+  \langle E_z(\mathbf{k}_{\|})\E_z(\mathbf{k}_{\|}')\rangle
+  = (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}
+  + \mathbf{k}_{\|}')k^2_{\|}\int{\frac{dk_z}{4\pi}\frac{e^{ik_z\Delta}}{k}}.
+\end{equation}
+We see that the divergence in the integral at large $k_z$ is regulated
+resulting in
+\begin{equation}
+  \langle E_z(\mathbf{k}_{\|})\E_z(\mathbf{k}_{\|}')\rangle
+  \sim (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}
+  + \mathbf{k}_{\|}')k^2_{\|}\log(k_{\|}\Delta).
+\end{equation}
+We can see that the result above is analogous to what was obtained for the
+spherical region case. In particular, the result diverges e logarithmically as 
+$\Delta\rightarrow 0$ and is proportional to $k^2_{\|}$ which is the eigenvalue
+of the two-dimenstional scalar Laplacian on the boundary. One difference is
+that in the spherical case, the logarithmic divergence due to the modes
+with high value of the normal component is cut-off by the radius $R$, whereas
+in the infinite plane case, where this cut-off is not availiable, it is
+cut-off by $k_{\|}$.
+\par From this example of the half plane and the spherical region, it is now
+clear that we expect the two-point function in any compact region a result
+analogous to the sphere case, namely going like $\log(R/\Delta)$, with $\Delta$
+being the cut-off fir the normal component of momentum, and $R$ being an IR
+scale provided by the size of the region of interest, and also being
+proportional to the two-dimenstional Laplacian along the boundary.
+
+
+
+
+
+
+\section{Entanglement and Dualities}
+\section{Conclusions}
+

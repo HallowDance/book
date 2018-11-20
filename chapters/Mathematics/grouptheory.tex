@@ -79,3 +79,304 @@ Let $N$ be a normal subgroup of a group $G$. We define the set $G/N$ to be the s
 
 Here it was used in an important way that $N$ is a normal subgroup. It can be shown that this operation on $G/N$ is associative, has identity element $N$ and the inverse of an element $aN \in G/N$ is $a^{-1}N$. Therefore, the set $G/N$ together with the defined operation forms a group; this is known as the \textit{quotient group} or \textit{factor group} of $G$ by $N$
 \end{definition}
+\section{Lie groups and representations}
+Every symmetry group that we work with in field theory is a Lie group.
+We will focus on $SU(N)$ as a working example, but everything generalizes
+for all other Lie groups. $SU(N)$ consists of (Hermitian and unit determinant)
+matrices of size $N\times N$ that act on $\mathbb{C}^n$. $SU(N)$ has
+$dim(SU(N))$ basis elements and each of these basis elements is an $N\times N$
+matrix. Note that $dim(SU(N))\neq N.$
+\par For every Lie group there is an associated Lie algebra (sometimes called
+the tangent space in the literature). The Lie algebra of $SU(N)$ is denoted by
+$\mathfrak{su}(N)$.$\mathfrak{su}(N)$ has the same dimension as $SU(N)$ has the
+same dimension as $SU(N)$. We denote a basis of $\mathfrak{su}(N)$ by
+$T^a,\;a=1,\cdots,dim(SU(N))$. Note that $T^a$ are also $N\times N$ matrices.
+Every Lie algebra has an additional structure called the \textit{Lie Bracket},
+which classifies the algebra, denoted by
+\begin{definition}[Lie Bracket]
+  \begin{equation}
+    \left[T^a, T^b\right]=f^{ab}_cT^c
+  \end{equation}
+\end{definition}
+$f^{ab}_c$ are called the \textit{structure constants} of the Lie algebra. They
+encode the structure of the group. We can gen an element of the Lie group by
+exponentiating an element of the Lie algebra:
+\begin{gather}
+  \mathrm{Lie\; algebra}\xrightarrow{exp}\mathrm{Lie\; group}\nonumber\\
+  exp(i\omega_aT^a)\in SU(N)
+\end{gather}
+We have chosen $T^a$ to be Hermitian, resulting in a factor of $i$ in the
+exponent. If we choose $T^a$ to be anti-Hermitian, then there would be no
+factor of $i$. However, we always work with Hermitian operators, so there is
+always a factor of $i$. Since an element of the Lie group can be found by
+exponentating some element of the Lie algebra and we can expand any element of
+the Lie algebra in terms of the basis of the Lie algebra (for example, $T^a$),
+then this basis generates any element of the Lie algebra and by exponentating,
+generates any element of the Lie group (that is connected to the
+origin)\footnote{A group can be split up into different components. The Lorentz
+  group, for example, consists of 4 disconnected components. One of this
+  components, called the proper orthochronous Lorentz group $SO(1,3)^+$ is
+  connected to the origin. Any relativistic theory will be invariant under
+  $SO(1,3)^+$ (or $SO(3,1)$, depending on convention) but not neccesarily under
+  the other components. Other groups, such as $SU(N)$ have only one component,
+  which is connected to the origin. As such, exponenting the Lie algebra
+generates all of $SU(N)$.} For this reason, the basis of the Lie algebra are
+called the \textit{generators}.
+\par However, $SU(N)$ only acts on $\mathbb{C}^N$. What if we want a group with
+the same structure (constants) as $SU(N)$\footnote{It should be noted that $SU(N)$ have different
+structure constants for different $N$} but that act on different spaces such as 
+$\mathbb{C}^m$, for $m\neq N$? Representations of $SU(N)$ allow us to do this.
+They allow us to construct groups with the same structure (constants) as
+$SU(N)$ but which act on different spaces.
+\subsection{Representations}
+A representation of a group $\mathcal{G}$ is a homomorphism from $\mathcal{G}$
+to the space of linear maps acting on a representation space,
+$\mathcal{V}_{rep}$:
+\begin{equation}
+  \rho:\mathcal{G}\rightarrow GL(\mathcal{V}_{rep})
+\end{equation}
+Every linear map can be thought of as a matrix and so an element of
+$\rho(\mathcal{G})$, say $R$, can be thought of as a matrix.
+$\rho(\mathcal{G})$ is a group of matrices and is called
+a \textit{representation} of the group. Each $R$ acts on $\mathcal{V}_{rep}$:
+\begin{equation}
+  R:\mathcal{V}_{rep}\rightarrow V_{rep}
+\end{equation}
+Since $R$ is a matrix that acts on $\mathcal{V}$, it has to be a matrix of size
+$dim(\mathcal{V}_{rep})\times dim(\mathcal{V}_{rep})$. The degree of the
+representation is the dimension of the representation space:
+\begin{equation}
+  deg(\rho) = dim(\mathcal{V}_{rep})
+\end{equation}
+So the representation $\rho(\mathcal{G})$ has dimension equal to
+$dim(\mathcal{G})$ and each element of $\rho(\mathcal{G})$ is a square matrix
+of size $dim(\mathcal{V}_{rep})$. We have to be careful when talking about the 
+dimensions of $\mathcal{G}$ and $\mathcal{V}_{rep}$ as it is easy to get
+confused when considering both. Examples will help clarify these concept.
+Different representations can act on different spaces. Representations are
+useful for describing how different states transform under the action of a 
+particular symmetry.
+
+\subsection{Some noteworthy points}
+\begin{itemize}
+  \item The number of basis elements in the representation is the same as the
+    number of basis elements of the group, $\mathcal{G}$. Another way of
+    saying this is $dim(\rho(\mathcal{G}))=dim(\mathcal{G})$.
+  \item A matrix in the representation, say $R$, acts on a representation
+    space, $\mathcal{V}_{rep}$, by matrix multiplication. An element of
+    $\mathcal{V}_{rep}$ can be considered as a column vector of
+    $dim(\mathcal{V}_{rep})$. So $R$ has to be a matrix of size
+    $dim(\mathcal{V}_{rep})\times dim(\mathcal{V}_{rep})$. This is why
+    we have to seperate out the dimension of $\rho$ from the degree. The
+    examples below will clarify this idea.
+  \item Recap: The representation of the symmetry group can be described using
+    the generators. The generators are a basis for the representation on the
+    Lie algebra. The number of generators is the number of basis elements of
+    the symmetry group $\;= dim(\mathcal{G})$. Each generator has size
+    $dim(\mathcal{V}_{rep})\times dim(\mathcal{V}_{rep})$. Each representation
+    has the same structure constants.
+\end{itemize}
+\subsection{Example}
+If we consider the group $\mathcal{G}=SU(2)$ when thinking about spin angular
+momentum, this can give an insight into how representations work. For $SU(N)$,
+we normally work with irreducible Representation spaces. Consider each
+irreducible
+representation space labelled by $j$ seperately, i.e.
+$\mathcal{V}_{rep}=\mathcal{V}_j$. Call the $3=dim(SU(2))$ generators of
+the representation $T^a=J^a$, where we normally call $J^1=J^x, J^2=J^y,
+J^3=J^z$ angular momentum. Examine the following table in detail to understand
+how the generators can be different sized matrices.
+\\
+\begin{table}[h!]
+  \begin{tabular}{|p{1cm}|p{2cm}|p{4cm}|p{5cm}|}
+    \hline
+    $j$ & basis for $\mathcal{V}_j$ & $dim(\mathcal{V}_j)=$ degree of rep
+        & $T^a = J^a$  \\ 
+    \hline
+    $j=0$ & $\ket{0,0}$ & 1 & $T^a=0$, so that it doesn't transform under SU(2)   \\ 
+    \hline
+    $j=\frac{1}{2}$ & $\ket{\frac{1}{2},m}$ & 2 & $T^a$ are 2x2 matrices, equal
+    to $\sigma^a/2$, where $\sigma$ are the Pauli matrices  \\ 
+    \hline
+    $j=1$ & $\ket{1,m}$ & 3 & $T^a$ are 3x3 matrices, equal to the
+    generalization of the Pauli matrices  \\ 
+    \hline
+  \end{tabular}
+  \caption{Some representations for SU(2) angular momentum}\label{tab1}
+\end{table}
+It is important to notice that there are always \textbf{only} $dim(SU(2))=3$
+generators $T^a$. However, these generators can be different sized matrices
+depending on which representation space $\mathcal{V}_j$ the generators
+act on. Each representation has the same structure constants. As such, each
+representation has the same structure of the original group but allows
+us to act on different spaces.
+\subsection{More points}
+\begin{itemize}
+  \item In general, consider $\chi_1\in\mathcal{V}_{rep}$ and let $T^a$ be a
+    generator of a representation of the group, then it acts on the
+    representation
+    space as:
+    \begin{equation}
+      T^a\chi_{1}=\chi_2\in\mathcal{V}_{rep}
+    \end{equation}
+  \item One way to know what representation you are in is to see what
+    size matrices the generators $T^a$ are. Some examples are given later.
+    If the generators are $m\times m$ matrices, then an element of the
+    representation
+    of the group, $g$, can be written as $g=exp{(\lambda^a T^a)}$. So $g$ is
+    also an $m\times m$ matrix, i.e, every representation of the Lie algebra
+    gives a representation of the group by exponentating. Since the generators
+    must act on elements of the representation space, and  the generators are
+    matrices of size $m\times m$, the elements of the representation space must
+    be $m$ component column vectors.
+
+  \item A gauge theoroy has the Lagrangian
+    $\mathcal{L}=\bar{\Psi}\left(i\gamma^\mu D_\mu -m\right)\Psi$, where the
+    field $\Psi$ is in a representation space of the gauge group and $D_\mu$ is
+    the covariant derivative. $D_\mu$ is defined to transform under an element
+    of the representation, $U$, of the gauge group as
+    \begin{equation}
+      D_\mu\Psi\rightarrow U D_\mu \Psi = (U D_\mu U^{-1})(U\Psi)
+    \end{equation}
+    and so $D_\mu\rightarrow U D_\mu U^{-1}$. This transformation property is
+    called the adjoint action of the group on the Lie algebra. Because of
+    this transform property, the covariant derivative is said to transform
+    in th adjoint action, or just adjointly. $D_\mu=\partial_\mu - igA_\mu(x)$,
+    where $A_\mu(x)$ is an element of the representation of the Lie algebra. We
+    can expand $A_\mu(x)$ in a basis of the representation so that $A_\mu(x)
+    = A^a+\mu(x)T^a$, where $A^a_\mu(x)$ are the gauge field coefficients with
+    corresponding (matrix) generators $T^a$. The gauge field $A^a_\mu$ are said
+    to transform under the adjoint action in order to make the covariant 
+    derivative transform correctly. The transformation is the standard
+    transformation:
+    \begin{equation}
+      A_\mu(x)\rightarrow U(x) A_\mu U(x)^\dagger - \frac{1}{e}(\partial_\mu
+      U(x))U(x)^\dagger 
+    \end{equation}
+    This is precisely the right transformation to make the covariant derivative
+    transform as required
+    \begin{equation}
+      D_{\mu}\chi(x)\rightarrow U(x)D_\mu \Psi(x)
+    \end{equation}
+    The generators \textbf{do not} have to be  in the adjoint representation of
+    the group and in general they are not. They just have to transform
+    adjointly.
+  \item We want to consider infinitesmal transformations. Let $U=exp(\lambda^a
+    T^a) = 1+ \lambda^a T^a +$ higher order terms. Call $\lambda = \lambda_a
+    T^a$. We know
+    \begin{align}
+      A_\mu(x) &\rightarrow UA_\mu U^{-1} - \frac{1}{e}(\partial_\mu
+      U)U^{-1}(x)\\
+      &= A_\mu - \frac{1}{e}\left\{\partial_\mu\lambda + e\left[A_\mu,
+  \lambda\right]\right\}\\
+      &= A_\mu - \frac{1}{e}D_\mu\lambda
+\end{align}
+    Because of  laziness, we don't want to write out $\left[A_\mu,
+    \lambda\right]$ all the time. We give it a special name: the adjoint action
+    of the Lie algebra on itself. Write it $A_\mu\cdot\lambda = \left[ A_\mu,
+    \lambda\right]$ or $(A_\mu\cdot\lambda)^{ad} = \left[A_\mu,
+  \lambda\right]$. This comes from the adjoint action of the group on the Lie
+  algebra in infinitimesal form. But we can expand in a basis, $A_\mu - A^a_\mu
+  T^a, \lambda=\lambda^a T^a$. The $A^a_\mu, \lambda^a$ are field coefficents 
+  when expanded in the (matrix) basis $T^a$. They are fields which commute. But
+  $T^a$ are matrices which in general don't commute. So
+  \begin{align}
+    D_\mu\lambda &= \partial_\mu\lambda + (A_\mu\cdot\lambda)^{ad}\nonumber\\
+                 &= \partial_\mu\lambda + e\left[A_\mu, \lambda\right]\nonumber\\
+                 &= \partial_\mu\lambda^a T^a + e A^a_\mu\lambda^b\left[T^a,
+  T^b\right]\nonumber\\
+                 &= \partial_\mu\lambda^a T^a + eA^a_\mu\lambda^b f^{ab}_c
+T^c\quad\mathrm{using\;}\left[T^a, T^b\right]=f^{ab}_{c} T^c
+  \end{align}
+  In component form, the covariant derivative acts on an element of the Lie
+  algebra as
+  \begin{align}
+    (D_\mu\lambda)_a &= \partial_\mu\lambda_a
+    + (A_\mu\cdot\lambda)_a^{ad}\nonumber\\
+                     &= \partial_\mu\lambda_a + e\left[A_\mu,
+  \lambda\right]_a\nonumber\\
+                     &= \partial_\mu\lambda_a + eA^b_\mu\lambda^c f^{bc}_a
+  \end{align}
+  \item The main point to  focus on here is the adjoint action. Do not be
+    confused between the adjoint $((A_\mu\cdot\lambda)^{ad} = \left[A_\mu,
+    \lambda\right])$ and  the adjoint representation. They are two different
+    things. The adjoint action is true for all representations, i.e, for all
+    $m\times m$ matrices $T^a$. But the  adjoint re[representation is
+    a specific representation of the group. In the adjoint representation, the
+    matrices have a specific size, where $m=dim(G)$. This  is standard
+    (sometimes confusing) terminology.
+\end{itemize}
+\subsection{Certain Types of Representations}
+When thinking about representations of $SU(N)$ as $m\times m$ matrices,
+there are three natural numbers to consideer for $m$. One is $m=1$, i.e, a
+scalar. This is called the trivial representation. Another is $m=n$, where
+the $SU(n)$ matrices themselves are the representation. This is called
+the fundamental representation. The last is when $m=dim(SU(n))$. This is
+called the adjoint representation.
+\par The \textbf{trivial} representation is whre $\rho(g)=0$ so that all
+generators of the representation have $T^a=0$. This is the $j=0$ representation 
+of $SU(2)$. $\ket{j=0,0}$ is said to be a singlet or scalar as it doesn't
+transform under $SU(2)$.
+\par The \textbf{fundamental} representation is the representation which
+is equal to the group. This is the homomorphism $\rho(g)=g$. In the fundamental
+representation, when considering $SU(n)$, the representation
+$\rho(SU(n))=SU(n)$, i.e. the $SU(n)$ matrices are the representation matrices.
+The representation is classified by $n\times n$ matrices. $SU(n)$ must act on
+a column vector of size $n$ and hence the dimension of the representation space
+must be $n$. This is the $j=1/2$ representation of $SU(2)$.
+\par In the \textbf{adjoint} representation, it can be shown that the
+generators have the component form $(T^a_{ad})_{bc} = f^a_{bc}$, where
+$f_{bc}^a$ are the anti-symmetric structure constants. If we know the
+structure constants, then we can construct the adjoint representation. E.g,
+$f_{abc} = \varepsilon_{abv}$ for $SU(2)$.
+
+\subsection{Usefulness of Lie group representations}
+Representation spaces are used to clarify spin and isospin using
+representations of $SU(2)$. Hadrons are described by representation spaces of
+$SU(3)_{\mathrm{flavour}}$, for example the eight fold way. Representation
+spaces of the Poincar\'e group are classifeid in terms of a particles spin
+and momentum.
+\par Historically, weak decays were seen to involve flavour changing decays and 
+break parity in experiment. We want to construct a Lagrangian to describe weak
+decays and to make theoretical predictions. Parity sends left handed fields to
+right handed fields and so we put the left handed components of each generation
+of matter into a two component column vector. We call this $L$. As an example,
+for the electron and neutrino we have $L=(\nu_e, e_L)^T$. We require that
+the terms involving $L$ in the Lagrangian be invariant under a $SU(2)$ gauge
+symmetry in order to introduce gauge fields which mediate a force between the
+components. We call this $SU(2)_{\mathrm{Left}}$. The kinetic term for $L$
+contains a covariant derivative in the form given above. It contains generators 
+for the representation of $SU(2)_{\mathrm{L}}$. These generators have to act on
+$L$. $L$ is two component and so we see that the generators, $T^a$ must be
+$2\times 2$ matrices. This is justthe fundamental representation of
+$SU(2)_\mathrm{L}$. So $L$ is said to be in the fundamental representation.
+\par Now, in order to maximally break parity, we do not want the right handed
+parts of the matter fields to feel force. So we do not put the right handed
+parts of matter fields into a doublet. The  right handed part of the matter 
+fields do not transform under $SU(2)_\mathrm{L}$. They are in the trivial or
+singlet representation of $SU(2)_\mathrm{L}$. This is the $j=0$ representation
+of $SU(2)$ discussed above.
+\par In QCD, we introduce a new symmetry called $SU(3)_\mathrm{colour}$. We say
+that each quark field $\Psi$ now comes with a colour: either red, blue or
+green. Put the different coloured quark fields into a column vector $\chi
+= \left(\Psi_\mathrm{red},\Psi_\mathrm{blue}\Psi_\mathrm{green}\right)^T$. For 
+example, using the up-type quark
+$\chi\left(u_\mathrm{red},u_\mathrm{blue},u_\mathrm{green}\right)^T$. Make
+a Lagrangian that will be invariant udner a $SU(3)_\mathrm{colour}$ gauge
+symmetry:
+\begin{equation}
+  \mathcal{L} = \bar{\chi}\left(i\gamma^\mu D_\mu -m\right)\chi.
+\end{equation}
+Since the $\chi$ is three component, the generators for the representation of
+the $SU(3)_\mathrm{colour}$ symmetry will have to act on $\chi$ and so these
+generators will have to be $3\times 3$ matrices. This is the fundamental
+representation
+of the group $SO(3)_\mathrm{colour}$. The quark fields are said to be in the
+fundamental representation of $SO(3)_\mathrm{colour}$. Leptons do not feel the
+strong force eand so transform trivially under $SO(3)_\mathrm{colour}$. This is
+the representation where the generators for $SO(3)_\mathrm{colour}$ are
+$T^a=0$. It is similar to the right handed fields in the $SU(2)_\mathrm{Left}$
+representation.
+\par When working in the fundamental representation, it is ok to think of the 
+group representation transformations just as the group transformations and the
+representation of the Lie algebra as just the Lie algebra.

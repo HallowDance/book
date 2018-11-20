@@ -1,10 +1,11 @@
 %This file is just a wrapper. Please, edit the files for your chapter in chapters/chapter1/.
-%Don't worry, we will put your chapter in the correct place when assemble the book.
 \documentclass[a4paper]{report}
-%\usepackage{fixltx2e,fix-cm}
+
+%%%% INCLUDE PACKAGES %%%%
+
 \usepackage{amssymb}
 \usepackage{amsmath}
-%\usepackage{amsthm}
+\usepackage{amsthm}
 \usepackage{physics}
 \usepackage{geometry}
 \usepackage{graphicx}
@@ -13,10 +14,18 @@
 \usepackage{makeidx}
 \usepackage{multicol}
 \usepackage{hyperref}
+\usepackage{tikz-feynman}
+\usepackage{tcolorbox}
 \usepackage{epigraph}
+\usepackage[rightcaption]{sidecap}
 \usepackage{minitoc}% for TOCs at the begining of each chapter
+
+%%%% END PACKAGES %%%%
+
+
 \frenchspacing
-\tolerance=5000
+\renewcommand\sidecaptionsep{0.1cm}
+\tolerance=50000
 \makeindex
 \include{frontmatter/preamble}
 \begin{document}
@@ -36,7 +45,7 @@
   \textcolor{namecolor}{\textsf{Faculty of Physics}}
   \vfill
   \noindent
-  {\huge \textsf{My Journey Through Theoretical Physics}
+  {\huge \textsf{My Journey Through Theoretical Physics}}
   \vskip\baselineskip
   \noindent
   \textsf{IVO ILIEV}
@@ -44,6 +53,9 @@
 \restoregeometry % restores the geometry
 \nopagecolor% Use this to restore the color pages to white
 %%%% END TITLE PAGE %%%%
+
+
+%%%%%%% INCLUDE CONTENT FILES %%%%%%%%%%%
 \include{frontmatter/dedication}
 \cleardoublepage
 \setcounter{page}{8} %previous pages will be reserved for frontmatter to be added in later.
@@ -53,8 +65,8 @@
 
 \tableofcontents
 \include{frontmatter/foreword}
-\include{frontmatter/preface}
-\include{frontmatter/contributor}
+\include{frontmatter/preface} % preface needs work
+%\include{frontmatter/contributor} %this is for contributors
 
 \mainmatter
 
@@ -62,20 +74,23 @@
 \include{chapters/Gravity/GR}
 \include{chapters/QFT/QFT.tex}
 \include{chapters/QFT/SUSY.tex}
+\include{chapters/QFT/ENT}
 \include{chapters/Strings/stringsCFT}
+\include{chapters/Strings/stringsCurved}
 \include{chapters/SolidState/dft}
 
-\newpage\null\thispagestyle{empty}\newpage
+\newpage\null\thispagestyle{empty}\newpage % page break between Parts
 
 \part{Mathematics}
 \include{chapters/Mathematics/grouptheory}
 \include{chapters/Mathematics/diferentialgeometry}
+%%%%%%%% END OF INCLUSION %%%%%%%%%%%
 
-
+%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%
 \nocite{*}
 \bibliographystyle{plain}
 \bibliography{biblio.bib}
-
+%%%%%%%% END BIBLIOGRAPHY %%%%%%%%
 \printindex
 
 \end{document}
