@@ -1,0 +1,177 @@
+\chapter{Schwarzian Quantum Mechanics}
+\adjustmtc
+\minitoc
+\section{Overview}
+In recent times it has been recognized that holographic conformal field theories at finite temperature exhibit characteristics of many-body quantum chaos. The Sachdev-Ye-Kitaev model\cite{SYK93} is a soluble many-body quantum system with a well-controlled large $N$ limit that exhibits maximal chaos and other characteristics that indicate it has a holographic dual given by a 2D gravity theory on AdS$_2$.\cite{Maldacena16,Polchinski16} The Schwarzian theory describes the quantum dynamics of a single 1D degree of freedom $f(\tau)$ and forms the theoretical gateway between the microscopic SYK model and the 2D dilaton gravity theory.
+
+The main object of study is the finite temperature correlation functions in the 1D QM theory described by the action\cite{Mertens17}
+
+\begin{gather}
+S[f] = -C \int_0^\beta{d\tau\left(\{f,\tau\}+\frac{2\pi^2}{\beta^2}f'^2\right)}\\
+= -C\int_0^\beta{d\tau\{F,\tau\}}, \quad F\equiv \tan\left(\frac{\pi f(\tau)}{\beta}\right),
+\label{eq:schwarzaction}
+\end{gather}
+where $C$ is the coupling constant of the zero-temperature theory. We will set $C=1/2$ from here on out, unless explicitly stated. Here $f(\tau+\beta) = f(\tau)+\beta$ runs over the space Diff(S$^1$) of diffeomorphisms on the thermal circle and most importantly
+
+\begin{equation}
+\{f,\tau\} = \frac{f'''}{f'} - \frac{3}{2}\left(\frac{f''}{f'}\right)^2
+\end{equation}
+denotes the Schwarzian derivative.
+
+It is easy to show that this action is invariant under $SL(2,\mathbb{R})$ Möbius transformations that act of $F$ via
+\begin{equation}
+F\rightarrow\frac{aF+b}{cF+d}
+\end{equation}
+This model possesses a corresponding set of conserved charges $l_a$ that generate the $\mathfrak{sl}(2,\mathbb{R})$ algebra $[l_a,l_b] = i\epsilon_{abc}l_c$ and commute with the Hamiltonian $H$. It just happens to be  that the Hamiltonian is equal to the $SL(2,\mathbb{R})$ Casimir operator, $H=\frac{1}{2}l_al_a$. This means that the energy spectrum and dynamics are uniquely determined by the $SL(2,\mathbb{R})$ symmetry. The Schwarzian theory is integrable and expected to be exactly soluble at any value of the inverse temperature $\beta$. In the following, we will label the energy eigenvalues $E$ in terms of the $SL(2,\mathbb{R})$ spin $j=-\frac{1}{2}+ik$ via
+
+\begin{equation}
+E(k) = -j(j+1) = \frac{1}{4} + k^2
+\label{eq:energyspecturm}
+\end{equation}
+
+We will drop the constant $\frac{1}{4}$, that can be achieved by choosing appropriate normal ordering in the quantum theory. If we mod out by the overall $SL(2,\mathbb{R})$ symmetry, the partition sum
+
+\begin{equation}
+Z(\beta) = \int_\mathcal{M}{\mathcal{D}f e^{-S[f]}}
+\end{equation}
+reduces to an integral over the infinite dimensional quotient space
+
+\begin{equation}
+\mathcal{M} = Diff(S^1)/SL(2,\mathbb{R})	
+\label{eq:spacestructure}
+\end{equation}
+
+This space M equals the coadjoint orbit of the identity element $\mathbb{1}\in$ Diff(S$^1$) which is known to be a symplectic manifold that upon quantization gives rise to the identity representation
+of the Virasoro group Diff(S$^1$), i.e. the identity module of the Virasoro algebra. We chose the functional measure $d\mu(f)$ to be the one derived form the symplectic form on $\mathcal{M}$ which is shown in \cite{Alekseev90}\cite{Bagrets16} to take the form $\mathcal{D}f = \prod_\tau df/f'$.
+
+The fact that the space $\mathcal{M}$ is symplectic is exploited in \cite{Witten17} to show that the partition function $Z$ is one-loop exact and given by
+
+\begin{equation}
+Z(\beta) = \left(\frac{\pi}{\beta}\right)^{3/2} e^{\pi^2/\beta} = \int_0^\infty{d\mu(k)e^{-\beta E(k)}}
+\end{equation}
+
+with $E(k)$ as in \eqref{eq:energyspecturm} and where the integration measure is given in terms of $k$ by
+
+\begin{equation}
+d\mu(k) = dk^2\sinh(2\pi k).
+\end{equation}
+This exact result for the spectral density 
+\begin{equation}
+\rho(E) = \sinh(2\pi\sqrt{E})
+\label{eq:spectraldensity}
+\end{equation}
+if further indication that the Schwarzian theory is completely soluble. 
+
+For our analysis we will make use of the more detailed property that the space $\mathcal{M}$ in \eqref{eq:spacestructure} is not just any phase space, but forms the quantizable coadjoint orbit space that gives rise to the identity module of the Virasoro algebra. This observation implies that the correlation functions of the Schwarzian theory,
+
+\begin{equation}
+\langle \mathcal{O}_1,\cdots,\mathcal{O}_n\rangle = \frac{1}{Z}\int_\mathcal{M}{\mathcal{D}f e^{-S[f]}\mathcal{O}_1\cdots\mathcal{O}_n} = \frac{1}{Z}\Tr(e^{-\beta H} \mathcal{O}_1\cdots\mathcal{O}_n),
+\end{equation}
+can be obtained by taking a suitable large $c$ limit of well-studied correlation functions of an exactly soluble 2D CFT with Virasoro symmetry.
+
+\section{Schrödinger formulation}
+In this section, we outline the Hamiltonian formulation of the Schwarzian theory, and how it is relate to other 1D systems with $SL(2,\mathbb{R})$ symmetry. We temporary set $\beta = 2\pi$.
+\subsection{Zero Temperature}
+We first consider the Schwarzian theory at zero temperature. In this limit, the $f'^2$-term is dropped in the action \eqref{eq:schwarzaction}, reducing it to the pure Schwarzian action $S = \int{d\tau\{f,\tau\}}$. To transit to a Hamiltonian description, it is useful to rewrite the Lagrangian into a first order form as
+
+\begin{equation}
+L = \pi_\phi\phi'+\pi_f f' - (\pi_\phi^2 + \pi_f e^\phi).
+\end{equation}
+
+This first order form makes clear that the Schwarzian theory has a four dimensional phase space, labeled by two pairs of canonical variables $(\phi,\pi_\phi)$ and $(f,\pi_f)$. Alternatively, we may view the quantity $\pi_f$ as a Lagrange multiplier, enforcing the constrained $f' = e^\phi$. Setting $\phi = \log f'$ and integrating out $\pi_\phi$, it is readily seen that the above first-order Lagrangian indeed reduces to the Schwarzian theory. Upon quantization, the variables satisfy canonical commutation relations $[f,\pi_f]=i$ and $[\phi,\pi_\phi] = i$.
+
+The invariance of the Schwarzian action under Möbius transformations
+
+\begin{equation}
+f\rightarrow\frac{af+b}{cf+d}
+\end{equation}
+implies the presence of a set of conserved charges
+\begin{equation}
+l_{-1} = \pi_f,\quad l_0=f\pi_f+\pi_\phi,\quad l_1=f^2\pi_f + 2f\pi_\phi + e^\phi
+\end{equation}
+that satisfy an $\mathfrak{sl}(2,\mathbb{R})$ algebra. The Hamiltonian $H$ is equal to the quadratic Casimir
+
+\begin{equation}
+H = \pi_\phi^2 + \pi_fe^\phi = l_0^2 - \frac{1}{2}\{l_{-1},l_1\}
+\label{eq:Schwarzianhamiltonian}
+\end{equation}
+and thus manifestly commutes with the $SL(2,\mathbb{R})$ symmetry generators. In particular, we can define a mutual eigenbasis of $H$ and $\pi_f=l_{-1}$
+\begin{equation}
+\pi_f\ket{\lambda, k} = \lambda\ket{\lambda,k},\quad H\ket{\lambda, k} = E(k)\ket{\lambda, k},\quad E(k)\equiv\frac{1}{4}+k^2,
+\label{eq:eigenbasis}
+\end{equation}
+which spans the complete Hilbert space of the theory.
+
+The 1D Schwarzian theory is closely related to the free particle on the 3D Euclidian AdS space $H^+_3$ with coordinates $\phi,f,\bar{f}$ and metric $ds^2 = d\phi^2 + 2e^{-\phi}dfd\bar{f}$, and to 1D Liouville theory. 
+
+\subsection{Finite temperature}
+Putting the theory at finite temperature, we reintroduce the $f'^2$ term in the action \eqref{eq:schwarzaction}. The effect pf this term in the first order formulation is taken into account by changing the Hamiltonian
+
+\begin{equation}
+H = \pi_\phi^2 + \pi_fe^\phi + e^{2\phi}
+\end{equation}
+We now solve the constraint $f' = e^{\phi}$, reducing the added term to $e^{2\phi} = f'^2$. The new Hamiltonian still has $SL(2,\mathbb{R})$ symmetry, generated by the charges:
+
+\begin{align}
+l_{-1} = \cos^2(f)\pi_f - \sin(2f)\pi_\phi + \cos(2f)e^\phi\\
+l_0 = \frac{1}{2}\sin(2f)\pi_f + \cos(2f)\pi_\phi + \sin(2f)e^\phi\\
+l_1 =  \sin^2(f)\pi_f + \sin(2f)\pi_\phi - \cos(2f)e^\phi
+\end{align}
+
+This charges satisfy $[l_0,l_{\pm 1}] = \mp l_{\pm 1}$ and $[l_1,l_{-1}] = 2l_0$ and they all commute with the Hamiltonian, which can again be identified as the quadratic Casimir $H = l_0^2 - \frac{1}{2}\{l_1,l_{-1}\}$. The $SL(2,\mathbb{R})$ symmetry generated by these charges acts via broken linear transformations on the uniformizing variable F
+
+\begin{equation}
+F\rightarrow\frac{aF+b}{cF+d},\quad F= \tan(f/2),\quad ad-bc = 1.
+\end{equation}
+
+Since $\pi_f = l_1 + l_{-1}$ commutes with $H$, we can again define a mutual eigenbasis \eqref{eq:eigenbasis} that spans the entire Hilbert space of the model. The Schrödinger wavefunctions of the eigenstates take the form
+
+\begin{equation}
+\Psi_{\lambda,k}(f,\phi) = e^{i\lambda f}\psi_{\lambda,k}(\phi), 
+\end{equation}
+where $\psi_{\lambda,k}(\phi), $ solves the Schrödinger equation
+\begin{equation}
+(-\partial^2_\phi + \lambda e^\phi + e^{2\phi})\psi_{\lambda,k}(\phi) = k^2 \psi_{\lambda,k}(\phi)
+\end{equation}
+given by a 1D particle in the so-called Morse potential $V(\phi)= \lambda e^\phi + e^{2\phi}$. The solutions of this equation are given in terms of Whittaker W-functions\footnote{For a small resume of Whittaker functions, check the appendices}. The full eignemode functions normalized in the flat measure $df d\phi$ are given by
+\begin{equation}
+\Psi_{\lambda,k}(f,\phi) = \sqrt{\frac{k\sinh(2\pi k)}{4\pi^3}}\abs{\Gamma(ik+\lambda/2 + 1/2)}e^{i\lambda f}e^{-\phi/2}W_{-\lambda/2,ik}(2e^\phi).
+\label{eq:eigenfunctiosn}
+\end{equation}
+\section{Particle in a magnetic field}
+There exists an interesting and useful connection between the Schwarzian model and a particle of the hyperbolic plane $H^+_2$ in a constant magnetic field\cite{Kitaev16}. The Landau problem on $H^+_2$ was first analyzed by A. Comtet and P.J. Houston in \cite{ComtetHouston85,Comtet85}. On of the main results in this papers, which we will use is an explicit formula for the spectral density of states.
+
+Writing the $H^+_2$ metric as $ds^2 = d\phi^2 + e^{-2\phi}df^2$, the Lagranigan of the particle is given by 
+\begin{equation}
+S = \int{dt\left(\frac{1}{4}\phi'^2 + \frac{1}{4}e^{-2\phi}f'^2 + Bf'e^{-\phi}\right)}
+\end{equation}
+which identifies the magnetic vector potential as $qA_f = Be^{-\phi} $, where $q$ is the charge of the particle. For a fixed constant $B$, we get the following Hamiltonian for the system
+\begin{equation}
+H_B = p^2_\phi + (p_f e^\phi - B)^2,
+\end{equation}
+where with $p_\phi$ and $p_f$ we have denoted the canonical conjugate variables. The model is again invariant under Möbius transformations and possesses a corresponding set of $SL(2,\mathbb{R})$ generators:
+\begin{equation}
+l_{-1} = p_f,\quad l_0 = fp_f + p_\phi,\quad l_1 = f^p_f + 2fp_\phi - p_f e^{2\phi} + 2B e^\phi
+\end{equation}
+Once again, the Hamiltonian is equal to the quadratic Casimir. The normalized simultaneous eigenmodes of $p_f$ (with eigenvalue $\nu$ and $H_B$ (with eigenvalue $E(k) = \frac{1}{4} + k^2 + B^2$ take the form \cite{ComtetHouston85}
+\begin{equation}
+\Psi_{\nu,k}(f,\phi) = \sqrt{\frac{k\sinh(2\pi k)}{4\pi^3\abs{\nu}}\abs{\Gamma(ik-B+1/2}}e^{i\nu f}e^{-\phi/2}W_{B,ik}(2\abs{\nu}e^\phi),
+\end{equation}
+which should be compared with formula \eqref{eq:eigenfunctiosn} for the eigenmodes of the Schwarzian model.
+
+Using the above formula for the eigenmodes, it is straightforward to compute the density of states for the Landau problem on $H^+_2$. The result for the spectral measure reads:
+\begin{equation}
+d\mu_B(k) = \rho_B(k)dk = dk^2\frac{\sinh(2\pi k)}{\cosh(2\pi k) = \cos(2\pi B)}
+\label{eq:comtetdensity}
+\end{equation}
+
+We can use this result to compute the spectral measure of the Schwarzian theory via the following observation\cite{Kitaev16}. Upon shifting $\phi\rightarrow\phi - \log(-2B)$ with $B\rightarrow i\infty$, the Hamiltonian $H_B$ reduces to
+\begin{equation}
+H_B = p_\phi^2 + p_f e^\phi + B^2,
+\end{equation}
+which, up to irrelevant constant $B^2$ contribution, coincides with the Hamiltonian \eqref{eq:Schwarzianhamiltonian} for the Schwarzian model at zero temperature. We can use this correspondence to derive the exact formula for the spectral measure \eqref{eq:spectraldensity}, that we gave in the introduction to the Schwarzian model. Starting from the result \eqref{eq:comtetdensity} and observing that $\cos(2\pi B)$ diverges as $B\rightarrow i\infty$, we deduce that (up to an irrelevant overall normalization)
+\begin{equation}
+d\mu(k) = dk^2\sinh(2\pi k),
+\end{equation}
+which is equivalent to \eqref{eq:spectraldensity}.
+

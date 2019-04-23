@@ -10,11 +10,9 @@ symmetry groups."}{Hermann Weyl}
 Let $(G, *)$ and $(H,\cdot)$ be two groups. A (group) homomorphism from $G$ to $H$ is a function $h:G\rightarrow H$ such that for all $x,y$ in $G$ it holds that
 $h(x*y) = h(u)\cdot h(v)$
 \end{definition}
-DICKS
 \begin{definition}[Coset]
 Let $G$ be a group and $H$ is a subgroup of $G$. Consider an element $g \in G$. Then, $gH = \{ gh : h\in H\}$ is the \textit{left coset} of $H$ in $G$ with respect to $g$, and $Hg = \{hg : h\in H\}$ is the \textit{right coset} of $H$ in $G$ with respect to $g$
 \end{definition}
-
 \begin{remark}
 In general the left and right cosets are not groups.
 \end{remark}
@@ -380,3 +378,275 @@ representation.
 \par When working in the fundamental representation, it is ok to think of the 
 group representation transformations just as the group transformations and the
 representation of the Lie algebra as just the Lie algebra.
+
+
+\section{Automorphic Forms}
+In this section we provide a pedestrian introduction to automorphic forms and
+theta series, emphasizing on examples important for string theory and M-theory.
+Automorphic forms play an important role in physics, especially in the context
+of string theory and M-theory dualities. Notably, U-dualities, first discovered
+as symmetries of classical toroidal compactifications of 11-dimensional
+supergravity by Cremmer and Julia [1] and later on elevated to quantum
+postulates by Hull and Townsend [2], motivate the study of automorphic forms
+for exceptional arithmetic groups $E_n(\mathbb{Z}) (n=6,7,8\;\mathrm{ or\;
+their }\;A_n\;\mathrm{ and }\;D_n$ analogues for $1\leq n\leq 5)$ - see \textit{e.g} [3]
+for a review of U-duality. These chapter is aimed to provide a pedestrian
+introduction to these seemingly abstract mathematical objects, designed to offer
+a concrete footing for physicists. The basic concepts are introduced via the
+simple $Sl(2)$ Eisenstein (not to be confused with Einstein!) and theta series.
+The general construction of continuous representations and of their
+accompanying Eisenstein series is detailed for $Sl(3)$. Thereafter, unipotent
+representations and their theta series for arbitrary simply-laced groups are
+presented.
+\subsection{Eisenstein and Jacobi Theta series}
+The general mechanism underlying automorphic forms is best illustrated b taking
+a representation-theoretic tour of two familiar $Sl(2,\mathbb{Z})$ examples:
+\subsubsection{$Sl(2,\mathbb{Z})$ Eisenstein Series}
+Our first example is the non-holomorphic Eisenstein series
+\begin{equation}
+  \mathcal{E}^{Sl(2)}_s(\tau) = \sum_{(m,n)\in\mathbb{Z}^2\backslash
+  (0,0)}\left(\frac{\tau_2}{\abs{m+n\tau}^2}\right)^s
+  \label{eq:eisensteinseries}
+\end{equation}
+which, for $s=3/2$, appears in string theory as the description of the
+complete, non-perturbative, four-graviton scattering amplitude at low energies
+[6]. It is a  function of the complex modulus $\tau$, taking values on the
+Poincar\'e upper half plane, or equivalently points in the symmetric space
+$\mathcal{M} = K\backslash G=SO(2)\backslash Sl(2,\mathbb{R})$ with coset representatie
+\begin{equation}
+  e = \frac{1}{\sqrt{\tau_2}}
+  \begin{pmatrix}
+    1 & \tau_1\\
+    0 & \tau_2
+  \end{pmatrix}
+  \label{eq:linearrepresentation}
+  \in Sl(2,\mathbb{R})
+\end{equation}
+The Eisenstein series \eqref{eq:eisensteinseries} is invariant under the
+modular transformation
+\begin{equation}
+  \tau \rightarrow (a\tau + b)/(c\tau + d)
+\end{equation}
+which is the right action of $g\in Sl(2,\mathbb{Z})$ on $\mathcal{M}$.
+Invariance follows simply from that of the lattice
+$\mathbb{Z}\times\mathbb{Z}$. This setup may be formalized by introducing:
+
+\begin{enumerate}[label=(\roman*)]
+  \item The linear representation $\rho$ of $Sl(2,\mathbb{R})$ in the space
+    $\mathcal{H}$ of functions of two variables $f(x,y)$,
+    \begin{equation}
+      \left[\rho(g)\cdot f\right](x,y) = f(ax+by, cx+dy),\quad g=
+      \begin{pmatrix}
+        a & b\\
+        c & d
+      \end{pmatrix}
+      ,\quad
+      ad-bc =1.
+    \end{equation}
+  \item An $Sl(2,\mathbb{Z})$-invariant distribution
+    \begin{equation}
+      \delta_{\mathbb{Z}}(x,y) = \sum_{(m,n)\in\mathbb{Z}\backslash (0,0)}
+    \delta(x-m)\delta(y-n)
+    \label{eq:sumsldistribution}
+  \end{equation}
+  in the dual space $\mathcal{H}^*$.
+\item A vector
+  \begin{equation}
+    f_K(x,y)=(x^2+y^2)^{-s}
+  \end{equation}
+  invariant udner the maxiamal compact subgroup $K = SO(2) \in
+  G = Sl(2,\mathbb{R})$.
+\end{enumerate}
+The Eisenstein series may now be recast in a  general notation for automorphic
+forms
+\begin{equation}
+\mathcal{E}_s^{Sl(2)}(e) = \langle \delta_{\mathbb{Z}}, \rho(e)\cdot
+f_K\rangle,\quad e\in G.
+\label{eq:automorphiceisenstein}
+\end{equation}
+The modular invariance of $\mathcal{E}_s^{Sl(2)}$ is now manifest: under the
+right action $e\rightarrow eg$ of $g\in Sl(2,\mathbb{Z})$, the vector
+$\rho(e)\cdot f_k$ transforms by $\rho(g)$, which in turn hits the
+$Sl(2,\mathbb{Z})$ invariant distribution $\delta_{\mathbb{Z}}$. Furhtermore,
+\eqref{eq:automorphiceisenstein} is ensured to be a function of the
+\textit{coset} $K\backslash G$ by invariance of the vector $f_K$ under the
+maximal compact $K$. Such a distinguished vector is known as
+\textit{spherical}. All the automorphic forms we shall encounter can be written
+in terms of a triplet $(\rho,\delta_{\mathbb{Z}},f_K)$.
+\par Clearly any other function of the $SO(2)$ invariant norm
+$\abs{x,y}_\infty\equiv \sqrt{x^2+y^2}$ would be as good a candidate for
+$f_K$. This reflects the reducibility of the representation $\rho$ in
+\eqref{eq:linearrepresentation}. However, its restriction to homogeneous, even
+functions of degree $2s$,
+\begin{equation}
+  f(x,y) = \lambda^{2s} f(\lambda x, \lambda y) = y^{-2s}f(\frac{x}{y},1),
+\end{equation}
+is irreducible. The restriction of the representation $\rho$ acts on the space
+of functions of a single variable $z=x/y$ by weight $2s$ conformal
+transformations $z\rightarrow(az+b)/(cz+d)$ and admits $f_K(z) = (1+z^2)^{-s}$
+as its unique spherical vector. In these variables, the distribution
+$\delta_{\mathbb{Z}}$ is rather singular as its support is on all rational
+values $z\in\mathbb{Q}$. A related problem is that the behaviour of
+$\mathcal{E}_s^{Sl(2)}(\tau)$ at the cusp $\tau\rightarrow i\infty$ is
+difficult to assess - yet of considerable interest to physicists being the
+limit relevant to non-perturbative instantons.
+\par These two problems may be evaded by performing a Poisson resummation on
+the integer $m\rightarrow\tilde{m}$ in the sum of the $Sl(2,\mathbb{Z})$
+invariant distribution \eqref{eq:sumsldistribution}, after first separating
+out terms with $n=0$. The results may be rewritten as a sum over the single
+variable $N=\tilde{m}n$, except for two degenerate - or "perturbative"
+- contributions:
+\begin{multline}
+  \mathcal{E}_s^{Sl(2)} = 2\zeta(2s)\tau_2^s
+  + \frac{2\sqrt{\pi}\tau_2^{1-s}\Gamma(s-1/2)\zeta(2s-1)}{\Gamma(s)}\\
+  + \frac{2\pi^s\sqrt{\tau_2}}{\Gamma(s)}\sum_{N\in\mathbb{Z}\backslash\left\{0\right\}}\mu_s(N)N^{s-1/2}K_{s-1/2}(2\pi\tau_2
+    N)e^{2\pi i\tau_1 N}.
+\end{multline}
+In this expression, the summation measure
+\begin{equation}
+  \mu_s(N) = \sum_{n\vert N}n^{-2s+1}
+  \label{eq:summationmeasure}
+\end{equation}
+is of prime physical interest, as it is connected to quantum fluctuations in an
+instanton background.
+\par First focus on the non-degenerate terms in the second line. Analyzing the
+transformation properties under the Borel and Cartan $Sl(2)$ generators
+$\rho
+\begin{pmatrix}
+  1&t\\
+  0&1
+\end{pmatrix}
+:\tau_1\rightarrow \tau_1 + t
+$
+and $\rho
+\begin{pmatrix}
+  t^{-1} & 0\\
+  0 & t
+\end{pmatrix}
+: \tau_2 \rightarrow t^2\tau_2
+$, we readily see that they fit into the framework
+\eqref{eq:automorphiceisenstein}, upon identifying
+\begin{equation}
+  f_K(z) = z^{s-1/2}K_{s-1/2}(z),\quad \delta_{\mathbb{Z}}(z)
+  = \sum_{N\in\mathbb{Z}\backslash\left\{0\right\}}\mu_s(N)\delta(z-N),
+  \label{eq:shpericalvector}
+\end{equation}
+and the representation $\rho$ as
+\begin{equation}
+  E_{+} = iz,\quad E_{-} = i(z\partial_z + 2 -2s)\partial_z,\quad
+  H=2z\partial_z + 2 - 2s.
+\end{equation}
+This is of course equivalent to the representation on homegeneous functions,
+upon Fourier transform in the variable $z$. The power-like degenerate terms may
+be viewed as regulating the singular value of the distribution $\delta$ at
+$z=0$. They may, in principle, be recovered by performing a Weyl reflection on
+the regular part. It is also easy to check that the spherical vector condition,
+$K\cdot f_K(z) \equiv (E_+ - E_-)\cdot f_K(z) = 0$, is the modified Bessel
+equation whose unique decaying solution at $z\rightarrow\infty$ is the
+spherical vector in \eqref{eq:shpericalvector}.
+\par While the representation $\rho$ and its spherical vector $f_K$ are easily
+understood, the distribution $\delta_{\mathbb{Z}}$ requires additional
+technology. Remarkably, the summation measure \eqref{eq:summationmeasure} can
+be written as an infinite product
+\begin{equation}
+  \mu_s(z) = \prod_{p\in\;\mathrm{primes}} f_p(z),\quad f_p(z)
+  = \frac{1-p^{-2s+1}\abs{z}_p^{2s-1}}{1-p^{-2s+1}}\gamma_p(z).
+\end{equation}
+(A simple trial computation of $\mu_s(2.3^2)$ will easily convince the reader
+of
+this equality.) Here $\abs{z}_p$ is the $p$-adic\footnote{A useful physics
+  introduction to $p$-adic and adelic fields in [10]. It is worth noting that a 
+  special function theory analogous to that over the complex numbers exists for
+the $p$-adics.} norm of $z$, i.e $\abs{z}_p = p^{-k}$ with $k$ the largest
+integer such that $p^k$ divides $z$. The function $\gamma_p(z)$ is unity
+if $z$ is a $p$-adic integer $(\abs{z}_p\leq 1)$ and vanishes otherwise.
+Therefore $\mu(z)$ vanishes unless $z$ is an integer $N$. Equation 
+\eqref{eq:automorphiceisenstein} can therefore be expressed as
+\begin{equation}
+  \mathcal{E}_s^{Sl(2)}(e)
+  = \sum_{z\in\mathbb{Q}}\prod_{p\in\mathrm{primes},\infty}
+    f_p(z)\rho(e)\cdot f_K(z),
+    \label{eq:automorphiceisenstein2}
+\end{equation}
+The key observation now is that $f_p$ is in fact the spherical vector for the 
+representation of $Sl(2,\mathbb{Q}_p)$, just as $f_\infty:= f_K$ is the
+spherical
+vector of $Sl(2,\mathbb{R})$. The reader can be convinced of this important
+fact, by evaluating the $p$-adic Fourier transform of $f_p(y)$ on $y$, thereby
+reverting to the $Sl(2)$ representation on homogeneous functions: the result
+\begin{equation}
+  \tilde{f}_p(x) = \int_{\mathbb{Q}_p}\dd z f_p(z)e^{ixz}
+  = \abs{1,x}_p^{-2s}\equiv \mathrm{max}(1,\abs{x}_p)^{-2s},
+\end{equation}
+is precisely the $p$-adic counterpart of the real spherical vector $f_K(x)
+= (1+x^2)^{-s}\equiv\abs{1,x}^{-2}_{\infty}$. The analogue of the decay
+condition is that $f_p$ should have support over the $p$-adic integers only,
+which holds by virtue of the  factor $\gamma_p(y)$. It is easy to check
+that the formula \eqref{eq:automorphiceisenstein2} in this representation
+reproduces the \eqref{eq:eisensteinseries}.
+\par Thus, the $Sl(2,\mathbb{Z})-$invariant distribution $\delta_{\mathbb{Z}}$
+can be straightforwardly obtained by computing the  spherical vector over 
+all $p$-adic fields $\mathbb{Q}_p$. More conceptually, the  Eisenstein series
+may be written \textit{adelically} (or \textit{globally}) as
+\begin{equation}
+  \mathcal{E}_s^{SL(2)}(e) = \sum_{z\in\mathbb{Q}}\rho(e)\cdot
+  f_{\mathbb{A}}(z),\quad f_{\mathbb{A}}
+  = \prod_{p=\mathrm{prime},\infty}f_p(z),
+\end{equation}
+where the sum $z\in\mathbb{Q}$ is over principle adeles\footnote{Adeles are
+  infinite sequences $(z_p)_{p=\mathrm{prime},\infty}$ where all but a  finite
+  set of $z_p$ are  $p$-adic integers. Principle adeles are constant sequences
+  $z_p = z\in \mathbb{Q}$, isomorphic to $\mathbb{Q}$ itself.}, and
+  $f_{\mathbb{A}}$ is the spherical vector of $Sl(2,\mathbb{A})$, invariant
+  under the maximal compact subgroup $K(\mathbb{A}) =\prod_d
+  Sl(2,\mathbb{Z}_p)\times U(1)$ of $Sl(2,\mathbb{A})$. This relation between
+  functions on $G(\mathbb{Z})\backslash G(\mathbb{R})/K(\mathbb{R})$ and
+  functions on $G(\mathbb{Q})\backslash G(\mathbb{A})/K(\mathbb{A})$ is known
+  as the Strong Approximation Theorem, and is a powerful tool in the study of 
+  automorphic forms.
+  \subsubsection{Jacobi Theta Series}
+  Our next example, the Jacobi theta series, demonstates the key role played by
+  Fourier invariant Gaussian characters - "\textit{the Fourier transform of the
+  Gaussian is the Gaussian"}. Our later generalization will involve cubic type
+  characters invariant under Fourier transform.
+  \par In contrast to the Eisenstein series, the Jacobi theta series
+  \begin{equation}
+    \theta(\tau) = \sum_{m\in\mathbb{Z}}e^{i\pi\tau m^2},
+  \end{equation}
+  is a modular form for a  congruence subgroup $\Gamma_{0}(2)$ of
+  $Sl(2,\mathbb{Z})$ with modular weight 1/2 and a non-trivial multiplier
+  system. It may, nevertheless, be cast in the framework
+  \eqref{eq:automorphiceisenstein}, with a minor caveat. The representation
+  $\rho$ now acts on functions of a single variable $x$ as
+  \begin{equation}
+    E_{+} = i\pi x^2, \quad H = \frac{1}{2}(x\partial_x + \partial_x x), \quad
+    E_{-} = \frac{i}{4\pi}\partial^2_x
+  \end{equation}
+  Here, the action of $E_{+}$ and $H$ may be read off form the usual Borel and
+  Cartan actions of $Sl(2)$ ot $\tau$ while the generator $E_{-}$ follows by
+  noting that the Weyl reflection $S:\tau\rightarrow -1/\tau$ can be
+  compensated by Fourier transform on the integer $m$. The invariance of the
+  "comb" distribution $\delta_{\mathbb{Z}} = \sum_{m\in\mathbb{Z}}\delta(x-m)$
+  under Fourier transform is just the Poisson resummation formula.
+  \par Finally (the caveat), the compact generator $K=E_{+} - E_{-}$ is exactly
+  the Hamiltonian of the harmonic oscillator, which notoriously does not admit
+  a normalizable zero energy eigenstate, but rather the Fourier-invariant
+  ground state $f_{\infty}(x) = e^{-\pi x^2}$ of eigenvalue $i/2$. This
+  relaxation of the spherical vector condition is responsible for the
+  non-trivial modular weight and multiplier system. Correspondingly, $\rho$
+  does not represent the group $Sl(2,\mathbb{R})$, but rather its double cover,
+  the metaplectic group.
+  \par Just as for the  Eisenstein series, an adelic formula for the summation
+  measure exists: note that the $p$-adic spherical vector must be invariant
+  under the compact generator $S$ which acts by Fourier transform. Remarkably,
+  the function $f_p(x) = \gamma_p(x)$, imposing support on the integers only is
+  Fourier-invariant - it is the $p$-adic Gaussian! One therefore recovers the
+  "comb" distribution with uniform measure. Note that the $Sl(2)= Sp(1)$ theta
+  series generalizes to higher symplectic groups under the  title of Siegel
+  theta series, relying in the same way on Gaussian Poisson resummation.
+  \subsection{Continuous representations and Eisenstein series}
+  The two $Sl(2)$ examples demonstrate that the essential ingredients for
+  automorphic forms with respect to an arithmetic group $G(\mathbb{Z})$ are (i)
+  an irreducible representation of $\rho$ of $G$ and (ii) corresponding
+  spherical vectors over $\mathbb{R}$ and $\mathbb{Q}_p$. We now explain how to
+  construct these representations by quantizing coadjoint orbits.aaa

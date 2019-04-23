@@ -122,7 +122,7 @@ covariant derivative
 \end{equation}
 For the propagator we get
 \begin{equation}
-  G(x,y;A) = \frac{1}{2}\int_0^\infty{\mathrm{d}\tau e^{-\frac{1}{2}\tau
+  G(x,y;A) = \frac{1}{2}\int_0^\infty\mathrm{d}\tau e^{-\frac{1}{2}\tau
       m^2}\int\limits_{\substack{z_\mu(0)=x_\mu\\ z_\mu(\tau)=y_\mu
         }}{\mathcal{D}z_\mu(t)e^{-\frac{1}{2}\int_0^\tau
         \mathrm{d}t\dot{z}^2_\mu(t)
@@ -489,8 +489,8 @@ internal symmetry space) fields, whose propagators are depicted by single
 lines.
 \par The three-gluon vertex is depicted in the double line notation as
 \begin{equation}
-\begin{tikzpicture}[baseline=center]
-    \begin{feynman}[inline=center]
+\begin{tikzpicture}
+    \begin{feynman}
       \vertex (center1);
       \vertex [above left=0.5cm of center1] (invl);
       \vertex [above right=0.5cm of center1] (invr);
@@ -509,8 +509,8 @@ lines.
   \end{feynman}
 \end{tikzpicture}
 -
-\begin{tikzpicture}[baseline=center]
-    \begin{feynman}[inline=center]
+\begin{tikzpicture}
+  \begin{feynman}
       \vertex (center1);
       \vertex [above left=0.5cm of center1] (invl);
       \vertex [above right=0.5cm of center1] (invr);
@@ -548,7 +548,7 @@ color structure of the four-gluon vertex for simplicity in the case when
 $i_1=j_2=i, i_2=j_3=j, i_3=j_4=k, i_4=j_1=l$, but $i,j,k,l$ take on different
 values. Then only the following term is left:
 \begin{equation}
-  \begin{tikzpicture}[baseline=center]
+  \begin{tikzpicture}
     \begin{feynman}[baseline=center.bottom]
       \vertex (center1);
       \vertex [above left=0.3cm of center1] (invtl);
@@ -593,7 +593,7 @@ propagator, four-loop diagram and a nonplanar diagram}
 \end{SCfigure}
 This dependence on $N$ is also prescribed by the asymptotic-freedom formula
 \begin{equation}
-  g^2 = \frac{12\pi^2}{11N \texrm{ln}(\Lambda/\Lambda_{QCD})}
+  g^2 = \frac{12\pi^2}{11N \textrm{ln}(\Lambda/\Lambda_{QCD})}
 \end{equation}
 of pure $SU(N)$ gauge theory.
 \par Thus the contribution of the first diagram in \ref{fig:nonplanardiagrams}
@@ -664,7 +664,7 @@ planar graphs is complicated but simpler than that of summing all the graphs,
 since the number of planar graphs with $n_0$ vertices grows geometrically at
 large $n_0$:
 \begin{equation}
-  #_p(n_0)\equiv\mathrm{#\;of\;planar\;graphs}\sim\mathrm{const}^{n_0}
+  \sharp_p(n_0)\equiv\mathrm{\sharp\;of\;planar\;graphs}\sim\mathrm{const}^{n_0}
   \label{eq:numberofvertices}
 \end{equation}
 This was shown by Tuttle and Koplic, Beveu, Nussinov, while the total number of

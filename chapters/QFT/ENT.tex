@@ -43,6 +43,7 @@ the Hilbert of gauge-invariant states does not admit a  tensor product
 decomposition, it could be written as a sum of tensor product terms,
 \begin{equation}
   \hilspace_{g\mathrm{inv}} = \bigoplus_i\hilspace_i\otimes\hilspace_i',
+  \label{eq:hilbertspacetensorproductterms}
 \end{equation}
 where each factor $\hilspace_i\otimes\hilspace_i'$ is the Hilbert space in 
 a sector corresponding to a particular value for the centre. Different choices
@@ -112,7 +113,7 @@ which turns out to be,
 \begin{equation}
   -\sum_i p_i\log(p_i) = \alpha_2\frac{A}{\epsilon^2}
   - \frac{1}{6}\log\left(\frac{A}{\epsilon^2}\right) + \cdots,
-  \label{classicalu1full}
+  \label{eq:classicalu1full}
 \end{equation}
 where the ellipsis refer to non-universal finite pieces. The logarithmic term
 arises from the two-dimenstional scalar Laplacian mentioned above, while
@@ -139,12 +140,13 @@ to see by standard quantisation of the electromagnetic field that
   \langle E_z(\mathbf{x_1})E_z(\mathbf{x_2})\rangle = \int
   \frac{d^3k}{(2\pi)^2}\frac{\omega_k}{2}\left(1-\frac{k_z^2}{k^2}\right)e^{i\mathbf{k}\cdot(\mathbf{x}_1
     - \mathbf{x}_2)}
+    \label{eq:generaltwopoint}
 \end{equation}
 (The two-point function is computed at equal time.) Here $\omega_k
 = k = \sqrt{k^2_z + k^2_x + k^2_y}$. Setting the two points to be at the
 boundary, $z=0$, we get
 \begin{equation}
-  \langle E_z(\mathbf{k}_{\|})\E_z(\mathbf{k}_{\|}')\rangle
+  \langle E_z(\mathbf{k}_{\|})E_z(\mathbf{k}_{\|}')\rangle
   = (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}
   + \mathbf{k}_{\|}')k^2_{\|}\int{\frac{dk_z}{4\pi}\frac{1}{k}}.
 \end{equation}
@@ -152,20 +154,22 @@ We see that the integral on the RHS is logarithmically divergent since $k\sim
 k_z$ for large $k_z$. Thus, as noted above, the result needs to be regulated by
 introducing a cut-off for momentum along the $z$ direction, normal to the
 boundary. One efficient way to do this is to take the two points located at
-slightly different values in the $z$ direction, with $\Delta z = \delta$,
+slightlA different values in the $z$ direction, with $\Delta z = \delta$,
 instead of both of them being exactly at the boundary. Repeating the 
 calculation above now gives,
 \begin{equation}
-  \langle E_z(\mathbf{k}_{\|})\E_z(\mathbf{k}_{\|}')\rangle
+  \langle E_z(\mathbf{k}_{\|})E_z(\mathbf{k}_{\|}')\rangle
   = (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}
   + \mathbf{k}_{\|}')k^2_{\|}\int{\frac{dk_z}{4\pi}\frac{e^{ik_z\Delta}}{k}}.
+  \label{eq:twopointelectric}
 \end{equation}
 We see that the divergence in the integral at large $k_z$ is regulated
 resulting in
 \begin{equation}
-  \langle E_z(\mathbf{k}_{\|})\E_z(\mathbf{k}_{\|}')\rangle
+  \langle E_z(\mathbf{k}_{\|})E_z(\mathbf{k}_{\|}')\rangle
   \sim (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}
   + \mathbf{k}_{\|}')k^2_{\|}\log(k_{\|}\Delta).
+  \label{eq:twopointdivergence}
 \end{equation}
 We can see that the result above is analogous to what was obtained for the
 spherical region case. In particular, the result diverges e logarithmically as 
@@ -181,12 +185,370 @@ analogous to the sphere case, namely going like $\log(R/\Delta)$, with $\Delta$
 being the cut-off fir the normal component of momentum, and $R$ being an IR
 scale provided by the size of the region of interest, and also being
 proportional to the two-dimenstional Laplacian along the boundary.
+\par We are now ready to consider the mutual information and relative entropy
+in this theory. Consider the mutual information in the vacuum state first.
+Suppose there are two compact disjoint spatial regions $A,B$. The mutual
+information is given by 
+\begin{equation}
+  I(A,B) = S_A + S_B - S_{AB}
+\end{equation}
+where $S_{AB}$ is the entaglement between the region $A\cup B$ abd the rest. We
+are interested in the classical term's contribution to $I(A,B)$. Since the
+$U(1)$ theory under consideration is free, this is determined by the two-point 
+function, as discussed above, with $p(E_n)$ the probability to be in the
+sector where the normal component of the electric field takes value $E_n$ being
+given by
+\begin{equation}
+  p(E_n(\mathbf{x})) = N\; \mathrm{exp}\left(-\frac{1}{2}\int d^2x d^2
+  y E_n(\mathbf{x})G^{-1}_{nn}(\mathbf{x}-\mathbf{y})E_n(\mathbf{y})\right).
+  \label{eq:twopointvacuum}
+\end{equation}
+Here $N$ is a normalization, $E_n$ denotes the normal component of the electric
+field, $\mathbf{x}\mathbf{y}$ are two points on the boundary and $G_{nn}$ is
+the Green function for the normal component $E_n$.
+\par When we are dealing with the two disjoint regions $A$ and $B$, we have two
+boundaries which are also disjoint. Thus the two point function which appears
+on the RHS is evaluated when the two points $\mathbf{x},\mathbf{y}$ are both on
+the boundary of $A$ or on the boundary of $B$, or when one point is on the
+boundary of $A$ and the other on the boundary of $B$. We saw on general grounds
+in the previous subsection that when the two points are on the same boundary
+the two-point function diverges and, after a cut-off is introduced, is
+proportional to $\log(R/\Delta)$, where $R$ is an IR scale set by the size
+of the region $A$ or $B$. There is no such divergence when the two points
+are located on the two different boundaries of $A$ and $B$ respectively, since
+in this case the two points cannot come close to each other. Hence, the
+two-point function which appears in the exponent in the equation above will
+be dominated by the contribution when the two points are on the same boundary;
+with the contribution from when they are on separate boundaries being suppresed
+parametrically by a factor of $[\log(R/\Delta)]^{-1}$. As a result, the
+probability, $p(E_n^A,E_n^B)$, for the $E_n$ to take the value $E_n^A, E_n^B$
+on the two boundaries $\partial A, \partial B$ will simply be the product
+\begin{equation}
+  p(E_n^A, E_n^B) = p(E_n^A)p(E_n^B),
+  \label{eq:mutinfo}
+\end{equation}
+where $p(E_n^A)$, for example, is the probability that $E_n$ takes value
+$E_n^A$ on $\partial A$ regardless of any value $E_n$ takes on $\partial B$.
+\eqref{eq:mutinfo} is true up to subleading terms which vanish in the continuum
+limit when $\Delta/R\rightarrow 0$. It then follows that the classical term
+will cancel out and not contribute to the mutual information in the continuum
+limit.
+\par Similarly, we can consider the relative entropy between two states. Here
+we will be interested in states  which only carry a finite energy above the
+ground state. Let the corresponding density matrices for some spatial
+region be $\rho^1$ and $\rho^2$ in these two cases; the relative entropy is
+given by 
+\begin{equation}
+  S(\rho^1\mid\rho^2) = \mathrm{Tr}\left(\rho^1\log\rho^1\right)
+  - \mathrm{Tr}\left(\rho^1\log\rho^2\right)
+\end{equation}
+It is easy to see that this becomes
+\begin{equation}
+  S(\rho^1\mid \rho^2) = \sum_i p^1_i\log(\frac{p_i^1}{p^2_i}) + \sum_i
+  p_i^1\mathrm{Tr}_{\hilspace_i}\log(\frac{\bar{\rho}^1_i}{\bar{\rho}_i^2}),
+\end{equation}
+where the bared rhos are the normalised density matrices in the
+$i^{\mathrm{th}}$ sector in state 1 or 2, respectively. We can see, by
+an argument analogous to the one above for mutual information that the first
+term, which is due to the classical contribution to the entanglement, again
+vanishes in the continuum limit. The argument goes as follows. The probability
+$p_i^{1,2}$ is determined by the correlation functions of $E_n$ in state $1,2$.
+The two-point function in the two states to the leading order will be the same,
+and in turn, equal to that in the vacuum \eqref{eq:twopointvacuum}, since it's
+dominated by very high momentum modes whose behaviour will be the same as in
+the vacuum for states that which only carry a finity energy above the vacuum.
+For a region of size $R$, this two-point function goes like $\log(R/\Delta)$
+and therefore diverges when $\Delta\rightarrow 0$. Connected higher point
+correlations can arise is states which are not the vacuum, but these will
+be finite and thus subdominant compared to the two-point function. Therefore,
+$p^1_i, p^2_i$ will be the same up to corrections which vanish as
+$\left[\log(R/\Delta)\right]^{-1}$, and as a result,
+\begin{equation}
+  \log\left(\frac{p_i^1}{p_i^2}\right)\sim \frac{1}{\log(\frac{R}{\Delta})}.
+\end{equation}
+Since $p_i^1$ is normalised so that $\sum_i p_i^1 = 1$, we see that the first
+term will be of order $\left[\log(R/\Delta)\right]^{-1}$ and thus will vanish.
+\par Before we proceed, some comments are worth to be made. We mentioned that
+in general, the two-point function would depend on the boundary Laplacian. For
+a spherical region, the zero mode of the Laplacian needs to be excluded when
+computing the determinant, due to the Gauss law constraint. More generally, all
+zero modes need to be handled with care, but such rigor goes beyond the scope
+of this chapter.
+\par The divergent behaviour of the two-point function going like
+$\log(R/\Delta)$ is true for modes which carry momentum along the boundary that
+is much smaller than $\Delta^{-1}$, (i.e., $k_{\|}\ll\Delta^{-1}$). We can also
+consider modes which have $k_{\|}\sim\Delta^{-1}$. In this case, the two-point
+function is again dominated by the contribution where the two points lie on the
+same boundary. Consider, without loss of generality, two regions corresponding
+to $z<0$ and $z>L$. When the two points are on the two boundaries, $z=0, z=L$,
+the two-point function becomes
+\begin{equation}
+  \langle E_z(\mathbf{k}_{\|})E_z(\mathbf{k}_{\|}')\rangle
+  = (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')k^2_{\|}\int
+  \frac{dk_z}{4\pi}\frac{e^{ik_zL}}{\sqrt{k^2_{\|}+k^2_z}}.  
+\end{equation}
+Integrating, we get
+\begin{equation}
+  \langle E_z(\mathbf{k}_{\|})E_z(\mathbf{k}_{\|}')\rangle
+  = (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')k^2_{\|}K_0(k_{\|}L),
+\end{equation}
+where $K_0$ is called the modifed Bessel function of the second kind. For
+$k_{\|}\sim\Delta^{-1}\gg L^{-1}$, we get
+\begin{equation}
+  \langle E_z(\mathbf{k}_{\|})E_z(\mathbf{k}_{\|}')\rangle
+  = (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')\left(\frac{1}{\Delta^3
+  L}\right)^{1/2}e^{-L/\Delta},
+\end{equation}
+so that the two-point function (where the two points lie on the two boundaries
+for modes with $k_{\|}\sim\Delta^{-1}$) is exponentially suppressed, compared
+to the case when the two points lie on the same boundary. Thus, the
+contribution of these modes will also drop out in the classical part of the
+mutual information. Similarly, if we are considering two states whose behaviour
+at the cut-off scale $\Delta$ is the same as that of the vacuum, then the 
+contribution of modes with $k_{\|}\sim\Delta^{-1}$ will also drop out
+in the relative entropy of these two states.
+\par Let us also briefly consider the case of the magnetic centre. In this
+case, the different superselection sectors are specified by the normal
+component of the magnetic field, \textbf{B},  and the probability of being
+in a superselection sector is specified by the two point function of the normal
+component of \textbf{B}. For the planar boundary considered above at $z=0$, it
+is easy to see that the two-point function is given by,
+\begin{equation}
+  \langle B_z(\mathbf{k}_{\|})B_z(\mathbf{k}_{\|}')\rangle
+  = (2\pi)^2\delta^{(2)}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')\int\frac{dk_z}{4\pi}\frac{e^{ik_z\Delta}}{k}.
+\end{equation}
+This is obviously the same as the two-point function for the electric field
+\eqref{eq:twopointelectric}.
+It is also straightforward to generalize this discussion for a gauge field to 
+other dimensions. In $d+1$ dimensions, \eqref{eq:generaltwopoint} is replaced
+by
+\begin{equation}
+  \langle E_z(\mathbf{x_1})E_z(\mathbf{x_2})\rangle = \int
+  \frac{d^dk}{(2\pi)^d}\frac{\omega_k}{2}\left(1-\frac{k^2_z}{k^2}\right)e^{i\mathbf{k}\cdot(\mathbf{x_1}-\mathbf{x_2})},
+\end{equation}
+where we are still considering the region $z<0$ with a boundary which now has
+extent in $d-1$ spatial dimensions.
+\par It then follows that
+\begin{align}
+  \langle E_z(\mathbf{k}_{\|})E_z(\mathbf{k}_{\|}')\rangle
+  &=(2\pi)^{d-1}\delta^{d-1}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')k^2_{\|}\int
+  \frac{dk_z}{4\pi}\frac{e^{ik_z\Delta}}{k}\nonumber\\
+  &\sim (2\pi)^{d-1}\delta^{d-1}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')k^2_{\|}\log(k_{\|}\Delta),
+\end{align}
+showing that the logarithmic divergence, and boundary Laplacian are universal
+features in all dimensions $d\geq 2$.\footnote{In $d=2$, despite the fact that
+  the compact theory is confined on large length-scales, it is not on small
+length-scales, and thus we expect this result to continue to hold as well.}The
+logarithmic divergence then implies that our arguments go through for the
+$U(1)$ theory in any dimension greater than two. It also follows that the
+mutual information and relative entropy are independent of the classical
+term.
+Our next consideration is the logical extension of the free $U(1)$ theory - we
+want to study theories with charged matter. On the lattice, charged matter adds
+degrees of freedom that live on the spatial lattice sites in the standard
+manner. The discussion above can be readily extended to such a case. The Gauss
+law constraint still results in a non-trivial centre, and the full Hilbert
+space admits a decomposition of the form given in
+\eqref{eq:hilbertspacetensorproductterms}. The label $i$ denotes sectors where
+the centre takes a fixed value. Also, the extended Hilbert space in this case
+is obtained by taking the tensor product of the Hilbert spaces of the gauge
+degrees of freedom (living on the links) and the matter degrees of freedom
+(living on the sites). Passing to the continuum in the electric centre case, or
+equivalently, the extended Hilbert space case, the different sectors are
+specified by the different values taken by the normal component of the electric
+field on the boundary of the region of interest. The probability $p_i$ is a 
+functional of these boundary values, $p_i\equiv p_i\left[E_n\right]$. The
+theory is no longer free, therefore there are non-zero correlation functions of
+higher order, besides the two-point function.
+\par As long as the interactions become weak in the UV sector, at the scale
+of the lattice, one would expect that the theory is perturbative at said scale
+and that the divergence seen in the free field case would dominate over the
+perturbative corrections due to the interactions. Thus, the leading correlation
+would again be the two-point function, which has the same behaviour as in
+\eqref{eq:twopointdivergence} and would diverge in the continuum limit. This
+should be the case in $d=2$, since in that case the gauge coupling is 
+superrenormalisable. In $d=3$, the gauge coupling grows logarithmically and
+becomes strong in the UV; it also becomes strong in the UV in $d>3$, where
+the gauge coupling is non-renormalisable. Therefore, it is unclear what happens
+in the continuum limit for those cases, or even if such a limit exists for
+them. One interesting possibility is that the theory flows to a non-trivial
+fixed point in the UV. In this case, the behaviour of the two-point function
+of the electric field would be determined by its anomalous dimension at said UV
+fixed point. The short distance contribution would take the form
+\begin{equation}
+  \langle E_z(\mathbf{k}_{\|})E_z(\mathbf{k}_{\|}')\rangle \sim
+\delta^{(d-1)}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')k^2_{\|}\int\frac{dk_z}{k^{(d-2(\delta-1))}}e^{ik_z\Delta}
+\end{equation}
+where $\delta$ is the anomalous dimension. If $\delta>(d+1)/2$, so that
+the anomalous dimension exceeds the engineering dimension, then the
+correlations will be even more strongly dominated by the short distance modes
+and one expects the arguments for the independence of the mutual information
+and relative entropy from the classical term to apply. For $\delta < (d+1)/2$,
+the situation is less clear. If the correlations of $E_n$ are finite and
+non-divergent, then it could be that the classical piece continues to
+contribute in the continuum limit to the mutual information and the relative
+entropy.
+\par Suppose that the theory is strong coupled in the UV and flows to a weakly
+coupled one, which is close to the free non-interacting theory, in the IR at an
+energy scacle of order $E\sim \Lambda$. In such cases, one would still expect
+thath the contribution to the classical term from modes with energies
+$E\leq\Lambda$ is approximately governed by thr two-point function and thus,
+the contribution of these modes should drop out in the mutual information or
+the relative entropy. It will be worth trying to make this intuitive argument
+more precise.
 
-
-
-
-
-
+\subsection{Non-Abelian Theory}
+Let us now turn our attention to the non-Abelian case. In this case, in the
+continuum, the different sectors in the electric centre or the EHS definition
+are specified by the  value of $\mathrm{Tr}(E_n^2)$ and other Casismirs (i.e.,
+appropriate local gauge invariant operators) on the boundary, where $E_n$ is
+the normal component of the electric field. The probability to be in
+a particular
+sector is a functional of $\mathrm{Tr}(E_n^2)$ and the other Casismirs and we
+denote it for ease of notation as $p\left[E_n^2\right]$.
+\par Let us start by considering the free $SU(N)$ Yang-Mills theory, say, in
+3+1 dimensions, and consider the region of space $z<0$. The boundary lies at
+$z=0$. It is easy to show that in this case the two-point function is given by
+\begin{gather}
+  \langle E_z(\mathbf{k}_{\|})^2E_z(\mathbf{k}_{\|}')^2\rangle
+  \sim
+  (N^2-1)\delta^{(2)}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')\int{d^2\bar{k}_{\|}\bar{k}_{\|}^2(\mathbf{k}_{\|}-\bar{\mathbf{k}}_{\|})^2}\\
+  \int{\frac{dk_z}{\sqrt{k_z^2+\bar{k}^2_{\|}}}}e^{ik_z\Delta}\int\frac{dk_z}{\sqrt{k_z^2'+(\mathbf{k}_{\|}-\bar{\mathbf{k}}_{\|})^2}}e^{ik_x'\Delta}
+  \end{gather}
+where we have separated the two points  in the $z$ direction by a value $\Delta
+z= \Delta$. We see that now the integral over $\bar{k}_{\|}$, the momentum 
+along the boundary, is also divergent, since $E_z^2$ is a more singular
+operator than $E_z$. Introducing a cut-off along the boundary directions and
+not distinguishing it form $\Delta$, the cut-off along the normal direction, we
+get 
+\begin{equation}
+  \langle E_z(\mathbf{k}_{\|})^2E_z(\mathbf{k}_{\|}')^2\rangle
+  \sim (N^2-1)\delta^{(2)}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')\frac{1}{\Delta^6},
+  \label{eq:twopointnonabel}
+\end{equation}
+up to logarithmic corrections, which we have not kept carefully. This is much
+more singular than the two-point function of $E_z$ in the Abelian case.
+\par It is also easy to calculate the higher point correlators for $E_z^2$ in
+the free case. The contributions to the $n$-point function can be classified in
+terms of the number of disconnected components. The dominant contribution comes
+from the maximally disconnected component going like the product $\langle
+E_z^2(1)E_z^2(2)\rangle\langle E_z^2(3)E_z^2(4)\rangle\cdots\langle E_z^2(n-1)E_z^2(n)\rangle$
+for $n$ even, which diverges as $\Delta^{-2(n+1)}$. In contrast, the fully
+connected contribution goes like $\Delta^{-6}$, as before, and is therefore
+subdominant. As a result, the two-point correlation function dominates the
+correlation functions and hence the probability distribution and therefore the
+classical term is determined by the two-point function
+\eqref{eq:twopointnonabel}. This two-point function is dominated by the UV
+modes at the cut-off. As for the higher-order Casismirs, the two-point function
+is even more singular and therefore dominated even more strongly.
+\par On turning on the gauge coupling, these correlations will change. However,
+Yang-Mills theory is known to be asymptotically free in 3+1 dimensions and
+superrenormalisable in 2+1 dimensions. Therefore, in these cases, we expect
+the behaviour at the scale of the lattice to continue to be that of the
+free theory to good aproximation, and the two-point and higher point
+correlations to diverge, as described above. These divergences of course occur
+because points on the boundary can come close together. When we consider
+two disconnected boundaries, this means that the correlations will be dominated
+by their value when the points lie on the same boundary. As a result, in the
+continuum limit, the joint probability should satisfy the condition
+\begin{equation}
+  p((E^2_n)^A,(E^2_n)^B) = p((E^2_n)^A)p((E^2_n)^B),
+  \label{eq:mutinfononabel}
+\end{equation}
+analogous to \eqref{eq:mutinfo} in the Abelian case, and the contribution of
+the classical piece to the mutual information should therefore vanish. Note
+that this conclusion is equally true in the electric centre definition, where
+the classical piece is given by the first term on the RHS of
+\eqref{eq:entanglemententropy}, and in the EHS definition, where it is given
+by the sum of the first two terms on the RHS of \eqref{eq:entanglemententropy}.
+Both these terms vanish if \eqref{eq:mutinfononabel} is true. Similarly, one
+can argue that the relative entropy for states which only differ from the
+vacuum with finite energy excitations, will also not recieve a contribution
+from the classical piece.
+\par In higher dimensions $d>3$, the theory is non-renormalisable and the 
+situation is more interesting. A continuum limut might exist with the theory
+flowing to a non-trivial fixed point in the UV, and as in the discussion above
+for the Abelian case, the anomalous dimension of $\mathrm{Tr}(E^2)$ would 
+then determine the short distance nature of the two-point and higher point
+correlators. Similarly, adding matter can change the bahaviour of the theory.
+An important example of this type is if the resulting theory becomes
+conformally invariant. Once again, the anomalous dimension of
+$\mathrm{Tr}(E^2)$ plays an important role in determining the nature of the
+short distance correlators. If the correlators are smooth at short distances,
+and do not diverge as $\Delta\rightarrow 0$, then the classical piece could
+potentially contribute to both the mutual information and the relative
+entropy.
+\subsection{$p$-Form Abelian Gauge Theory}
+Our discussion of the Abelian $U(1)$ gauge theory can be generalised to the
+case of a general $p$-form Abelian theory in $d+1$ dimensions. The action
+is given by
+\begin{equation}
+  S = - \frac{1}{2(p+1)!}\int d^{d+1}x H_{\mu_1\mu_2\cdots\mu_{p+1}}H^{\mu_1\mu_2\cdots\mu_{p+1}}
+\end{equation}
+where
+\begin{equation}
+  H_{\mu_1\mu_2\cdots\mu_{p+1}}
+  = (p+1)\partial_{[\mu_1}B_{\mu_2\mu_3\cdots\mu_{p+1}]},
+\end{equation}
+and the square brackets indicate complete anti-symmetrisation.
+\par The EHS is obtained by working the the following gauge
+\begin{equation}
+  B_{0\mu_1\cdots\mu_{p-1}} = 0.
+\end{equation}
+The resulting constrains, analogous to the Gauss law, are
+\begin{equation}
+  \partial^i H_{0i\mu_1\cdots\mu_{p-1}} = 0.
+\end{equation}
+The different superselection sectors, for the electric centre choice are
+therefore specified by the value for the normal component of the 
+electric field, $H_{0n\mu_1\cdots\mu_p}\equiv H_{0i\mu_1\cdots\mu_p}n^i$.
+\par The resulting classical term is then determined by the two-point 
+function of the normal component. For a planar boundary, which we continue to
+denote as $z=0$, we have
+\begin{multline}
+  \langle H_{0zi_1i_2\cdots i_{p-1}}(\mathbf{k}_{\|})H_{0zj_1j_2\cdots
+    j_{p-1}}(\mathbf{k}_{\|}')\rangle\sim\delta^{(d-1)}(\mathbf{k}_{\|}+\mathbf{k}_{\|}')k^2_{\|}(\delta^T_{i_1[j_1}\delta^T_{i_2j_2}\cdots\delta^T_{i_{p-1}j_{p-1}]})\\
+    \times\int\frac{dk_z}{\sqrt{k_z^2+k^2_{\|}}}e^{ik_z\Delta}
+  \end{multline}
+Here
+\begin{equation}
+  \delta^T_{ij}\equiv\delta_{ij} - \frac{(k_{\|})_i(k_{\|})_j}{k^2_{\|}}
+\end{equation}
+is the delta function transverse to the spatial momentum along the boundary
+$\mathbf{k}_{\|}$, and the square brackets in the product of the delta
+functions indicates complete anti-symmetrisation with respect to the
+second indices $j_1,j_2,\cdots,j_{p-1}$.
+\par We see that the two-point function generally involves a Laplacian for
+a $(p-1)$-form living on the boundary which is $(d-1)$-dimensional. The
+contribution is once again dominated by short distance modes and
+logarithmically dependent on the cut-off $\Delta$. As a result, we see that the
+contribution of the classical piece drops out of the mutual information or
+relative entropy.\footnote{As in the gauge field case, the logarithmic
+  dependence on $\Delta$ is true for modes with $k_{\|}\ll\Delta^{-1}$.
+  However, it also follows that these modes have zero contribution to the
+mutual information and the relative entropy in the classical piece.}
+\par Let us also note that when we work with a region which is not the half
+space and the boundary is no longer planar, the logarithmic divergence will be
+cut off by the size of the region of interest. Also, in those more general
+cases, one should be more careful about the zero modes and their contributions.
 \section{Entanglement and Dualities}
-\section{Conclusions}
+In this section, we will study some aspects of the duality between a theory
+with a $p$-form gauge potential in $d+1$ dimensions and the dual theory, which
+is equipped with a $(d-p-1)$-form potential. This is a broad generalisation of
+the electric-magnetic duality in 3+1 dimensions for a gauge field, and is also
+closely related to the Kramers-Wannier duality on the lattice. Our interest
+will be to study how the different choices for the centre of the algebra of
+observables transform under this duality and the accompanying changes in the
+entaglement entropy and related quantities. In particular, we will consider two
+choices of centers for the $p$-form theory, called the electric and magnetic 
+centers and study how they map under duality. We will find that the magnetic 
+centre choice for a region $R$ in the $p$-form case maps to an algebra 
+of observables in the dual theory which is closesly related but not identical
+to the  electric centre of the  dual $(d-p-1)$-form theory in a suitable region
+$\tilde{R}$ of the dual lattice. In the continuum limit, these differences
+become uninmortant for ultraviolet insensitive quantities, like the relative
+entropy and mutual information,  as we mentioned above, and the two dual
+theories therefore agree.
 
+\section{Conclusions}
+In this section :

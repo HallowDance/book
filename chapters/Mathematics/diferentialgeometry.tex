@@ -12,6 +12,27 @@ Ric_g = \lambda g
 \begin{remark}
 An Einsteinian manifold, where $\lambda=0$ is called a \textit{Ricci-flat} manifold.
 \end{remark}
+\begin{definition}[Covering space]
+  Let $X$ be a topological space. A covering space of $X$ is a topological
+  space $C$ together with a continuous surjective map
+  \begin{equation}
+    p : C\rightarrow X
+  \end{equation}
+  such that for every $x\in X$, there exists an open neighborhood $U$ of $x$,
+  such that $p^{-1}(U)$ is a union of disjoint open sets in $C$, each of which
+  is mapped homeomorphically onto $U$ by $p$.
+\end{definition}
+  The map $p$ is called the covering map, the space $X$ is often called the
+  base space of the covering, and the space $C$ is called the total space of
+  the covering. For any point $x$ in the base the inverse image of $x$ in $C$
+  is necessarily a discrete space called the fiber over $x$. The special open
+  neighbourhoods $U$ of $x$ given in the definition are called \textit{evenly
+  covered neighbourhoods}. The evenly covered neighbourhoods form an open cover
+  of the space $X$. The homeomorphic copies of $C$ of an evenly covered
+  neighborhood
+  $U$ are called the \textit{sheets} over $U$. 
+
+
 
 \section{Differential Forms}
 \epigraph{"Hamiltonian mechanics cannot be understood without differential
@@ -751,7 +772,7 @@ $W_2$.
   If $\alpha:\left[a,b\right]\rightarrow \mathbb{R}^2$ is a convex map, then
   the rotation index of $\alpha$ is
   \begin{equation}
-    \int_a^b{\kappa(s)ds = \theta(b)-\theta(a) = 2\pi I
+    \int_a^b{\kappa(s)ds} = \theta(b)-\theta(a) = 2\pi I
   \end{equation}
   where $\kappa(s)$ is the Gaussian curvature.
 \end{definition}

@@ -1,0 +1,156 @@
+\chapter{ZZ-branes}
+\adjustmtc
+\minitoc
+\section{Overview}
+Two-dimensional Euclidean AdS$_2$ (the pseudosphere) was quantized using Liouville quantum field theory by Zamolodchikov
+and Zamolodchikov. In \cite{Zamolodchikov01} they generalized the quantization
+of Liouville theory on the disk \cite{Fateev00} to the non-compact
+geometry of the pseudosphere. The main difference between the
+quantization of the disk and the pseudosphere is the assumption
+with regard to the pseudosphere that the two-point correlation
+function factorizes when the geodesic distance separating the
+two operators diverges\cite{Gesser08}.
+\par
+Using conformal bootstrap methods the Zamolodchikovs
+found a number of conformal invariant boundary conditions,
+that may be imposed at “infinity” of the pseudosphere, and that
+are consistent with the above assumption. These boundary conditions
+were labeled by two positive integers $(\hat{m},\hat{n}$ , where the
+“basic” $(1,1)$ boundary condition played a role quite similar to
+the $(1, 1)$ Cardy boundary state in the minimal conformal field
+theories\footnote{for more information, check the apendices}. In the context of $(p,q)$ minimal non-critical string theory the boundary conditions of the Zamolodchikovs were given an interpretation as branes, the so-called \textbf{ZZ branes}\cite{Shih04}.
+
+\section{Properties of ZZ branes}
+In this subsection, we will review the properties of the FZZT and most importantly, the ZZ branes. This will be important later, when we come back to the Partition functions of Schwarzian quantum mechanics. In order to get a ZZ brane, we must take the tensor product of a FZZT boundary state form Liouville theory and a Cardy state from the matter. This gives the boundary state\cite{Fateev00}
+
+\begin{equation}
+\ket{\sigma;k, l} = \sum_{k',l'}{\int_0^\infty{dP \cos(2\pi P\sigma)\frac{\Psi^*(P)S(k,l;k',l')}{\sqrt{S(1,1;k',l')}}}\ket{P}\rangle_L\ket{k',l'}\rangle_M}
+\end{equation}
+
+Here $(k,l)$ labels the matter Cardy state associated to the minimal model primary $\mathcal{O}_{k,l}$ and $\ket{P}\rangle_L$ and $\ket{k',l'}\rangle_M$ are Liouville and matter Ishibashi states, respectively. The Liouvlille alnd matter wavefunctions are $\cos{2\pi P\sigma}\Psi(P)$ and $S(k,l;k',l')$, where
+
+\begin{gather}
+\Psi(P) = \mu^{-\frac{iP}{b}}\frac{\Gamma(1+\frac{2iP}{b})\Gamma(1+2iPb)}{i\pi P}\\
+S(k,l;k',l') = (-1)^{kl'+k'l}\sin(\frac{\pi p l l'}{q})\sin(\frac{\pi q k k'}{p})
+\end{gather}
+What can be seen from these equations is that the matter wavefunction is essentially the modular S-matrix of the minimal model. Finally, the parameter $\sigma$ is related to the boundary cosmological constant $\mu_B$ via (up to a rescaling for convenience)
+
+\begin{equation}
+\frac{\mu_B}{\sqrt{\mu}} = \cosh\pi b\sigma
+\end{equation}
+From here, we the one-point functions of physical operators on the disk with the FZZT boundary condition can be calculated, as it is in \cite{Shih04}.
+\par
+The previous calculation are evidence that in the full string theory, where the boundary states are representatives of the BRST cohomology, the following is true
+
+\begin{equation}
+\ket{\sigma;k,l} = \sum_{m',n'}{\ket{\sigma + \frac{i(m'q + n'p}{\sqrt{pq}};1,1}}
+\label{eq:zzboundary}
+\end{equation}
+modulo BRST exact states. The result \eqref{eq:zzboundary}, which relates branes with different matter states is a fully quantum result. This relation is difficult to understand semiclassically, where branes with different matter states appear distinct. But there is no contradiction, because \eqref{eq:zzboundary} involves a shift of $\sigma$ by an imaginary quantity, which amounts to analytic continuation of $\mu_B$ from the semiclassical region where it is real and positive.
+\par
+According to \eqref{eq:zzboundary}, the FZZT branes with $(k,l) = (1,1)$ form a \textit{complete basis} of all the FZZT branes of the theory. The branes with other matter states should be thought of as multi-brane states formed out of these elementary FZZT branes. This allows us to simplify our discussion henceforth by restricting our attention, without loss of generality, to the elementary FZZT (and ZZ) branes with $(k,l) = (1,1)$. We will also simplify the notation by dropping the label $(1,1)$ from the boundary states; this label will be implicit for the rest of the section.
+\par
+A second interesting property of the one-point functions is that they are clearly invariant under the transformations
+
+\begin{equation}
+\sigma \Rightarrow -\sigma, \quad \sigma\pm 2i\sqrt{pq}
+\label{eq:zzbranessigma}
+\end{equation}
+
+Again, this is evidence that the states labeled by $\sigma$ should be identified under the transformations \eqref{eq:zzbranessigma} modulo BRST exact states. Therefore it makes more sense to define
+
+\begin{equation}
+z = \cosh\frac{\pi\sigma}{\sqrt{pq}}
+\end{equation}
+and to label the states by $z$
+
+\begin{equation}
+\ket{\sigma}\Rightarrow\ket{z}
+\end{equation}
+such that two states $ket{z}$ and $ket{z'}$ are equal if and only if $z=z'$.
+
+Now we turn our attention to the ZZ boundary states. As was for the case of the FZZT boundary states, these are formed by tensoring a Liouville ZZ boundary state and a matter Cardy state (in this case, the $(1,1)$ matter state). However, here there are subtleties arising from the fact that $b^2$ is rational: the Liouville ZZ states are in one-to-one correspondence
+with the degenerate representations of Liouville theory, which have rather different properties at generic $b$ and at $b^2$ rational. In either case, the prescription given in \cite{Zamolodchikov01} for constructing the ZZ boundary states is to take the formula for the irreducible character for a rational $b^2$:
+
+\begin{equation}
+\hat{chi}_{t,m,n}(q) = \frac{1}{\eta(q)}\sum_{j=0}^t\left(q^{-N(t-2j,m,n)^2/4pq}-q^{-N(t-2j,m,-n)^2/4pq}\right)
+\label{eq:irreduciblecharacter}
+\end{equation}
+
+and replace each term $\frac{1}{\eta(q)}q^(-N^2/4pq)$ with an FZZT boundary state with $\sigma=iN$. This \eqref{eq:irreduciblecharacter}
+
+\begin{gather}
+\ket{t,m,n} = \sum_{j=0}^t\left(\ket{z=\cos\frac{\pi N(t-2j,m,n)}{pq}} - \ket{z=\cos\frac{\pi N(t-2j,m,-n)}{pq}}\right)\nonumber \\
+= (t+1)\left(\ket{z=(-1)^t\cos\frac{\pi(mq+np)}{pq}} - \ket{z=(-1)^t\cos\frac{\pi(mq-np)}{pq}}\right)
+\label{eq:zzbrane}
+\end{gather}
+In this second equation we can observe that we lose dependence of $j$. We recognize the quantity in parentheses to be a ZZ state with $t=0$; thus we conclude that
+\begin{equation}
+\ket{t,m,n} = 
+\begin{cases}
++(t+1)\ket{t=0,m,n}\quad \textnormal{t even}\\
+-(t+1)\ket{t=0,m,q-n}\quad \textnormal{t odd}
+\end{cases}
+\label{eq:zzbranescases}
+\end{equation}
+It is also straightforward to show using \eqref{eq:zzboundary} that
+
+\begin{equation}
+\ket{t,m,n} = \ket{t,p-m,q-n}
+\end{equation}
+and that
+\begin{equation}
+\ket{t,m,n} = 0\quad \textnormal{when}\quad m=p\textnormal{ or } n=q
+\end{equation}
+One should keep in mind that the above three equations are meant to be true modulo BRST null states.
+\par
+One can identify the states with $t=0$ appearing in \eqref{eq:zzbranescases} are identical to the ZZ boundary states for generic $b$, which can be written as differences of just two FZZT states
+\begin{multline}
+\ket{t=0,m,n} = \ket{z=\cos\frac{\pi\sigma(m,n)}{\sqrt{pq}}} - \ket{z=\cos\frac{\pi\sigma(m, -n)}{\sqrt{pq}}}\\
+= 2\sum_{k',l'}\int_0^\infty{dP\sinh(\frac{2\pi m P}{b})\sinh(2\pi n P b)\Psi^*(P)\sqrt{S(1,1;k',l')}\ket{P}\rangle_L\ket{k',l'}\rangle_M}
+\label{eq:zzfromfzzt}
+\end{multline}
+with
+\begin{equation}
+\sigma(m,n) = i(\frac{m}{b}+nb)
+\end{equation}
+The boundary cosmological constant corresponding to $\sigma(m,n)$ is
+\begin{equation}
+\mu_B(m,n) = \sqrt{\mu}(-1)^m\cos(\pi nb^2)
+\end{equation}
+The two subtracted FZZT states in \eqref{eq:zzfromfzzt} have the same boundary cosmological constant.
+\par
+Using the above identifications we can reduce any ZZ brane down to a linear combination of $(t=0,m,n)$ branes with $1\leq m\leq p-1, 1\leq n\leq q-1$ and $mq - np > 0$. We call these $(p-1)(q-1)/2$ branes the \textit{principal ZZ branes}. It is easy to see from \eqref{eq:zzfromfzzt} that the one-point functions of physical operators are sufficient to distinguish the principal ZZ branes from one another. Thus the principal ZZ branes form a complete and linearly independent basis of physical states with ZZ-type boundary conditions.
+\par
+We will conclude this section by discussing an interesting feature of the principal ZZ branes. The ground ring one-point functions in the principal ZZ brane states can be normalized so that (we will drop the label $t=0$ from these states from this point onwards so the notation won't become bloated)
+
+\begin{equation}
+\langle\hat{\mathcal{O}}_{r,s}\ket{m,n} = U_{s-1}\left((-1)^m\cos\frac{\pi n p}{q}\right)U_{r-1}\left((-1)^n \cos\frac{\pi m q}{p}\right)\langle 0\ket{m,n},
+\label{eq:zzpartition}
+\end{equation}
+where $\langle 0\ket{m,n}$ denotes the ZZ partition function (i.e. the one-point function of the identity operator). This is consistent with the multiplication rule 
+\begin{equation}
+\hat{\mathcal{O}}_{r,s} = U_{s-1}(\hat{x})U_{r-1}(\hat{y})
+\end{equation}
+assuming that the principal ZZ branes are eigenstates of the ring generators:
+\begin{equation}
+\hat{x}\ket{m,n} = x_{mn}\ket{m,n}
+\end{equation}
+\begin{equation}
+\hat{y}\ket{m,n} = y_{mn}\ket{m,n}
+\end{equation}
+with eigenvalues
+\begin{equation}
+x_{mn} = (-1)^m\cos\frac{\pi n p}{q}, \quad y_{mn} = (-1)^n\cos\frac{\pi m q}{p}
+\end{equation}
+Let's make a few more comments about the result \eqref{eq:zzpartition}
+\begin{itemize}
+\item It is clear that the general FZZT boundary states labeled by $\sigma$ will not be an eigenstate of the ring generators: this property is special to the ZZ boundary states
+\item Once we have normalized the ring elements to bring their one-point functions to the form \eqref{eq:zzpartition}, the ZZ branes with other matter labels $(k,l)$ will not be eigenstates of the ring elements. Of course, we could have normalized the ring elements with respect to a different $(k,l)$; then \eqref{eq:zzpartition} would have applied to this matter label. Still, it is natural to assume that the branes with matter label $(1,1)$ are eigenstates of the ring.
+\item Finally, one can notice that $x_{mn}$ is essentially the value of the boundary cosmological constant associated with the $(m,n)$ ZZ brane. 
+\end{itemize}
+
+
+
+
+

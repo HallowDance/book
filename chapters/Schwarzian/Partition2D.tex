@@ -1,0 +1,98 @@
+\chapter{Partition function in two dimensions}
+\adjustmtc
+\minitoc
+In this section we will study the path integral formulation of the Schwarzian theory at finite temperature. In particular, we will use its relationship to the group Diff($S^1$) to reformulate 1D Schwarzian QM as a suitable large $c$ limit of 2D Virasoro CFT, that we have analyzed in the first chapter. Similar ideas are analyzed in \cite{Mandal17}.
+\par
+The partition function of the Schwarzian theory \eqref{eq:schwarzaction} is defined as the integral
+
+\begin{equation}
+Z(\beta) = \int\frac{\mathcal{D}f}{SL(2,\mathbb{R})}e^{-S[f]}
+\label{eq:schwarzpartition}
+\end{equation}
+over invertible functions $f$, satisfying the periodicity and monotonicity constraints $f(\tau+\beta) = f(\tau)+\beta$ and $f'(\tau)> 0$. The space of functions with these properties specifies the group of diffeomorphisms of the circle, also known as the Virassoro group.
+\par
+The $SL(2,\mathbb{R})$ quotient in \eqref{eq:schwarzpartition} indicates that the functional integral runs over the infinite dimensional quotent space
+
+\begin{equation}
+\mathcal{M} = \text{Diff}(S^1)/SL(2,\mathbb{R})
+\end{equation}
+of diffeomorphisms modulo the group of Möbius transformations acting on $F=\tan(\frac{\pi f}{\beta})$.This space $ \mathcal{M} $ is called the coadjoint orbit of the identity element $\mathbb{1}\in\text{Diff}(S^1)$, which is known to be a symplectic manifold\cite{Kirilov81}. It symplectic form takes the following form
+\begin{equation}
+\omega = \int_0^{2\pi}dx\left[\frac{df'\wedge df''}{f'^2 - df\wedge df'}\right]
+\end{equation}
+
+This observation was used by Stanford and Witten \cite{Witten17} to calculate the functional integral with the help of the Duistermaat-Heckman (DH) formula\cite{Duistermaat82}.
+\par
+The DH formula applies to any integral over a symplectic manifold of the schematic form
+\begin{equation}
+I = \int dpdq e^{-H(p,q)}
+\end{equation}
+where $H(p,q)$ generates, via the Poisson bracket $\{q,p\} = 1$, a $U(1)$ symmetry of the manifold. The derivation using the DH formula goes beyond the scope of this work. In place of that, we will give the result for the spectral density using the knowledge of ZZ branes, that we have defined in the previous chapter.
+\section{Spectral Density from ZZ branes}
+Firstly, we must recall that the \textit{identity character} of a $c>1$ CFT takes the form
+
+\begin{equation}
+\text{Tr}(q^{L_0})\equiv \chi_0(q) = \frac{q^{\frac{1-c}{24}}(1-q)}{\eta(\tau)}
+\end{equation}
+where $\eta(\tau)$ denotes the Dedekind eta function:
+
+\begin{equation}
+\eta(\tau) = q^\frac{1}{24}\prod_{n=1}^\infty(1-q^n)
+\end{equation}
+ with $q=e^{2\pi i \tau}$. The factor $(1-q)$ in the above formula for the identity character accounts for the presence of the null state $L_{-1}\ket{0} = 0$. The identity character represents the chiral genus one partition function of the identity sector of the Virasoro CFT. Alternatively, we can identify $\chi_0(q)$ with the partition function of the Virasoro CFT on the annulus. This annulus partition function is equal to a trace over an open string sector of the Virasoro CFT, or by using the duality between the open and closed string channels, as the transition amplitude between two ZZ boundary states\cite{Fateev00,CardyCFT}.
+ \begin{equation}
+ \chi_0(q) = \mel{ZZ}{\tilde{q}}{ZZ}
+ \end{equation}
+\par
+The ZZ boundary state is given as an integral over Ishibashi boundary states (up to irrelevant constant factors) \cite{Fateev00}:
+\begin{equation}
+\ket{ZZ} = \int_0^\infty dP\psi_{ZZ}(P)\ket{P}\rangle, 
+\end{equation}
+where
+\begin{equation}
+\Psi_{ZZ}(P) = \frac{2\pi i P}{\Gamma(1-2ibP)\Gamma(1+\frac{2iP}{b}})
+\end{equation}
+In the limit we are considering the boundary states are associated to a circle with a radius that goes to zero and this allows us to approximate $\ket{P}\rangle\rightarrow \ket{P}$. This is the main feature that will allow computation of correlation functions since it can be used to turn a correlation function between ZZ-branes into an integral of a correlation function on the sphere. Using this and taking $\tilde{q} = e^{-\frac{\beta}{b^2}}$, where $\beta$ is the temperature of the Schwarzian theory, the partition function becomes
+\begin{equation}
+Z = \int_0^\infty dP\vert\Psi_{ZZ}(P)\vert^2e^{-\beta\frac{P^2}{b^2}}, \quad \vert\Psi_{ZZ}(P)\vert^2 = \sinh(2\pi b P)\sinh(\frac{2\pi P}{b})
+\end{equation}
+For small $b$ this integral is dominated by states with $P$ of order $b$. Therefore we define $P=kb$ and take the $b\Rightarrow 0$ limit; we can reproduce the result of Witten and Stanford. There is a third way, using a modular bootstrap and taking the large $c$ limit, which is discussed in detail in \cite{Mertens17}
+\section{Schwarzian correlators from ZZ branes}
+In this short section we will exploit the relationship between the Schwarzian theory and Virasoro CFT to compute finite temperature correlation functions of $SL(2,\mathbb{R})$ invariant operators in the Schwarzian theory. The simplest such operator is the Schwarzian itself. It's correlation functions are completely fixed by symmetries. Let's introduce
+\begin{equation}
+\text{Sch}(f,\tau) \equiv \{\tan\frac{\pi f(\tau)}{\beta},\tau\}
+\end{equation}
+From the 2D perspective, we can obtain these correlation functions via the dictionary
+\begin{equation}
+T(\omega)\leftrightarrow \frac{1}{12}\text{Sch}(f,\tau)
+\end{equation}
+These correlation functions are fixed by Virasoro-ward identities. The case of a single insertion corresponds to taking the derivative of the partition function in the open channel with respect to the modulus $q$:
+\begin{equation}
+<T(z)> = \frac{1}{Z}\frac{\partial Z}{\partial \log q}.
+\end{equation}
+It is instructive to evaluate both sides via the representation of the partition function in terms of the ZZ boundary states
+\begin{equation}
+\mel{ZZ}{T}{ZZ} = \frac{1}{Z}\int dk^2 e^{-\beta k^2}\sinh(2\pi k)\mel{k}{T}{k}.
+\end{equation}
+The stress-tensor one-point function is constant on the cylinder, upon mapping the plane to the cylinder via $z=e^{-\frac{\omega}{b}}$, using the standard anomalous transformation law for the stress tensor and that $h_K = \frac{Q^2}{4}+b^2k^2$, one can find that
+\begin{equation}
+<\text{Sch}(f,\tau)> = \frac{2\pi^2}{\beta^2} + \frac{3}{\beta}
+\end{equation}
+Correlation functions of more insertions can be deduced in the same way, but we haven't calculated them in this work.
+\par 
+A more interesting class of correlation functions are those involving the bi-local operators:
+\begin{equation}
+\mathcal{O}(\tau_1,\tau_2)\equiv\left(\frac{\sqrt{f'(\tau_1)f'(\tau_2)}}{\frac{\beta}{\pi}\sin\frac{\pi}{\beta}[f(\tau_1)-f(\tau_2)]}\right)^{2l}.
+\label{eq:bylocal}
+\end{equation}
+These operators naturally live on the 2D space $\kappa$ parametrized by pairs of points $(\tau_1,\tau_2)$ on the thermal circle. The space $\kappa$ is called \textit{kinematic space}, since it plays an analogous geometrical role as the kinematic space associated with 2D holographic CTFs.
+\par 
+To exhibit the geometry of kinematic space $\kappa$, ket us - motivated by the form \eqref{eq:bylocal} of the bi-local operators - associate to any point $(u,v)\in\kappa$ a classical field $\varphi_{cl}(u,v)$ via
+\begin{equation}
+e^{\varphi_{cl}(u,v)} = \frac{\sqrt{f'(u)f'(v)}}{\frac{\beta}{\pi}\sin\frac{\pi}{\beta}[f(u)-f(v)]}
+\end{equation}
+This field satisfies the Liouville equation
+\begin{equation}
+\partial_u\partial_v\varphi_{cl}(u,v) = e^{2\varphi_{cl}(u,v)}
+\end{equation}
+Hence kinematic space $\kappa$ naturally comes with a constant curvature metric $ds^2=e^{2\phi(u,v)}dudv$ and looks like a hyperbolic cylinder with an asymptotic boundary located at $u=v$. Note, however, that the metric on kinematic space is now a dynamical quantity that depends on the dynamical diffeomorphism $f(\tau)$.

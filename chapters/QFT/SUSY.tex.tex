@@ -1,4 +1,4 @@
-%\chapterauthor{Second Author}{Second Author Affiliation}
+%\chapterauthor{Second Author}{Second Author Affiliation}`
 \chapter{Supersymmetry}
 \chapterauthor{Ivo Iliev\\Sofia University}
 \adjustmtc
@@ -40,7 +40,6 @@ The supersymmetric algebra becomes,
     0 & 4E
   \end{bmatrix}
 \end{equation}
-
 intended as acting on the states of the multiplet we are looking for. In
 particular,
 \begin{equation}
@@ -57,7 +56,7 @@ and thus
 \end{equation}
 This means that as operators $Q_1$ and $\bar{Q}_{\dot{1}}$ annihilate the
 multiplet. 
-\par The only nontrivial anticommutation relation that is left is:
+\par The only non-trivial anticommutation relation that is left is:
 \begin{equation}
   \{Q_2,\bar{Q}_{\dot{2}}\} = 1
 \end{equation}
@@ -148,7 +147,7 @@ states, $P_\mu = (E,0,0,E)$ and therefore as before we have that
   \{Q_1^I,\bar{Q}_{\dot{1}}^J\} = 0,
 \end{equation}
 which implies the (operator) equations $Q_1^I=0$ and $\bar{Q}_{\dot{1}}^I=0$,
-for $I=1,\cdots,\sn$. The nontrivial relations are then:
+for $I=1,\cdots,\sn$. The non-trivial relations are then:
 \begin{equation}
 \{Q_2^I, \bar{Q}_{\dot{2}}^J\} = 4E\delta^{IJ}
 \end{equation}
@@ -273,10 +272,11 @@ two fermions.
     \end{itemize}
 
   \end{example}
-What is broken!
 \section{General}
 \begin{definition}[R-symmetry]
-In supersymmetric theories, an R-symmetry is the symmetry transforming different supercharges into each other. In the simplest case of the $\sn=1$ supersymmetry, such R-symmetry is isomorphic to a global $U(1)$ group or it's discrete subgroup. For extended supersymmetry theories, the R-symmetry group becomes a global non-abelian group.  
+In supersymmetric theories, an R-symmetry is the symmetry transforming
+different supercharges into each other. In the simplest case of the $\sn=1$
+supersymmetry, such R-symmetry is isomorphic to a global $U(1)$ group or its discrete subgroup. For extended supersymmetry theories, the R-symmetry group becomes a global non-abelian group.  
 \end{definition}
 
 \begin{remark}
@@ -325,32 +325,758 @@ coefficient must be positive for all $\xi$. In particular, the strongest result 
   M\geq|Z|
 \end{equation}
 \end{example}
-%%%\begin{table}
-%%%    \tabletitle{Examples for illustrating attacks}
-%%%    \begin{tabular}{|c|c|c|c|}
-%%%        \hline
-%%%        \textbf{Job} & \textbf{Sex} & \textbf{Age} & \textbf{Disease} \\
-%%%        \hline
-%%%        Engineer & Male & 35 & Hepatitis \\
-%%%        Engineer & Male & 38 & Hepatitis \\
-%%%        Lawyer & Male & 38 & HIV \\
-%%%        Writer & Female & 30 & Flu \\
-%%%        Writer & Female & 30 & HIV \\
-%%%        Dancer & Female & 30 & HIV \\
-%%%        Dancer & Female & 30 & HIV \\
-%%%        \hline
-%%%    \end{tabular}
-%%%    \label{table:rawpatient}
-%%%\end{table}
 \section{Supersymmetric theories on curved manifolds}
 \textit{Remark:} Supersymmetric theories may be defined only on backgrounds admitting solutions to certain Killing spinor equations,
 \begin{align}
 \left(\nabla_\mu-iA_\mu\right)\zeta + iV_\mu\zeta + iV^\nu\sigma_{\mu\nu}\zeta = 0\\
-\left(\nabla_\mu+iA_\mu\right)\tilde{\zeta} - iV_\mu\tilde{\zeta} 0 iV^\nu\tilde{\sigma}_{\mu\nu}\tilde{\zeta} = 0
+\left(\nabla_\mu+iA_\mu\right)\tilde{\zeta} - iV_\mu\tilde{\zeta} -  iV^\nu\tilde{\sigma}_{\mu\nu}\tilde{\zeta} = 0
 \end{align}
 which in four dimensions and Euclidean signature are
 equivalent to the requirement that the manifold is complex and the metric Hermitian.
 
-%\begin{Glossary}
+\section{Supersymmetric Chern-Simons-matter theories}
 
-%\end{Glossary}
+In this section we will introduce the basic building blocks of supersymmetric
+Chern-Simons-matter theories. We will work in Euclidean space, and we will put
+the theories on the three-sphere, since we are eventually interested in
+computing the free energy of the gauge theory in this curved space. 
+\subsection{Conventions}
+In Euclidean space, the fermions $\psi$ and $\bar{\psi}$ are independent and 
+they transform and they transform in the same representation of the Lorentz
+group. Their index structure is:
+\begin{equation}
+  \psi^\alpha, \quad\bar{\psi}^\alpha .
+\end{equation}
+We will take $\gamma_\mu$ to be the Pauli matrices, which are hermitian, and
+\begin{equation}
+  \gamma_{\mu\nu} = \frac{1}{2}\left[\gamma_\mu,\gamma_nu\right]
+= i\epsilon_{\mu\nu\rho}\gamma^{\rho}
+\end{equation}
+We introduce the usual symplectic product through the antisymmetric matrix
+\begin{equation}
+  C_{\alpha\beta} = 
+  \begin{pmatrix}
+        0 & C\\
+        -C & 0
+  \end{pmatrix}.
+\end{equation}
+We set $C=-1$ and denote the matrix by $\epsilon_{\alpha\beta}$. The product
+is
+\begin{equation}
+  \bar{\epsilon}\lambda = \bar{\epsilon}^\alpha
+  C_{\alpha\beta}\lambda^\beta .
+\end{equation}
+Notice that
+\begin{equation}
+  \bar{\epsilon}\gamma^\mu\lambda = \bar{\epsilon}^\beta
+  C_{\beta\gamma}(\gamma^\mu)^\gamma_\alpha\lambda^\alpha .
+\end{equation}
+It is easy to check that
+\begin{equation}
+\bar{\epsilon}\lambda = \lambda\bar{\epsilon},\quad
+\bar{\epsilon}\gamma^\mu\lambda = -\lambda\gamma^\mu\bar{\epsilon},
+\end{equation}
+and in particular
+\begin{equation}
+  (\gamma^\mu\bar{\epsilon})\lambda = -\bar{\epsilon}\gamma^\mu\lambda .
+\end{equation}
+We also have the following Fierz identities
+\begin{equation}
+  \bar{\epsilon}(\epsilon\psi) + \epsilon(\bar{\epsilon}\psi)
+  + (\bar{\epsilon}\epsilon)\psi = 0
+\end{equation}
+and
+\begin{equation}
+  \epsilon(\bar{\epsilon}\psi) + 2(\bar{\epsilon}\epsilon)\psi
+  + (\bar{\epsilon}\gamma_\mu\psi)\gamma^\mu\epsilon = 0.
+\end{equation}
+\subsection{Vector multiplet and supersymmetric Chern-Simons theory}
+  We first start with theories based on vector multiplets. The three
+  dimensional Euclidean $\mathcal{N}=2$ vector superfield $V$ has the following
+  content
+  \begin{equation}
+    V: \quad A_\mu,\sigma,\lambda,\bar{\lambda}, D,
+  \end{equation}
+  where $A_\mu$ is a gauge field, $\sigma$ is an auxiliary scalar field,
+  $\lambda,\bar{\lambda}$ twi-component complex Dirac spinors, and $D$ is an 
+  auxiliary scalar. This is just the dimensional reduction of the
+  $\mathcal{N}=1$ vector multiplet in 4 dimensions, and $\sigma$ is the
+  reduction of the fourth component of $A_\mu$. All fields are valued in
+  the Lie algebra $\mathfrak{g}$ of the gauge group $G$. For $G=U(N)$ our 
+  convention is that $\mathfrak{g}$ are Hermitian matrices. It follows
+  that the gauge covariant derivative is given by
+  \begin{equation}
+    \partial_\mu + i\left[A_\mu,.\;\right]
+  \end{equation}
+  while the gauge field strength is
+  \begin{equation}
+    F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
+    + i\left[A_\mu,A_\nu\right].
+  \end{equation}
+The transformations of the fields are generated by two independent complex 
+structures $\epsilon$, $\bar{\epsilon}$. They are given by,
+\begin{align}
+  \delta A_\mu &= \frac{i}{2}(\bar{\epsilon}\gamma_\mu\lambda
+  - \bar{\lambda}\gamma_\mu\epsilon),\nonumber\\
+  \delta\sigma &= \frac{1}{2}({\bar{\epsilon}}\lambda
+  - \bar{{\lambda}}\epsilon),\nonumber\\
+  \delta\lambda &= -\frac{1}{2}\gamma^{\mu\nu}\epsilon F_{\mu\nu} - D\epsilon
+  + i\gamma^\mu\epsilon D_\mu\sigma + \frac{2i}{3}\sigma\gamma^\mu
+  D_\mu\epsilon,\nonumber\\
+  \delta\bar{\lambda} &= - \frac{1}{2}\gamma^{\mu\nu}F_{\mu\nu} + D\bar{\epsilon}
+  - i\gamma^\mu\bar{\epsilon}D_\mu\sigma
+  - \frac{2i}{3}\sigma\gamma^{\mu}D_\mu\bar{\epsilon},\nonumber\\
+  \delta D &= -\frac{i}{2}\bar{\epsilon}\gamma^\mu D_\mu\lambda
+  - \frac{i}{2}D_\mu\bar{\lambda}\gamma^\mu\epsilon
+  + \frac{i}{2}\left[\bar{\epsilon}\lambda,\sigma\right]
+  + \frac{i}{2}\left[\bar{\lambda}\epsilon, \sigma\right]
+  - \frac{i}{6}(D_\mu\bar{\epsilon}\gamma^\mu\lambda
+  + \bar{\lambda}\gamma^{\mu}D_\mu\epsilon),
+\end{align}
+and we split naturally
+\begin{equation}
+\delta = \delta_\epsilon + \delta_{\bar\epsilon}.
+\end{equation}
+Here we follow the conventions of \cite{Hama11}, be we change the sign of the gauge
+connection: $A_\mu\rightarrow - A_\mu$. The derivative $D_\mu$ is covariant
+with respect to both the gauge field and the spin connection. On all the
+fields, except $D$, the commutator
+$\left[\delta_{\epsilon},\delta_{\bar{\epsilon}}\right]$ becomes a sum
+of translation, gauge transformation, Lorentz rotation, dilation and
+$R$-rotation:
+\begin{align}
+  \left[\delta_\epsilon, \delta_{\bar{\epsilon}}\right]A_\mu
+  &= iv^\nu\partial_\nu A_\mu + i\partial_\mu\nu^\nu A_\nu
+  - D_\mu\Lambda,\nonumber\\
+  \left[\delta_\epsilon, \delta_{\bar{\epsilon}}\right]\sigma
+  &= i\nu^\mu\partial_\mu\sigma + i\left[\Lambda, \sigma\right] + \rho\sigma,
+  \nonumber\\
+  \left[\delta_\epsilon, \delta_{\bar{\epsilon}}\right]\lambda
+  &= i\nu^\mu\partial_\mu\lambda
+  + \frac{i}{4}\Theta_{\mu\nu}\gamma^{\mu\nu}\lambda + i\left[\Lambda,
+  \lambda\right] + \frac{3}{2}\rho\lambda + \alpha\lambda,\nonumber\\
+  \left[\delta_\epsilon, \delta_{\bar{\epsilon}}\right]\bar{\lambda}
+  &= i\nu^\mu \partial_\mu\bar{\lambda}
+  + \frac{i}{4}\Theta_{\mu\nu}\bar{\lambda} + i\left[\Lambda,
+  \bar{\lambda}\right] + \frac{3}{2}\rho\bar{\lambda}
+  - \alpha\bar{\lambda},\nonumber\\
+  \left[\delta_\epsilon, \delta_{\bar{\epsilon}}\right]D &=i\nu^\mu\partial_\mu
+  D + i\left[\Lambda, D\right] + 2\rho
+  D + \frac{1}{3}\sigma(\bar{\epsilon}\gamma^\mu\gamma^{\nu}D_\mu D_\nu\epsilon
+  -\epsilon\gamma^\mu\gamma^\nu D_\mu D_\nu\bar{\epsilon}),
+\end{align}
+where
+\begin{align}
+  \nu^\mu &= \bar{\epsilon}\gamma^\mu\epsilon,\nonumber\\
+  \Theta^{\mu\nu} &= D^{[\mu}v^{\nu]}
+  + \nu^\lambda\omega^{\mu\nu_\lambda},\nonumber\\
+  \Lambda &= \nu^\mu i A_\mu + \sigma\bar{\epsilon}\epsilon\nonumber\\
+  \rho &= \frac{i}{3}(\bar{\epsilon}\gamma^{\mu}D_\mu\epsilon + D_\mu
+  \bar{\epsilon}\gamma^\mu\epsilon),\nonumber\\
+  \alpha &= \frac{i}{3}(D_\mu\bar{\epsilon}\gamma^{\mu}\epsilon
+  - \bar{\epsilon}\gamma^\mu D_\mu\epsilon).
+\end{align}
+Here, $\omega_\lambda^{\mu\nu}$ is the spin connection. As a check, let us
+calculate the commutator acting on $\sigma$. We have,
+\begin{align}
+  \left[\delta_\epsilon, \delta_{\bar{\epsilon}}\right]\sigma
+  &= \delta_\epsilon\left(\frac{1}{2}\bar{\epsilon}\lambda\right)
+  - \delta_{\bar{\epsilon}}\left(-\frac{1}{2}\bar{\lambda}\epsilon\right)\nonumber\\
+  &=\frac{1}{2}\bar{\epsilon}\left(-\frac{1}{2}\gamma^{\mu\nu}\epsilon
+    F_{\mu\nu}
+  - D\epsilon + i\gamma^\mu\epsilon D_\mu \sigma\right)
+  + \frac{i}{3}\bar{\epsilon}\gamma^{\mu}(D_\mu\epsilon)\sigma\nonumber\\
+  &+ \frac{1}{2}(-\frac{1}{2}\gamma^{\mu\nu}\bar{\epsilon}F_{\mu\nu}
+  + D\epsilon - i\gamma^{\mu}\bar{\epsilon}D_\mu\sigma)\epsilon
+  - \frac{i}{3}\gamma^\mu(D_\mu\bar{\epsilon})\epsilon\sigma\nonumber\\
+  &= i\bar{\epsilon}\gamma^\mu\epsilon D_\mu\sigma + \rho\sigma.
+\end{align}
+In order for the supersymmetry algebra to close, the last term in the RHS of
+$\left[\delta_\epsilon, \delta_{\bar{\epsilon}}\right]D$ must vanish. This is
+the case if the Killing spinors satisfy:
+\begin{equation}
+  \gamma^\mu\gamma^\nu D_\mu D_\nu\epsilon = h\epsilon,\quad
+  \gamma^\mu\gamma^\nu D_\mu D_\nu \bar{\epsilon} = h\bar{\epsilon}
+  \label{eq:spinorrequirement}
+\end{equation}
+for some scalar function $h$. A sufficient condition for this is to simply have
+\begin{equation}
+  D_\mu\epsilon = \frac{i}{2r}\gamma_\mu\epsilon, \quad
+  D_\mu\bar{\epsilon}=\frac{i}{2r}\gamma y_\mu\bar{\epsilon}
+\end{equation}
+and
+\begin{equation}
+  h = - \frac{9}{4r^2}
+  \label{eq:equationh}
+\end{equation}
+where $r$ is the radius of the three-sphere. This condition is satisfied by one
+of the Killing spinors on the three-sphere (the one which is constant in the
+left-invariant frame). Notice that, with this choice $\rho$ vanishes.
+\par The Euclidean SUSY Chern-Simons (CS) action, in flat space, is given by
+\begin{align}
+  S_{SCS} &= - \int d^3x \mathrm{Tr}\left(A\wedge dA + \frac{2i}{3}A^3
+    - \bar{\lambda}\lambda + 2D\sigma\right)\\
+    &= -\int d^3x
+    \mathrm{Tr}\left(\epsilon^{\mu\nu\rho}\left(A_\mu\partial_\nu A_\rho
+      + \frac{2i}{3}A_\mu A_\nu A_\rho\right)
+    - \bar{\lambda}{\lambda}+2D\sigma\right).
+  \end{align}
+
+  Here $\mathrm{Tr}$ denotes the trace in the fundamental representation. The
+  part of the action involving the gauge connection $A$ is the standard,
+  bosonic CS action in three dimensions. This action was first considered
+  from the point of view of QFT, in \cite{Deser82}, where the total action for
+  a non-abelian gauge field was the sum of the standard Yang-Mills action and
+  the CS action. In \cite{Witten89}, the CS action was considered by itself and shown
+  to lead to a topological gauge theory.
+  \par We can check that the SUSY CS action is invariant under the
+  supersymmetry generated by $\delta_\epsilon$ (the proof for
+  $\delta_{\bar{\epsilon}}$ is similar). The  SUSY variation of the integrand
+  of the action is
+  \begin{multline}
+    (2\delta A_\mu\partial_\nu A_\rho + 2i\delta A_\mu A_\nu
+    A_\rho)\epsilon^{\mu\nu\rho} - \bar{\lambda}\delta\lambda + 2(\delta
+    D)\sigma + 2D\delta\sigma = \\-i\bar{\lambda}\gamma_\mu\epsilon\partial_\nu
+    A_\rho\epsilon^{\mu\nu\rho} + \bar{\lambda}\gamma_\mu\epsilon A_\nu A_\rho
+    \epsilon^{\mu\nu\rho} - \bar{\lambda}(-\frac{1}{2}\gamma^{\mu\nu}F_{\mu\nu}
+    - D + i\gamma^\mu D_\mu\sigma)\epsilon
+    - \frac{2i}{3}\bar{\lambda}\gamma^\mu D_\mu\epsilon\sigma\\
+    -i(D_\mu\bar{\lambda})\gamma^\mu\sigma\epsilon
+    + i\left[\bar{\lambda}\epsilon, \sigma\right]\sigma
+    - \frac{i}{3}\bar{\lambda}\gamma^\mu D_\mu\epsilon\sigma
+    - \bar{\lambda}\epsilon D.
+  \end{multline}
+  It is obvious that the terms involving $D$ cancel. Let us consider the terms
+  involving the gauge field. Using the gamma matrix comutator, we find
+  \begin{equation}
+    \frac{1}{2}\bar{\lambda}\gamma^{\mu\nu} F_{\mu\nu}\epsilon = i\bar{\lambda}
+    \gamma_\rho\epsilon\epsilon^{\mu\nu\rho}\partial_\mu A_\nu
+    - \bar{\lambda}\gamma_\rho\epsilon\epsilon^{\mu\nu\rho}A_\mu A_\nu
+  \end{equation}
+  which cancels the first two terms in the variation. Let us now look at the
+  remaining terms. The covariant derivative of $\bar{\lambda}$ is
+  \begin{equation}
+    D_\mu \bar{\lambda} = \partial_\mu\bar{\lambda}
+    + \frac{i}{2r}\gamma_\mu\bar{\lambda} + i\left[A_\mu, \bar{\lambda}\right].
+  \end{equation}
+  If we integrate by parts the term involving the derivative of $\lambda$ we
+  find in total
+  \begin{multline}
+    i\bar{\lambda}\gamma^\mu\epsilon\partial_\mu\sigma
+    + i\bar{\lambda}\gamma^\mu\partial_\mu\epsilon\sigma
+    + \frac{1}{2r}(\gamma^\mu\bar{\lambda})\gamma_\mu\epsilon
+    + \left[A_\mu,\bar{\lambda}\right]\gamma^\mu\epsilon\sigma=\\
+    =i\bar{\lambda}\gamma^\mu\epsilon\partial_\mu\sigma
+    + i\bar{\lambda}\gamma^\mu D_\mu \epsilon \sigma + \left[A_\mu,
+    \bar{\lambda}\right]\gamma^\mu\epsilon\sigma
+  \end{multline}
+  The derivative of $\sigma$ cancels against the corresponding term in the
+  covariant derivative of $\sigma$. Putting all together, we find
+  \begin{equation}
+    i\bar{\lambda}\gamma^\mu(D_\mu\epsilon)\sigma
+    - i \bar{\lambda}\gamma^\mu(D_\mu\epsilon)\sigma + \left[A_\mu,
+    \bar{\lambda}\right]\gamma^\mu\epsilon\sigma
+      + \bar{\lambda}\gamma^\mu\epsilon\left[A_\mu,
+      \sigma\right]+i\left[\bar{\lambda}\epsilon,\sigma\right]\sigma.
+\end{equation}
+The last three terms cancel due to the cyclic property of the trace. This
+proves the invariance of the SUSY CS theory.
+\par In the path integral, the SUSY CS action enters the form
+\begin{equation}
+ \mathrm{exp}\left(\frac{ik}{4\pi}S_{\mathrm{SCS}}\right)
+ \label{eq:susycspathintegral}
+\end{equation}
+where $k$ plays the role of the inverse coupling constant and it is referred to
+as the level of the CS theory. In a consistend quantum theory,  $k$ must be an
+integer. This is due to the fact that the Chern-Simons action for the
+connection $A$ is not invariant under large gauge transformations, but changes
+by an integer times $8\pi^2$. The quantization of $k$ guarantees that
+\eqref{eq:susycspathintegral} remains invariant.
+\par Of course, there  is another Lagrangian for vector multiplets, namely
+the Yang-Mills Lagrangian,
+\begin{equation}
+  \mathcal{L}_{\mathrm{YM}} = \mathrm{Tr}\left[\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+    + \frac{1}{2}D_\mu\sigma D^\mu\sigma
+    + \frac{1}{2}\left(D+\frac{\sigma}{r}\right)^2
+    + \frac{i}{2}\bar{\lambda}\gamma^\mu D_\mu \lambda
+    + \frac{i}{2}\bar{\lambda}\left[\sigma,\lambda\right]
+  - \frac{1}{4r}\bar{\lambda}\lambda\right].
+  \label{eq:ymlagrangian}
+\end{equation}
+In the flat space limit $r\rightarrow\infty$, this becomes the standard
+(Euclidean) super Yang-Mills theory in three dimensions. The Lagrangian
+\eqref{eq:ymlagrangian} is not only invariant under the SUSY transformations,
+but it can also be written as a superderivative,
+\begin{equation}
+  \bar{\epsilon}\epsilon\mathcal{L}_{\mathrm{YM}}
+  = \delta_{\bar{\epsilon}}\delta_{\epsilon}\mathrm{Tr}\left(\frac{1}{2}\bar{\lambda}\lambda
+  - 2D\sigma\right).
+\end{equation}
+This will be important later on.
+\subsection{Supersymmetric matter multiplets}
+We will now add supersymmetric matter, i.e. a chiral multiplet $\Phi$ in
+a representation $R$ of the gauge group. Its components are
+\begin{equation}
+  \Phi :\quad \phi,\bar{\phi},\psi,\bar{\psi}, F,\bar{F}.
+\end{equation}
+The supersymmetry transformations are
+\begin{align}
+  \delta\phi &= \bar{\epsilon}\psi,\nonumber\\
+  \delta\bar{\psi} &= \epsilon\bar{\psi},\nonumber\\
+  \delta\psi &= i\gamma^\mu\epsilon D_\mu\phi + i\epsilon\sigma\phi
+  + \frac{2\Delta i}{3}\gamma^\mu D_\mu\epsilon\phi
+  + \bar{\epsilon}F,\nonumber\\
+  \delta{\bar{\psi}} &= i\gamma^\mu\bar{\epsilon} D_\mu \bar{\psi}
+  + i\bar{\phi}\sigma\bar{\epsilon} + \frac{2\Delta i}{3}\bar{\phi}\gamma^\mu
+  D_\mu\bar{\epsilon} + \bar{F}\epsilon,\nonumber\\
+  \delta F &= \epsilon(i\gamma^\mu D_\mu \psi - i\sigma\psi - i\lambda\phi)
+  + \frac{i}{3}(2\Delta - 1)D_\mu\epsilon\gamma^\mu\psi,\nonumber\\
+  \delta\bar{F} &= \bar{\epsilon}(i\gamma^\mu D_\mu \bar{\psi}
+  - i\bar{\psi}\sigma + i\bar{\psi}\bar{\lambda}) + \frac{i}{3}(2\Delta
+  -1)D_\mu\bar{\epsilon}\gamma^\mu\bar{\psi}
+\end{align}
+where $\Delta$ is the possible anomalous dimension of $\phi$. For theories
+with $\mathcal{N}\geq 3$ supersymmetry, the field has the canonical dimension
+\begin{equation}
+  \Delta = \frac{1}{2},
+\end{equation}
+but in general this is not the case.
+\par The commutators of these transformations are given by
+\begin{align}
+  \left[\delta_\epsilon,\delta_\bar{\epsilon}\right]\phi
+  &= i\nu^\mu\partial_\mu\phi + i\Lambda\phi + \Delta\rho\phi
+  - \Delta\alpha\phi\\
+  \left[\delta_\epsilon,\delta_\bar{\epsilon}\right]\bar{\phi}
+  &= i\nu^\mu\partial_\mu\bar{\phi} - i\Lambda\bar{\phi} + \Delta\rho\bar{\phi}
+  +\Delta\alpha\bar{\phi}\\
+  \left[\delta_\epsilon,\delta_\bar{\epsilon}\right]\psi
+  &= i\nu^\mu\partial_\mu\psi+\frac{1}{4}\Theta_{\mu\nu}\gamma^{\mu\nu}\psi
+  + i\Lambda\psi + \left(\Delta + \frac{1}{2}\right)\rho\psi
+  + (1-\Delta)\alpha\psi\\
+  \left[\delta_\epsilon,\delta_\bar{\epsilon}\right]\bar{\psi}
+  &= i\nu^\mu\partial_\mu\bar{\psi}
+  + \frac{1}{4}\Theta_{\mu\nu}\psi^{\mu\nu}\bar{\psi} - i\bar{\psi}\Lambda
+  + \left(\Delta + \frac{1}{2}\right)\rho\bar{\psi} + \left(\Delta
+  -1\right)\alpha\bar{\psi},\\
+  \left[\delta_\epsilon,\delta_\bar{\epsilon}\right]F &= i\nu^\mu\partial_\mu F + i\Lambda F + \left(\Delta + 1\right)\rho F + \left(2-\Delta\right)\alpha F,\\
+      \left[\delta_\epsilon,\delta_\bar{\epsilon}\right]\bar{F}
+      &= i\nu^\mu\partial_\mu\bar{F} - i\bar{F}\Lambda + \left(\Delta
+  + 1\right)\rho\bar{F} + \left(\Delta -2\right)\alpha\bar{F}.
+\end{align}
+The lowest components of the superfields are  assigned the dimension $\Delta$
+and $R$-charge $\mp\Delta$. The supersymmetry algebra closes off-shell
+when the Killing spinors $\epsilon,\bar{\epsilon}$ satisfy
+\eqref{eq:spinorrequirement} and $h$ is given by \eqref{eq:equationh}.
+As a check, we compute
+\begin{align}
+  \left[\delta_\epsilon,\delta_\bar{\epsilon}\right]\phi &=\\
+                                                         &=\bar{epsilon}\left(i\gamma^\mu\epsilon
+  D_\mu\phi + i\epsilon\sigma\phi
++ \frac{2i\Delta}{3}\gamma^\mu(D_\mu\epsilon)\phi\right) = i\nu^\mu D_\mu\phi
++ i\sigma\bar{\epsilon}\epsilon
++ \frac{2i\Delta}{3}\left(\bar{\epsilon}\gamma^\mu D_\mu\epsilon\right),
+\end{align}
+which is the wished-for result.
+\par Let us now consider supersymmetric Lagrangians for the matter
+hypermultiplet. If the fields have their canonical dimensions, the
+Lagrangian:
+\begin{equation}
+  \mathcal{L} = D_\mu\bar{\phi} D^\mu \phi - i\bar{\psi}\gamma^\mu D_\mu \psi
+  + \frac{3}{4r^2}\bar{\phi}\phi + i\bar{\psi}\sigma\psi
+  + i\bar{\psi}\lambda\phi - i\bar{\phi}\bar{\lambda}\psi + i\bar{\psi} D\phi
+  + \bar{\phi}\sigma^2\phi + \bar{F}F
+  \label{eq:hyperlagrangian}
+\end{equation}
+is invariant under supersymmetry if the Killing spinors
+$\epsilon,\bar{\epsilon}$ satisfy \eqref{eq:spinorrequirement}, with $h$ given
+as in \eqref{eq:equationh}. The quadratic part of the Lagrangian for $\phi$
+gives indeed the standard conformal coupling for  a scalar field. We recall
+that the action for a massless scalar field in a curved space of $n$ dimensions
+contains a coupling to the curvature $R$ given by
+\begin{equation}
+  S = \int \mathrm{d}^n x\sqrt{g}(g^{\mu\nu}\partial_\mu\phi\partial_\nu\phi
+  + \xi R\phi^2),
+\end{equation}
+where $\xi$ is a constant. This action is conformally invariant when
+\begin{equation}
+\xi = \frac{1}{4}\frac{n-2}{n-1}.
+\end{equation}
+If the  spacetime is an $n$-sphere of radius $r$, the curvature is
+\begin{equation}
+  R = \frac{n(n-1)}{r^2}
+\end{equation}
+and the conformal coupling of the scalar leads to an effective mass
+term of the form
+\begin{equation}
+  \frac{n(n-2)}{4r^2}\phi^2
+\end{equation}
+which in $n=3$ dimensions gives the quadratic term for $\phi$ in
+\eqref{eq:hyperlagrangian}. 
+\par If the fields have non-canonical dimensions, the Lagrangian
+\begin{multline}
+  \mathcal{L_\mathrm{mat}} = D_\mu\bar{\phi} D^\mu\phi + \bar{\phi}\sigma^2\phi
+  + \frac{i(2\Delta-1)}{r}\bar{\phi}\sigma\phi
+  + \frac{\Delta(2-\Delta)}{r^2}\bar{\phi}\phi + i\bar{\phi}D\phi + \bar{F}F\\
+  -i\bar{\psi}\gamma^\mu D_\mu \psi + i\bar{\psi}\sigma\psi - \frac{2\Delta
+  - 1}{2r}\bar{\psi}\psi + i\bar{\psi}\lambda\phi
+  - i\bar{\phi}\bar{\lambda}\psi
+  \label{eq:noncanonicallagrangian}
+\end{multline}
+is supersymmetry, provided the parameters $\epsilon,\bar{\epsilon}$ satisfy the
+Killing spinor  conditions \eqref{eq:spinorrequirement}. The Lagrangian in
+\eqref{eq:noncanonicallagrangian} is not only invariant under the
+supersymmetries $\delta_{\epsilon,\bar{\epsilon}}$ but it can be written as
+a total superderivative,
+\begin{equation}
+  \bar{\epsilon}\epsilon\mathcal{L_\mathrm{mat}}
+  = \delta_{\bar{\epsilon}}\delta_{\epsilon}\left(\bar{\psi}\psi
+    - 2i\bar{\phi}\sigma\phi + \frac{2(\Delta -1)}{r}\bar{\phi}\phi\right).
+  \end{equation}
+\subsection{ABJM theory}
+The theory proposed by Aharony, Bergman, Jafferis and Maldacena in \cite{Aharony08, Aharony08v2} to describe $N$ M2 branes
+is a praticular example of a supersymmetric Chern-Simons theory. It consists of
+two copies of Chern-Simons theory with gauge groups $U(N_1)$, $U(N_2)$, and
+opposite levels $k, -k$. In addition, we have four matter supermultiplets
+$\Phi_i$, $i=1,\dots,4$, in the bifundamental representation of the 
+gauge group $U(N_1)\times U(N_2)$. This theory can be represented
+as a quiver\footnote{A quiver is a directed graph where loops and multiple
+  arrows between two vertices are allowed, i.e. a multidigraph. They are
+  commonly used in representation theory: a representation $V$ of a
+  quive assigns a vector space $V(x)$ to each vertex $x$ of the
+quiver and a linear map $V(a)$ to each arrow $a$.}, with two nodes representing the Chern-Simons theories,
+ and four edges between the nodes representing the matter supermultiplets, see
+ the figure. In addition, there is a superpotential invloving the matter
+ fields, which after integrating out the auxiliary fields in the
+ Chern-Simons-matter system, reads (on $\mathbb{R}^3$.
+ \begin{equation}
+   W = \frac{4\pi}{k}\mathrm{Tr}\left(\Phi_1\Phi_2^\dagger\Phi_3\Phi_4^\dagger
+   - \Phi_1\Phi_2^\dagger\Phi_3\Phi_4^\dagger\right),
+ \end{equation}
+ where we have used the standard superspace notation for $\mathcal{N}=1$
+ supermultiplets.
+ \section{A brief review of Chern-Simons theory}
+ Since one crucial ingredient in the theories we are considering is
+ Chern-Simons theory, we review here some results concerning the perturbative
+ of structure of this theory on general three-manifolds. Chern-Simons theory on
+ three-manifolds is an important subject in itself, hence we present a rather
+ formal treatment with at least some pedagogical value.
+ \subsection{Perturbative approach}
+ In this section, we will denote the bosonic Chern-Simons action by
+ \begin{equation}
+   S = - \frac{1}{4\pi}\int_M\mathrm{Tr}(A\wedge\mathrm{d}A
+   + \frac{2i}{3}A\wedge A\wedge A)
+ \end{equation}
+ where we use the conventions for Hermitian connections, and we included the
+ factor $1/4\pi$ in the action for notational convenience. The group of gauge
+ transformations $\mathcal{G}$ acts on the gauge connections as
+ follows,
+ \begin{equation}
+   A\rightarrow A^U = UAU^{-1} - iU\mathrm{d}U^{-1}, \quad U\in\mathcal{G}.
+ \end{equation}
+ We will assume that the theory is defined on a compact three-manifold $M$. The
+ partition function is defined as 
+ \begin{equation}
+   Z(M)
+   = \frac{1}{\mathrm{vol}(\mathcal{G})}\int\left[\mathcal{D}A\right]e^{ikS}
+   \label{eq:partitionfunctionchernsimons}
+ \end{equation}
+ where we recall that $k\in\mathbb{Z}$.
+ \par There are many different approaches to the calculation of
+ \eqref{eq:partitionfunctionchernsimons}, but the obvious strategy is to use
+ perturbation theory. Notice that, since the theory is defined on a compact
+ manifold, there are no IR divergences and we just have to deal with UV
+ divergences, as in standard QFT. Once these are treated appropriately, the
+ partition function \eqref{eq:partitionfunctionchernsimons} is a well-defined
+ observable. In perturbation theory we evaluate
+ \eqref{eq:partitionfunctionchernsimons} by expanding around saddle points.
+ These are flat connections, which are in one-to-one correspondance with group
+ homomorphisms
+ \begin{equation}
+   \pi_1(M)\rightarrow G
+ \end{equation}
+ modulo conjugation. For example, if $M = \mathbb{S}^3/\mathbb{Z}_p$ is the
+ lens space $L(p,1)$, one has $\pi_1(L(p,1))=\mathbb{Z}_p$, and flat
+ connections are labelled by homomorphisms $\mathbb{Z}_p \rightarrow G$. Let us
+ assume that thesea rare a discrete set of points( this happens, for example.
+ if $M$] is a rotational homology sphere, since in that case $\pi_1(M)$ is
+ a finite group). We weill label the falt connnections with an index $c$, and
+ a flat connection will be denoted by $A^{(c)}$. Each flat connection
+ leads to a covariant derivative:
+ \begin{equation}
+   \mathrm{d}_{A^{(c)}} = \mathrm{d} + i[A^(c),\cdot],
+   \label{eq:covariantderivative}
+ \end{equation}
+ and flatness implies that
+ \begin{equation}
+   \mathrm{d}^2_{A^{(c)}} = iF_{A^{(c)}} = 0.
+ \end{equation}
+ Therefore the covariant derivative leads to a complex
+ \begin{equation}
+   0\rightarrow\Omega^{0}(M,\mathbf{g})\xrightarrow{\mathrm{d}_{A^{(c)}}}\Omega^{1}(M,\mathbf{g})\xrightarrow{\mathrm{d}_{A^{(c)}}}\Omega^{3}(M,\mathbf{g}).
+   \label{eq:covariantderivativecomplex}
+ \end{equation}
+ The first two terms in this complex have a natural interpretation
+ in the context of gauge theories: $\Omega^{0}(M,\mathbf{g})$ is the Lie
+ algebraalgebra of the  group of gauge transformations, and we can
+ write a gauge transformation as 
+ \begin{equation}
+   U = e^{i\phi}\quad \phi\in\Omega^{0}(M,\mathbf{g})
+ \end{equation}
+ The elements of $\Omega^{0}(M,\mathbf{g})$ generate infinitesimal
+ gauge transformations,
+ \begin{equation}
+   \delta A = - \mathrm{d}_A\phi
+ \end{equation}
+ The second term, $\Omega^{1}(M,\mathbf{g})$, can be identifeid with the
+ tangent space to the space of gauge connections. The first map in the complex
+ \eqref{eq:covariantderivativecomplex} is interpreted as (minus) an
+ infinitesimal gauge transformation in the background of $A^{(c)}$.
+ \par One can recall that the space of $\mathbf{g}$ valued forms on $M$ has
+ a natural inner product given by
+ \begin{equation}
+   \langle a,b \rangle = \int_M\mathrm{Tr}(a\wedge \ast b),
+ \end{equation}
+where $\ast$ is the Hodge operator. With respect to this product, we can define
+an adjoint operator on $\mathbf{g}$-valued $p$-forms in the same
+way that is done for the usual de Rham operator,
+\begin{equation}
+  \mathrm{d}^\dagger_{A^{(c)}} = (-1)^{3(1+p)+1}(\ast \mathrm{d}_{A^{(c)}})\ast .
+\end{equation}
+We then have the orthogonal decompositions
+\begin{gather}
+  \Omega^{0}(M,\mathbf{g})
+  = \mathrm{Ker}\:\mathrm{d}_{A^{(c)}}\oplus\mathrm{Im}\:\mathrm{d}^\dagger_{A^{(c)}}\nonumber\\
+  \Omega^{1}(M,\mathbf{g})
+  = \mathrm{Ker}\:\mathrm{d}^\dagger_{A^{(c)}}\oplus\mathrm{Im}\:\mathrm{d}_{A^{(c)}}
+  \label{eq:orthogonaldecomposition}
+\end{gather}
+These decompositions are easily proved. For the first one, for example, we just
+have to note that
+\begin{equation}
+  a\in\mathrm{Ker}\: \mathrm{d}_{A^{(c)}}\Rightarrow \langle
+  \mathrm{d}_{A^{(c)}}a,\phi\rangle = \langle a,
+  \mathrm{d}_{A^{(c)}}^\dagger\phi\rangle = 0,\quad \forall\phi
+\end{equation}
+therefore
+\begin{equation}
+  (\mathrm{Ker}\:\mathrm{d}_{A^{(c)}})^\bot
+= \mathrm{Im}\:\mathrm{d}^\dagger_{A^{(c)}}.
+\end{equation}
+One also has the analogue of the Laplace-Beltrami operator acting on
+$p$-forms
+\begin{equation}
+  \Delta^p_{A^{(c)}} = \mathrm{d}_{A^{(c)}}^\dagger\mathrm{d}_{A^{(c)}}
+      + \mathrm{d}_{A^{(c)}}\mathrm{d}_{A^{(c)}}^\dagger .
+    \end{equation}
+In the following we will assume that
+\begin{equation}
+  H^{1}(M,\mathbf{g}) = 0.
+\end{equation}
+This means that the conection $A^{(c)}$ is \textit{isolated}. However we will
+consider the possibility that $A^{(c)}$ has a non-trivial isotropy group
+$\mathcal{H}_c$. We recall that the isotropy group of a connection  $A^{(c)}$
+is the subgroup of gauge transformations which leave $A^{(c)}$ invariant,
+\begin{equation}
+  \mathcal{H}_c = \left\{\phi \in \mathcal{G}\:\big\vert\phi(A^{(c)}) =A^{(c)}\right\}.
+\end{equation}
+The Lie algebra of this group is given by zero-forms annihilated
+by the covariant derivative \eqref{eq:covariantderivative},
+\begin{equation}
+  \mathrm{Lie}(\mathcal{H}_c) = H^{0}(M,\mathbf{g})
+  = \mathrm{Ker}\:\mathrm{d}_{A^{(c)}},
+  \label{eq:liealgebra}
+\end{equation}
+which is in general non-trivial. A  connection is \textit{irreducible} if its
+isotopy group is equal to the center of the group. In particular, if
+$A^{(c)}$ is irreducible one has
+\begin{equation}
+  H^0(M,\mathbf{g})=0
+\end{equation}
+It can be shown that the isotropy group $\mathcal{H}_c$ consists 
+of constant gauge translations that leave $A^{(c)}$ invariant,
+\begin{equation}
+  \phi A^{(c)}\phi^{-1} = A^{(c)}.
+\end{equation}
+They are in one-to-one correspondence with a subgroup of $G$ which
+we will denote by $H_c$.
+\par In the semiclassical approximation, $Z(M)$ is written as a sum
+of terms associated to saddle-points:
+\begin{equation}
+  Z(M) = \sum_c Z^{(c)}(M),
+\end{equation}
+where $c$ labels the different flat connections $A^{(c)}$ on $M$. Each of the
+$Z^{(c)}(M)$ will be a perturbative series in $1/k$ of the form
+\begin{equation}
+  Z^{(c)}(M)
+  =  Z^{(c)}_{\mathrm{1-loop}}(M)\exp\left\{\sum_{l=1}^{\infty}S_l^{(c)}k^{-l}\right\},
+\end{equation}
+where $S_l^{(c)}$ is the $(l+1)$-loop contribution around the 
+flat connection $A^{(c)}$. In order to derive this expansion, we
+split the connection into a "background", which is the flat connection
+$A^{(c)}$, plus a "fluctuation" $B$:
+\begin{equation}
+  A = A^{(c)}+B
+\end{equation}
+Expanding around this, we find
+\begin{equation}
+  S(A) = S(A^{(c)})+S(B),
+  \label{eq:expansionloop}
+\end{equation}
+where 
+\begin{equation}
+  S(B) = -\frac{1}{4}\int_M \mathrm{Tr}(B\wedge\mathrm{d}_{A^{(c)}}B
+  + \frac{2i}{3}B^3).
+\end{equation}
+The first term in \eqref{eq:expansionloop} is the classical
+Chern-Simons invariant of the connection $A^{(c)}$. Since Chern-Simonstheory is
+a gauge theory, in order to proceed we have to fix the gauge. We will
+follow the detailed analysis of \cite{Adams97}. Our gauge choice
+will be the standard, covariant gauge,
+\begin{equation}
+  g_{A^{(c)}}(B) = \mathrm{d}^\dagger_{A^{(c)}}B=0
+\end{equation}
+where $g_{A^{(c)}}$ is the gauge fixing function. We recall that in the
+standard Fadeev-Popov (FP) gauge fixing one first defines
+\begin{equation}
+  \Delta^{-1}_{A^{(c)}}(B) = \int\mathcal{D}U\delta(g_{A^{(c)}}(B^U)),
+  \label{eq:fpgaugefixing}
+\end{equation}
+and then inserts into the path integral
+\begin{equation}
+1 = \left[\int\mathcal{D}U\delta(g_{A^{(c)}}(B^U))\right]\Delta_{A^{(c)}}(B).
+\end{equation}
+The key new ingredient here is the presence of a  non-trivial isotropy
+group $\mathcal{H}_c$ for the flat connection $A^{(c)}$. When there is
+a non-trivial isotropy group, the gauge-fixing condition does not fix
+the gauge completely, since
+\begin{equation}
+  g_{A^{(c)}}(B^\phi) = \phi g_{A^{(c)}}(B)\phi^{-1},\quad
+  \phi\in\mathcal{H}_c,
+  \label{eq:fakegaugefixing}
+\end{equation}
+i.e. the basic assumption that $g(A)=0$ only cuts the gauge orbit
+once is not true, and there is a residual symmetry by the isotropy
+group. Another way to see this is that the standard FP determinant
+vanishes due to zero modes. In fact, the standard calculation of
+\eqref{eq:fpgaugefixing} (which is valid if the standard isotropy
+group of $A^{(c)}$ is trivial) gives
+\begin{equation}
+  \Delta^{-1}_{A^{(c)}}(B) = \abs{\mathrm{det}\frac{\delta
+      g_{A^{(c)}}(B^U)}{\delta U}}^{-1}
+      = \abs{\mathrm{det}\;\mathrm{d}^\dagger_{A^{(c)}}\mathrm{d}_A}^{-1}.
+      \label{eq:fpdeterminant}
+    \end{equation}
+Note that when $\mathcal{H}_c\neq 0$, the operator $\mathrm{d}_{A^{(c)}}$ has
+zero modes due to the nonvanishing of \eqref{eq:liealgebra}, and the FP
+procedure is ill-defined. The correct way to proceed in the calculation of
+\eqref{eq:fpgaugefixing} is to split the integration over the
+gauge group into two pieces. The first piece is the integration
+over the isotropy group. Due to \eqref{eq:fakegaugefixing}, the integrand does
+not depend on it, and we obtain a factor of $\mathrm{Vol}(\mathcal{H}_c)$. The
+second piece gives an integration over the remaining part of the gauge
+transformations, which has as its Lie algebra
+\begin{equation}
+  \left(\mathrm{Ker}\;\mathrm{d}_{A^{(c)}}\right)^\bot .
+\end{equation}
+The integration over this piece leads to the standard FP determinant
+\eqref{eq:fpdeterminant} but with the zero modes removed. We then
+find,
+\begin{equation}
+  \Delta^{-1}_{A^{(c)}}(B)
+  = \mathrm{Vol}(\mathcal{H_c})\abs{\det\diff^\dagger_{A^{(c)}}\diff_A}^{-1}_{(\mathrm{Ker}\;\diff_{A^{(c)}})^\bot}
+\end{equation}
+This phenomenon was first observed by Rozansky in \cite{Rozansky94}, and
+developed in this language in \cite{Adams97}. As usual, the determinant
+appearing here can be written as a path integral over ghost fields,
+with action
+\begin{equation}
+  S_{\mathrm{ghosts}}(C,\bar{C},B) = \langle
+  \bar{C},\diff^\dagger_{A^{(c)}}\diff_A C\rangle,
+\end{equation}
+where $C,\bar{C}$ are Grassmannian fields taking values in
+\begin{equation}
+  \left(\mathrm{Ker}\diff_{A^{(c)}}\right)^\bot .
+\end{equation}
+The action for the ghosts can be divided into a kinetic term plus an
+interaction term between the ghost fields and the fluctuation $B$:
+\begin{equation}
+  S_{\mathrm{ghosts}}(C,\bar{C},B) = \langle\bar{C},\Delta^0_{A^{(c)}}C\rangle
+  + i\langle\bar{C},\diff^\dagger_{A^{(c)}}\left[B,C\right]\rangle .
+\end{equation}
+The modified FP gauge-fixing leads then to the path integral
+\begin{multline}
+  Z^{(c)}(M) = e^{ikS(A^{(c)})}\int_{\Omega^1(M,\mathbf{g})}\mathcal{D}B
+  e^{ikS(B)}\Delta_{A^{(c)}}(B)\delta\left(\diff^\dagger_{A^{(c)}}B\right)=\\
+  = \frac{e^{ikS(A^{(c)})}}{\mathrm{Vol}(\mathcal{H}_c)}\int_{\Omega^1(M,\mathbf{g})}\mathcal{D}B\delta(\diff^\dagger_{A^{(c)}}B)\int_{(\mathrm{Ker}\;\diff_{A^{(c)}})^\bot}\mathcal{D}C\mathcal{D}\bar{C}e^{ikS(B)-S_{\mathrm{ghosts}}(C,\bar{C},B)}.
+\end{multline}
+Finally, we analyze the delta constraint on $B$. Due to the decomposition of
+$\Omega^1(M,\mathbf{g})$ in \eqref{eq:orthogonaldecomposition}, we can write
+\begin{equation}
+  B = \diff_{A^{(c)}}\phi + B',
+  \label{eq:bfielddecompose}
+\end{equation}
+where
+\begin{equation}
+  \phi\in\left(\mathrm{Ker}\;\diff_{A^{(c)}}\right)^\bot, \quad
+  B'\in\mathrm{Ker}\;\diff^\dagger_{A^{(c)}}.
+\end{equation}
+The presence of the operator $\diff_{A^{(c)}}$ in the change of variables
+\eqref{eq:bfielddecompose} leads to a non-trivial Jacobian. Indeed,
+we have
+\begin{equation}
+  \abs{\abs{B}}^2 = \langle\phi,\Delta^0_{A^{(c)}}\phi\rangle
+  + \abs{\abs{B'}}^2
+\end{equation}
+and the measure in the functional integral becomes
+\begin{equation}
+  \mathcal{D}B
+  = \left({\det} ' \Delta^0_{A^{(c)}}\right)^{\frac{1}{2}}\mathcal{D}\phi\mathcal{D}B',
+  \label{eq:chernsimonsjacobian}
+\end{equation}
+where the $'$ indicates, as usual, that we are removing the  zero nodes. Notice
+that the operator in the last equation is positive-definite, so the square root
+of its determinant is well-defined. We also have that
+\begin{equation}
+  \delta\left(\diff_{A^{(c)}}^\dagger B\right)
+  = \delta\left(\Delta^0_{A^{(c)}}\phi\right)
+  = \left({\det}'{\Delta^0_{A^{(c)}}}^{-1}\right)\delta(\phi),
+\end{equation}
+which is a straighforward generalization of the standard formula
+\begin{equation}
+  \delta(ax) = \frac{1}{\abs{a}}\delta(x).
+\end{equation}
+We conclude that the delta function, together with the Jacobian in
+\eqref{eq:chernsimonsjacobian}, lead to the following factor in
+the path integral:
+\begin{equation}
+  ({\det}'\Delta^0_{A^{(c)}})^{-\frac{1}{2}}.
+\end{equation}
+In addition, the delta function sets $\phi=0$. The only thing that remains is
+the integration over $B'$ which we relabel $B'\rightarrow B$. The  final result
+for the gauge-fixed path integral is then
+\begin{equation}
+  Z^{(c)}(M)
+  = \frac{e^{ikS(A^{(c)})}}{\mathrm{Vol}(\mathcal{H}_c)}\left({\det}'\Delta^0_{A^{(c)}}\right)^{-\frac{1}{2}}\int_{(\mathrm{Ker}\;\diff^\dagger_{A^{(c)}})^\bot}\mathcal{D}C\mathcal{D}\bar{C}e^{ikS(B)-S_{\mathrm{ghosts}}(C,\bar{C},B)}
+\end{equation}
+This is the starting point to perform gauge-fixed perturbation theory in:
+Chern-Simons theory. 
+\subsection{The one-loop contribution}
+We now consider the one-loop contribution of a saddle-point to the path
+integral. This has been studied in many papers [41,58,87,88]. We will follow
+the detailed presentation in [2]. Before proceeding, we should specify what is
+the regularization mathod that we will use to define the functional determinants
+appearing in our calculation. A natural and useful regularization for quantum
+field theories in curved space is zeta-functional regularization. We recall
+that the zeta function of a self-adjoint operator $T$ with eigenvalues
+$\lambda_n>0$ is defined as
+\begin{equation}
+  \zeta_T(s) = \sum_n{\lambda_n^{-s}.}
+\end{equation}
+Under appropriate conditions, this defines a meromorphic\footnote{A meromorphic
+  function on an open subset $D$ of the complex plane (or a higher dimensional
+  complex disk) is a function that is holomorhic on all of $D$ except for
+a discrete set of isoleted poles.} function on the complex $s-$plane which is
+regular at $s=0$. Since
+\begin{equation}
+  =\zeta'_T(0) = \sum_n{\log{\lambda_n}}
+\end{equation}
