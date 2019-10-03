@@ -1,0 +1,55 @@
+\chapter{More on T-duality and the TsT transformation}
+\chapterauthor{Ivo Iliev\\Sofia University}
+\adjustmtc
+\minitoc
+In this chapter  we will briefly delve into bosonic and fermionic $T$ duality
+and the associated $TsT$ transformation in the context of a string $\sigma$
+model.
+\section{The notion of Bosonic and Fermionic $T$-duality}
+Lets consider a generic (classical\footnote{A dilaton $\phi$ enters the string
+action at a higher order in the coupling $\alpha'$. At the classical level
+  the dilaton has to be introduced in the corresponding supergravity (e.g. the
+  RR-forms appear always as $e^\phi F_{\mu_1,\dots,\mu_p}$). As we will not do
+  explicit field redifinitions, we neglect it and its behaviour under $T$
+  duality from the start. Working at the classical level we also disregard any
+prefactors of the action and are only interested in its schematical form.})
+string $\sigma$ model of the form
+\begin{equation}
+  S \propto \int\dd^2\sigma\partial_+ Z^M\mathcal{E}_{MN}(Z)\partial_- Z^{N}\equiv
+  \int \dd^2\sigma\mathcal{L}, \quad M,N = 1,\dots,D,
+\end{equation}
+where we work in  conformal gauge for the sake of convenience, and understand
+$Z^M$ as
+\begin{equation}
+  Z^M = (X^\mu(\sigma),\theta^\Delta(\sigma))
+\end{equation}
+with some bosonic fields $X^\mu$ and some fermionic Grassmann-valued fields
+$\theta^\Delta$. We refer to the parity of the  coordinate $Z^M$ as $s(M)$.
+$\mathcal{E}_{MN}(Z)$ is the background field describing the coupling between
+the fields\footnote{$\mathcal{E}_{MN}$ could be decomposed into its graded
+  symmetric (metric like) and graded skewsymmetric (B-field like) part:
+  $\mathcal{E}_{MN} = \mathcal{G}_{MN} + \mathcal{B}_{MN}$. But only the order
+  $\theta^0$ terms in $\mathcal{G}_{\mu\nu}$ and respectively $B_{\mu\nu}$ have
+  direct physical interpretation as the components of the metric and the
+  B field. We shall stick to the quite abstract "background" $\mathcal{E}_{MN}$
+as it is practical and sufficient for our further considerations.}
+with parity $s(\mathcal{E}_{MN}) = s(M) + s(N)$, so that $s(\mathcal{L}=0)$.
+\par Now we assume the model has a manifest isometry and choose the associated
+coordinate to be $Z^1$, meaning the symmetry is realised as a shift of $Z^1$.
+We write $Z^M = (Z^1, Z^{\underline{M}})$ with $\underline{M} = 2,\dots,D$, so
+that $\mathcal{E}_{MN} \equiv \mathcal{E}_{MN}(Z^{\underline{M}})$. $Z^1$ can
+be either bosonic or fermionic\footnote{In the fermionic case the generator $Q$
+  dual to the isometry coordinate has to anticommute with itself in order to
+  correspond to a shift isometry. In other words, fermionic $T$-duality
+requires a nullpotent supercharge $Q, Q^2=0$.}. This allows us to rewrite the
+Lagrangian by introducing gauge fields $A_{\pm}$:
+\begin{equation}
+  \partial_{\pm}Z^1 \propto A_{\pm},\quad
+  \mathcal{L}\rightarrow\mathcal{L}-\bar{Z}^1(\partial_+A_ - \partial_-A_+),
+\end{equation}
+where the Lagrange multiplier $\bar{Z}^1$ ensures $A_{\pm} = \partial_{\pm}Z^1$
+by its equations of motion. Integrating out $A_{\pm}$ instead of $\bar{Z}^1$
+yields the action of the dual model
+\begin{equation}
+  \bar{S}\propto\int\dd^2\sigma\partial_+\bar{X}^M\bar{\mathcal{E}}_{MN}\partial_-\bar{X}^N,
+\end{equation}

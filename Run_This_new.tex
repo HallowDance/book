@@ -1,8 +1,13 @@
 %This file is just a wrapper. Please, edit the files for your chapter in chapters/chapter1/.
-\documentclass[a4paper]{report}
-
+%%%% ENCODING %%%%
+\documentclass[a4paper,12pt]{report}
+\setcounter{secnumdepth}{5}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{titlesec}
+%%% FONTS %%%%
 %%%% INCLUDE PACKAGES %%%%
-
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -18,9 +23,12 @@
 \usepackage{tcolorbox}
 \usepackage{epigraph}
 \usepackage{enumitem}
+\usepackage{bbold}
 \usepackage[rightcaption]{sidecap}
 \usepackage{minitoc}% for TOCs at the begining of each chapter
-% minitoc is now working at all
+\dominitoc
+\dominilot
+\dominilof
 %%%% END PACKAGES %%%%
 \frenchspacing
 \renewcommand\sidecaptionsep{0.1cm}
@@ -29,7 +37,6 @@
 \include{frontmatter/preamble}
 \begin{document}
 
-dasdadasasd
 %%%% TITLE PAGE %%%%%%%%%%%%%%
 \begin{titlepage}
   \newgeometry{left=7.5cm} %defines the geometry for the titlepage
@@ -44,7 +51,7 @@ dasdadasasd
   \textcolor{namecolor}{\textsf{Faculty of Physics}}
   \vfill
   \noindent
-  {\huge \textsf{My Journey Through Theoretical Physics}}
+  \huge \textsf{My Journey Through Theoretical Physics}
   \vskip\baselineskip
   \noindent
   \textsf{IVO ILIEV}
@@ -58,8 +65,6 @@ dasdadasasd
 \include{frontmatter/dedication}
 \cleardoublepage
 \setcounter{page}{8} %previous pages will be reserved for frontmatter to be added in later.
-
-
 \tableofcontents
 \include{frontmatter/foreword}
 \include{frontmatter/preface} % preface needs work
@@ -67,15 +72,17 @@ dasdadasasd
 
 %\mainmatter
 
-
+\parttoc
 \doparttoc
 \dominitoc
 \part{Physics}
 \include{chapters/Gravity/GR}
 \include{chapters/QFT/QFT.tex}
+\include{chapters/QFT/TTdeform}
 \include{chapters/QFT/SUSY.tex}
 \include{chapters/QFT/ENT}
 \include{chapters/Strings/stringsCFT}
+\include{chapters/Strings/tst}
 \include{chapters/Schwarzian/SchwarzianQM}
 \include{chapters/Schwarzian/Partition2D}
 \include{chapters/Schwarzian/ZZBranes}

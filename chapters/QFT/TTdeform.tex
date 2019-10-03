@@ -1,0 +1,599 @@
+\section{$T\bar{T}$ deformation}
+In some sense all QFT's that we use in physics are \textit{effective} field
+theories - they are valid only over some range of energy (respectively, length)
+scales. It has been shown that if the theory is renormalizable, this range of
+scales can be very large, thus making the theory more applicable and
+predictive. Still, even for (perturbatively) renormalizable theories, new
+physics enters the stage at some point, usually at some UV point (or region).
+Non-renormalizable theory, meaning a theory where the  action involves 
+operators with dimension greater than the spacetime dimension ($\Delta > d$)
+still can be applicable up to some energy scale (the so called "UV cut-off")
+$\Lambda$.
+Investigation of non-renormalizable theories has led to the idea of the "UV
+completion" - a way to make sense of some theories at higher energies. For
+example a theory might flow from a non-trivial RG fixed point, an effect
+called "asymptotic safety". (revize) Another possibility is that the UV limit
+is not a conventional UV fixed point corresponding to a local QFT but is
+something else entirely (eg \textit{String Theory}). The $T\bar{T}$ deformation
+of 2d QFT is an example of a non-renormalizable deformation of a local QFT for
+which many physical quantities make sense and are finite and calculable in
+terms of the data of the undeformed theory. This deformation is very special in
+itself, it has been termed 'asymptotic fragility' - which in turn can be used
+as a constraint on physical theories.
+
+
+\subsection{Overview}
+Consider a sequence of 2d Eucleadian field theories
+$\mathcal{T}\;(t\in\mathbb{R})$ in a domain endowed with a flat Eucleadian
+metric $\eta_{ij}$, each with a local stress-energy tensor
+\begin{equation}
+  T_{ij}^{(t)}(x)\sim \delta S^{(t)}/ \delta g^{ij}(x)
+\end{equation}
+Imagine now that the first object in the sequence, $\mathcal{T}^{(0)}$ is
+a conventional local QFT (massive) or a CFT (massless). We can define the
+deformation for our theories
+\begin{equation}
+  S^{(t+\delta t)} = S^{(t)} - \delta t\int{\det T^{(t)} d^2 x}
+\end{equation}
+equivalently we can arrive at this by inserting $\int\det Td^2x$ into the
+correlation functions. We can calculate the determinant:
+\begin{equation}
+  \det T = \frac{1}{2}\epsilon^{ik}\epsilon^{jl} T_{ij}T_{kl} \propto
+  T_{zz}T_{\bar{zz}} - T^2_{z\bar{z}}
+  \label{eq:ttdeterminant}
+\end{equation}
+where \eqref{eq:ttdeterminant} is written in complex
+(holomorphic-antiholomorhic) coordinates. In the language of conformal field
+theories this can be written as $T\bar{T}$. Obviously the dimension of this
+deformation is 4, hence one would expect that $\langle \det T\rangle \sim
+\Lambda^4$. The first very interesting result using these types of
+transformations came from Zamolodchikov (2004). By requiring that the
+stress-energy tensor is conserved, $\partial^i T_{ij} =0$, we can show that
+\begin{equation}
+  \frac{\partial}{\partial y_m}\epsilon^{ik}\epsilon^{jl}T_{ij}(x)T_{kl}(x+y)
+  = \frac{\partial}{\partial x_i}\epsilon^{mk}\epsilon^{jl}T_{ij}T_{kl}(x+y)
+\end{equation}
+Whilst at first glance this does not look very interesting, one can make the
+following statement:
+\begin{tcolorbox}
+  For any transitionally invariant state the vacuum expectation value
+  \begin{equation}
+    \langle \epsilon^{ik}\epsilon^{jl}T_{ij}(x)T_{kl}(x)\rangle = \langle
+    \epsilon^{ik}\epsilon^{jl}T_{ij}(x)T_{kl}(x+y)\rangle
+    \label{eq:ttinvariant}
+  \end{equation}
+\end{tcolorbox}
+The vacuum expectation value in $\eqref{eq:ttinvariant}$ calculable and finite
+in terms of the matrix elements of $T_{ij}$. In some interpretation this means
+that the $T\bar{T}$ transformation is solvable and integrable, something that
+is in itself a very rare occurrence in quantum field theories. We will now
+follow Zamolodchikov's paper, omitting some extra detail and focusing on the
+$T\bar{T}$ deformations in terms  of conformal field theories.
+
+\subsection{One-point expectation functions}
+The one-point expectation values $\langle \mathcal{O}_i\rangle$ of local fields
+control the linear reaction of the system to external forces which couple to
+the fields $\mathcal{O}_i$(z). Also, in view of the operation-product
+expansions (OPE):
+\begin{equation}
+ \cfto_i(z)\cfto_j(z') = \sum)_k C_{ij}^k(z-z')\cfto_k(z')
+ \label{eq:operationproductexpansion}
+ \end{equation}
+ the two-point correlation functions $\langle \cfto_i(z)\cfto_j(z')\rangle$
+ (and, by extension and repeated application of
+ \eqref{eq:operationproductexpansion}, all higher-point correlation functions)
+ are expressed through the OPE structure functions $C_{ij}^k(z-z')$ and the
+ one-point expectation values $\langle\cfto_k\rangle$. While this is an
+ interesting result, it is seldom used for calculation because even though the
+ structure functions (which describe local dynamics of the field theory)
+ usually admit perturbative expansions, the one-point expectation values
+ (incorporation information about the vacuum state of the theory) are
+ typically nonperturbative quantities and no general to their systematic
+ evaluation is known.\footnote{In 2d, fairly accurate numerical estimates can
+   be  obtained for a lot of cases via a version of the Truncated Conformal
+ Space Approach}. Even before Zamolodchikov it was shown that for some specific
+ models (namely the sine-Gordon model and some minimal CFT's) the expectation
+ value of the composite field $T\bar{T}$ is related to the trace component of
+ the  stress-energy tensor:
+ \begin{equation}
+   \langle T\bar{T}\rangle = -\langle \Theta \rangle^2,
+   \label{eq:specifictt}
+ \end{equation}
+ where $\Theta = \frac{\pi}{2}T^\mu_\mu$.
+ Zamolodchikov showed that this equations is valid for a broad spectrum of 2d
+ quantum field theories, including some theories that are not required to be
+ integrable. Instead of considering an infinite Eucleadian plane, let us
+ consider a field theory on an infinite cylinder, with one of the Eucleadian
+ axis compactified on a circle (the so-called Matsubara representation of field
+ theories at finite temperature). It can be shown that the last equation can be
+ generalized to:
+ \begin{equation}
+   \langle T\bar{T}\rangle = \langle T\rangle \langle \bar{T}\rangle
+   - \langle{\Theta}\rangle\langle\Theta\rangle.
+   \label{eq:generaltt}
+ \end{equation}
+ When the circumference of the cylinder goes to infinity (equivalently, the
+ temperature goes to zero) the global rotational symmetry is  restored, making
+ the expectation value of the chiral components $T$ and $\bar{T}$ vanish - this
+ limit \eqref{eq:generaltt} reduces to \eqref{eq:specifictt}. It can also be
+ argued that the vacuum expectation values $\langle\cdots\rangle
+ = \mel{0}{\cdots}{0}$ are replaced by more general diagonal elements
+ $\mel{n}{\cdots}{n}$, where $\ket{n}$ is any non-degenerate eigenstate of the
+ energy and momentum operators (in the case of the cylinder, to make this
+ statement precise one has to take the Hamiltonian picture in which the
+ coordinate along the cylinder is taken as the Eucleadian time). Note that we
+ consider quantum field theory in flat 2d space in terms of Eucleadian version
+ of the theory. The points $z$ of the 2d space can be labeled by the Cartesian
+ coordinates $(x,y)$, but we usually use complex coordinates
+ $z=(\mathrm{z},\mathrm{\bar{z}}) = (\mathrm{x}+i\mathrm{y},
+ \mathrm{x}-i\mathrm{y})$. The usual normalization of the energy-momentum
+ tensor $T_{\mu\nu}$ is assumed - for instance, in the picture where
+ $\mathrm{y}$ is taken as the Eucleadian time, $-T_{yy}$ coincides with the
+ energy density. The chiral components $T,\bar{T},\Theta$ are normalized
+ according to the CFT convention, namely
+ $T=-(2\pi)T_{\mathrm{zz}},\;\bar{T}=-(2\pi)T_{\bar{\mathrm{z}}\bar{\mathrm{z}}},\;\Theta=(2\pi)T_{z\bar{z}}$.
+ \subsection{Assumptions and main idea of the argument}
+ Some of the assumptions in this section concern the local dynamics of the
+ field theory, and others  will be about the global settings. To make the
+ proper distinction, we shall label the former with (L) and the latter with
+ (G).
+ \begin{enumerate}
+  \item (L). Local translational and rotational symmetry. This implies
+    existence of local field $T_{\mu\nu}$ (the energy-momentum tensor) which is
+    symmetric, $T^{\mu\nu}(z) = T^{\nu\mu}(z)$, and satisfies the continuity 
+    equation $\partial_\mu T^{\mu\nu}(z)=0$. In terms of the conventional
+    chiral components $T = -2\pi T_{zz}, T=-2\pi T_{\bar{z}\bar{z}}$ and 
+    $\Theta = 2\pi T_{z\bar{z}}=2\pi T_{\bar{z}z}$ the continuity equation is
+    written as
+    \begin{gather}
+      \partial_{\bar{z}}T(z) = \partial_z \Theta(z),\\
+      \partial_z\bar{T}(z) = \partial_\bar{z} \Theta(z).
+      \label{eq:continuitytheta}
+    \end{gather}
+    This assumption is already taken into account in writing the OPE
+    \eqref{eq:operationproductexpansion}, where the structure functions
+    $C^k_{ij}$ are assumed to depend on the separations $z-z'$ only.
+  \item (G). Global translational symmetry. It is assumed that for any
+    local field $\cfto_i(z)$ the expectation value $\langle \cfto_i(z)\rangle$
+    is a constant independent of $z$. It follows from
+    \eqref{eq:operationproductexpansion} that the two-point correction
+    functions depend only on the separations,
+    \begin{equation}
+      \langle \cfto_i(z)\cfto_j(z')\rangle = G_{ij}(z-z').
+      \label{eq:cftseparations}
+    \end{equation}
+  \item (G). Infinite separations. We assume that at least one direction (i.e.
+    Eucleadian vector $e = (\mathrm{e},\bar{\mathrm{e}})$) exists, such that
+    for any $\cfto_i$ and $\cfto_j$
+    \begin{equation}
+      \lim_{t\rightarrow\infty}\langle \cfto_i(z+et)\cfto_j(z') \rangle
+        = \langle \cfto_i\rangle\langle \cfto_j\rangle.
+        \label{eq:infiniteseparations}
+    \end{equation}
+    The "global" assumptions 2 and 3 imply that the underlying geometry of 2D
+    space is either an infinite plane, or an infinitely long cylinder.
+  \item (L) CFT limit at short distances. We will assume that the
+    short-distance behaviour of the field theory is governed by a conformal
+    field theory, and that certain no-resonance condition is satisfied. We will
+    detail the content of this assumptions later. This assumption is needed in
+    order to make the definition of the composite field $T\bar{T}$ essentially
+    unambiguous\footnote{There is intrinsic ambiguity in adding certain total
+      derivatives, which does not affect the expectation value $\langle
+      T\bar{T}\rangle$.}
+  \end{enumerate}
+
+  The main idea of the arguments stems from a simple identity involving
+  two-point correlation functions of the energy-momentum tensor, consequence of
+  the assumptions 1-3 alone. Consider the following combination of two-point
+  correlation functions
+  \begin{equation}
+    \mathcal{C} = \langle T(z)\bar{T}(z') \rangle - \langle \Theta(z)
+    \Theta(z')\rangle.
+    \label{eq:constantc}
+  \end{equation}
+  Now, we take the derivative $\partial_{\bar{z}}$ of the above and transform it
+  as follows. In the first term, we use \eqref{eq:continuitytheta} to replace
+  the derivatives to replace the derivative $\partial_{\bar{z}}T(z)$ by
+  $\partial_z\Theta(z)$, and then apply \eqref{eq:cftseparations} to
+  move the derivative to the second entry $\bar{T}(z')$. When the
+  derivative $\partial_\bar{z}\Theta(z)$ in the second term is also
+  moved to $\Theta(z')$, one finds
+  \begin{equation}
+  \langle \partial_{\bar{z}}T(z)\bar{T}(z')
+  - \partial_{\bar{z}}\Theta(z)\Theta(z')\rangle = \langle
+    -\Theta(z)\partial_{z'}\bar{T}(z')
+    + \Theta(z)\partial_{\bar{z}'}\Theta(z')\rangle = 0,
+  \end{equation}
+  where the equation \eqref{eq:continuitytheta} was used again in the last
+  step. By similar transformations it can be shown that the derivative
+  $\partial_z$ also vanishes, and hence the quantity $\mathcal{C}$ is
+  a constant, independent of the coordinates.
+  \par Note that in this derivation, only assumptions 1 and 2 are used. Adding
+  assumption 3 allows one to relate this constant to the one-point expectation
+  values of the fields involved. Taking the limit
+  \eqref{eq:infiniteseparations} of the right-hand side of
+  \eqref{eq:constantc}, one finds:
+  \begin{equation}
+    \mathcal{C} = \langle T\rangle \langle \bar{T}\rangle - \langle
+    \Theta\rangle \langle \Theta\rangle.
+  \end{equation}
+  On the other hand, some reflection about equation \eqref{eq:constantc} seems
+  to hint to the fact that the constant $\mathcal{C}$ coincides with the
+  expectation value of appropriately defined composite operator $T\bar{T}$.
+  Indeed, one expects that the composite field $T\bar{T}$ can be obtained 
+  in some way form the product $T(z)\bar{T}(z')$ by bringing the points 
+  $z$ and $z'$ together. The main obstacle is in the presence of singular
+  terms in the operator product expansion of $T(z)\bar{T}(z')$, which makes
+  straightforward limits impossible. We will show in the next section that the
+  second term in the combination $T(z)\bar{T}(z') - \Theta(z)\Theta(z')$
+  exactly subtracts these singular terms, so that the limit $z\rightarrow z'$
+  in \eqref{eq:constantc} can be taken, leading to \eqref{eq:generaltt}.
+  \subsection{Operator Product Expansion}
+  It is not difficult to repeat manipulations of the previous section, this time
+  working not with the two-point functions \eqref{eq:constantc}, but with
+  the combination of the operator products $T(z)\bar{T}(z')
+  - \Theta(z)\Theta(z')$ itself. Using \eqref{eq:continuitytheta} one finds
+  \begin{multline}
+    \partial_{\bar{z}}\left(T(z)\bar{T}(z')-\Theta(z)\Theta(z')\right)
+    =
+    (\partial_z + \partial_{z'})\Theta(z)\bar{T}(z')
+    - (\partial_{\bar{z}}+\partial_{\bar{z}'})\Theta(z)\Theta(z'),
+    \label{eq:ope3.1}
+  \end{multline}
+  and
+  \begin{equation}
+    \partial_z(T(z)\bar{T}(z') - \Theta(z)\Theta(z')) = 
+    (\partial_z + \partial_{z'})T(z)\bar{T}(z') - (\partial_{\bar{z}}
+    + \partial_{\bar{z}'})T(z)\Theta(z').
+    \label{eq:ope3.2}
+  \end{equation}
+  The meaning of these expressions becomes clearer after inserting the operator
+  product expansions
+  \begin{gather}
+    \Theta(z)\bar{T}(z') = \sum_i B_i(z-z')\cfto_i(z'),\\
+    \T(z)\Theta(z') = \sum_i A_i(z-z')\cfto_i(z'),
+  \end{gather}
+  and
+  \begin{gather}
+    T(z)\bar{T}(z') = \sum_i D_i(z-z')\cfto_i(z'),\\
+    \Theta(z)\Theta(z') = \sum_i C_i(z-z')\cfto_i(z'),
+    \label{eq:opetheta15}
+  \end{gather}
+  where the sums involve complete sets of local fields
+  $\left\{\cfto_i\right\}$. The equations \eqref{eq:ope3.1}, \eqref{eq:ope3.2} then
+  read 
+  \begin{gather}
+    \sum_i \partial_{\bar{z}} F_i (z-z')\cfto_i(z') =\nonumber\\
+    \sum_i\left(B_i(z-z')\partial_{z'}\cfto_i(z')
+    - C_i(z-z')\partial_{\bar{z}'}\cfto_i(z')\right),
+    \label{eq:ope3.1final}
+  \end{gather}
+  \begin{gather}
+    \sum_i\partial_z F_i(z-z')\cfto_i(z') = \nonumber\\
+    \sum_i\left(D_i(z-z')\partial_{z'}\cfto_i(z')
+    - A_i(z-z')\partial_{\bar{z}'}\cfto_i(z')\right),
+    \label{eq:ope3.2final}
+  \end{gather}
+  where 
+  \begin{equation}
+    F_i(z-z') = D_i(z-z') - C_i(z-z')
+  \end{equation}
+  Note that the right-hand side of equations \eqref{eq:ope3.1final} and
+  \eqref{eq:ope3.2final} involve only coordinate derivatives of local
+fields. It follows that any operator $\cfto_i$ appearing in the expansion
+\begin{equation}
+  T(z)\bar{T}(z') - \Theta(z)\Theta(z') = \sum_i F_i(z-z')\cfto_i(z'),
+  \label{eq:ttexpansion}
+\end{equation}
+unless itself is a coordinate derivative of another local operator, comes with
+a constant (i.e. coordinate-independent) coefficient $F_i$. In other words, the
+operator product expansion can be written as:
+\begin{equation}
+  T(z)\bar{T}(z') - \Theta(z)\Theta(z') = \cfto_{T\bar{T}}(z')
+  + \mathrm{derivative\;terms}
+\end{equation}
+where $\cfto_{T\bar{T}}(z)$ is some local operator. At this point it is
+possible to \textit{define} the composite field $T\bar{T}$ through equation
+above:
+\begin{equation}
+  T\bar{T}(z):= \cfto_{T\bar{T}}(z);
+\end{equation}
+then the desired relation \eqref{eq:generaltt} follows immediately. Note
+that although in this way one defines $T\bar{T}$ only modulo derivative
+terms, in view of the assumption 2, those terms bring no contribution to the
+left hand side of \eqref{eq:generaltt}. However, this definition may look a bit
+too formal to bring much insight into the meaning of \eqref{eq:generaltt}. To
+understand the nature of the limit $z\rightarrow z'$ in
+\eqref{eq:ttexpansion}, and thus to make contact with a more constructive
+definition of the composite field $T\bar{T}$, one needs to know more about the 
+short-distance behaviour of the field theory. For this case, assumption 4 holds
+the relevant information for our construction.
+\subsection{Dimensional Analysis}
+As was mentioned, we assume the short-distance limit of the field theory is
+controlled by certain conformal field theory, which we will refer to as the
+CFT. More precisely, we assume that the field theory at hand is the CFT
+perturbed by its relevant operators. To avoid unnecessarily complex
+expressions, let me first assume that the perturbation is by a single operator
+$\Phi_\Delta$ of the dimensions $(\Delta, \Delta)$ with $\Delta < 1$; then the
+theory is  described by the action
+\begin{equation}
+  \mathcal{A} = A_{CFT} + \mu\int\Phi_\Delta(z)d^2z,
+  \label{eq:qftaction}
+\end{equation}
+where $\mu$ is a coupling constant which has the dimension
+[length]$^{2\Delta-2}$. This formulation of the theory makes it possible to
+carry out dimensional analysis of the structure functions.
+\par Let $\{\cfto_i\}$ be a complete set of local fields of the CFT, including
+primary fields as well as their descendants, and let $(\Delta_i,
+\bar{\Delta_i})$ be the left and right scale dimensions of the fields
+$\cfto_i$. This set includes the field $T\bar{T}$ (of the dimensions)
+(2,2)), which in CFT is just the descendant $T\bar{T} = L_{-2}\bar{L}_{-2}I$ of
+the identity operator. Equivalently, this field can be defined as 
+$T\bar{T}(z') = \lim_{z\rightarrow z'} T(z)\bar{T}(z')$, where the
+limit is straightforward since in CFT the above operator product has no
+singularity at $z=z'$.
+\par As was explained in REF [12], the fields $\cfto_I$ of the perturbed theory
+are in one-to-one correspondence with the fields of the CFT (hence we use the
+same notations). The field $\cfto$ has the spin $s_i = \Delta_i
+- \bar{\Delta}_i$ and the mass dimension $d_i = \Delta_i + \bar{\Delta}_i$, and
+$\cfto_i$ coincides with the corresponding CFT field in the limit
+$\mu\rightarrow 0$. Unless certain resonance conditions are met, these
+properties characterize the field $\cfto_i$ uniquely. One says that the field
+$\cfto_i$ has $n$-th order resonance with the field $O_j$ if these fields 
+have the same spins, $s_j = s_i$, and their dimensions satisfy the equation 
+$d_i = d_j + 2n(1-\Delta)$ (the resonance condition) with some positive integer
+$n$. When this resonance condition is fulfilled the above characterization of
+the field $\cfto_i$ allows for the ambiguity $\cfto_i \rightarrow \cfto_i
++ \mathrm{const}*\mu^n\cfto_j$
+\par The field $T\bar{T}$ always has the intrinsic ambiguity of the form
+$T\bar{T}\rightarrow T\bar{T}
++ \mathrm{cosnt}*\partial_z\partial_{\bar{z}}\Theta,$ where $\Theta$ is
+the trace component of the energy-momentum tensor tensor of the perturbed
+theory. Using the equation for the action, it is clear that $\Theta
+= (1-\Delta)\pi\mu\Phi_\Delta$, the ambiguity is due to the first-order
+resonance of $T\bar{T}$ with the derivative
+$\partial_z\partial_{\bar{z}}\Phi_\Delta$. However, this ambiguity has
+no effect on the expectation value of $T\bar{T}$. For the present analysis
+the danger is in possible resonances with non-derivative fields. Since at 
+this time I do not know how to handle the resonance cases, we accept the
+following no-resonance assumption:
+\begin{itemize}
+  \item (4') Dimensions $\Delta_i$ of the fields $\cfto_i$ of the CFT satisfy
+    the condition
+    \begin{equation}
+      \Delta_i - 2 + n(1-\Delta) \neq 0, \quad \mathrm{for}\; n=1,2,3,\dots,
+      \label{eq:assumptiondimension}
+    \end{equation}
+    with the only exception of $\Delta_i = \Delta + 1$ (which  is the dimension
+    of $\partial_z\partial_{\bar{z}}\Phi_\Delta$
+    )
+\end{itemize}
+According to [3], the OPE structure functions in
+\eqref{eq:operationproductexpansion} admit power-series expansions in $\mu$,
+with the coefficients computable (in principle) through the conformal
+perturbation theory. Thus, the structure functions $D_i(z-z')$ in
+\eqref{eq:opetheta15} can be written as
+\begin{equation}
+  D_i(z-z') = \sum_{n=0}^{\infty} (z-z')^{\Delta_i -2
+  +n(1-\Delta)}(\bar{z}-\bar{z}')^{\bar{\Delta}_i -2
+  + n(1-\Delta)}D_i^{(n)}\mu^n.
+  \label{eq:expansionstructure}
+\end{equation}
+The zero-order coefficients $D_i^{(0)}$ are taken from the unperturbed CFT,
+hence $D_i^{(0)} =0$ unless $\cfto_i$ is the field $T\bar{T}$ or one of its
+derivatives, a nd $D_{T\bar{T}}^{(0)} = 1$. Then it follows from
+\eqref{eq:assumptiondimension} that the only terms in the expansions
+\eqref{eq:expansionstructure} which carry vanishing powers  of both $z-z'$ and
+$\bar{z} - \bar{z}'$ are the zero-order term of $D_{T\bar{T}}$, and the
+first-order term associated with $\cfto_i
+= \partial_{z'}\partial_{\bar{z}'}\Phi_\Delta$. 
+\par Similar expansion can be written down for the structure functions
+$C_i(z-z')$ in the OPE \eqref{eq:opetheta15},
+\begin{equation}
+  C_i(z-z') = \sum_{n-2}^{\infty}(z-z')^{\Delta_i
+    - 2 +n(1-\Delta)}(\bar{z}-\bar{z}')^{\bar{\Delta}_i -2
+  +n(1-\Delta)}C_i^{(n)}\mu^n.
+\end{equation}
+Note that the sum here starts from $n=2$, consequence of the fact that
+$\Theta\sim\mu\Phi_\Delta$. In this case the no-resonance condition implies
+that there are no terms with vanishing powers of both $z-z'$ and
+$\bar{z}-\bar{z}'$ at all.
+\par Consider now the differences $F_i(z-z') = D_i(z-z') - C_i(z-z')$. It
+follows from some of the previous equations that, unless $\cfto_i$ is
+a derivative of another local field, all terms with nonzero powers of $z-z'$ or
+$\bar{z}-\bar{z}'$ must cancel out in this difference \footnote{This implies
+  for  instance $D_{T\bar{T}}^{(1)} = 0$, a statement easily verified in
+conformal perturbation theory}. Therefore
+\begin{equation}
+  F_i(z-z') = 0\quad \mathrm{unless}\quad \cfto_i
+  = T\bar{T}\quad\mathrm{or}\quad\cfto_i=\mathrm{derivative},
+\end{equation}
+and
+\begin{equation}
+  F_{T\bar{T}}(z-z') = 1.
+\end{equation}
+One concludes that the definition of $T\bar{T}$ through the conformal
+perturbation theory agrees with the formal definition \eqref{eq:definitiontt}.
+\par It is not difficult to generalize this analysis to the case when the CFT
+is perturbed by a mixture. $\sum_a \mu_a \int \Phi_{\Delta_a}(z)d^2z$ of
+relevant operators $\Phi_{\Delta_a}$. The dimensional analysis can be carried
+out in a similar straightforward way provided the no-resonance condition is 
+modified as follows:
+\begin{itemize}
+ \item 4''. The dimensions $\Delta_i$ of the fields $\cfto_i$ of the CFT
+   satisfy the conditions
+   \begin{equation}
+     \Delta_i - 2 + \sum_a n_a(1-\Delta_a)\neq 0
+   \end{equation}
+   for any non-negative integers $n_a$ such that $\sum_a n_a > 0$, with only
+   the exeption of $\Delta_i = \Delta_a + 1.$
+\end{itemize}
+\subsection{Further remarks}
+We can consider the 2D space to be a cylinder, with one of the  Cartesian
+coordinates compactified on a circle of circumference $R$, $(x,y) \sim
+(x+R,y)$, and let $\mathbb{H}$ and $\mathbb{P}$ be the Hamiltonian and the
+momentum operators in the picture where the  coordinate $y$ along the cylinder
+is  taken as the Eucleadian time. The arguments of the previous sections
+validate the relation \eqref{eq:generaltt} with $\langle\dots\rangle$ standing
+for the matrix element $\mel{0}{\dots}{0}$, where $\ket{0}$ is the ground state
+of the Hamiltonian $\mathbb{H}$ (and it is assumed that the states are
+orthogonal, meaning $\braket{0}{0}= 1$). It turns out that the same relation
+remains valid if the vacuum expectation values there are replaced by generic
+diagonal matrix elements $\mel{n}{\dots}{n}$, where $\ket{n}$ is an arbitrary
+non-degenerate eigenstate of the energy and momentum operators,
+\begin{equation}
+  \mathbb{H}\ket{n} = E_n\ket{n}, \quad \mathbb{P}\ket{n} = P_n\ket{n},
+\end{equation}
+and again the normalization $\braket{n}{n}=1$ is assumed. Indeed, of the
+previously listed assumptions, the local ones (1 and 4) are independent on the 
+choice of matrix element, while assumption 2 (global translational invariance)
+certainly remains valid when any diagonal matrix element between
+energy-momentum eigenstates is taken. Hence, one can repeat the calculation at
+the end of the second section (which only uses assumptions 1 and 2) and again
+show that the combination
+\begin{equation}
+  \mathcal{C}(n) = \mel{n}{T(z)\bar{T}(z')}{n}
+  - \mel{n}{\Theta(z)\Theta(z')}{n}
+  \label{eq:constantcombination}
+\end{equation}
+is constant, independent of the points $z$ and $z'$. In general, the asymptotic
+factorization \eqref{eq:infiniteseparations} (the one in assumption 3), no
+longer holds, since the two-point function $\mel{n}{\cfto_i (x,y) \cfto_j
+  (x',y')}{n}$ can pick up contributions from the  intermediate states
+  $\ket{n'}$ with $E_{n'} < E_n$ which give rise to terms growing exponentially
+  with $\abs{y-y'}$. However, one can write down the spectral decompositions of
+  the two-point functions in the right-hand side of
+  \eqref{eq:constantcombination}, i.e.
+\begin{equation}
+  \mel{n}{T(z)\bar{T}(z')}{n}
+  = \sum_{n'}\mel{n}{T(z)}{n'}\mel{n'}{\bar{T}(z)}{n}e^{(E_n-E_{n'})\abs{y-y'}+i(P_n
+    + P_{n'})(x-x')}
+\end{equation}
+and similar decomposition of $\mel{n}{\Theta(z)\Theta(z')}{n}$, where $(x,y)$
+and $(x',y')$ are Cartesian coordinates of the points $z$ and $z'$,
+respectively. Clearly, for the combination \eqref{eq:constantcombination} to be
+independent of the coordinates, all terms in these decompositions with $n\neq
+n'$ must cancel out between the two correlators in the right-hand side of
+\eqref{eq:constantcombination}. If $\ket{n}$ is non-degenerate, if follows that
+\begin{equation}
+  \mathcal{C} = \mel{n}{T(z)}{n}\mel{n}{\bar{T}(z')}{n}
+  - \mel{n}{\Theta(z)}{n}\mel{n}{\Theta(z')}{n},
+\end{equation}
+and by taking the limit $z\rightarrow z'$ one arrives at the desired relation
+\begin{equation}
+  \mel{n}{T\bar{T}}{n} = \mel{n}{T}{n}\mel{n}{\bar{T}}{n} - \mel{n}{\Theta}{n}\mel{n}{\Theta}{n}
+  \label{eq:decompositionformula}
+\end{equation}
+It's revealing to rewrite this relation in somewhat different form. In terms
+of Cartesian components of the energy-momentum tensor $T_{\mu\nu}$ it
+reads\footnote{the factor $\pi$ is due to the factor $2\pi$ n the definition of
+the  chiral components of the composite operator - $T$ and $\bar{T}$}
+\begin{equation}
+  \mel{n}{T\bar{T}}{n} = -\pi^2\left(\mel{n}{T_{yy}}{n}\mel{n}{T_{xx}}{n}
+  - \mel{n}{T_{xy}}{n}\mel{n}{T_{xy}}{n}\right),
+\end{equation}
+On the other hand, because we're talking about the energy-momentum tensor, we
+have
+\begin{equation}
+  \mel{n}{T_{yy}}{n} = -\frac{1}{R}E_n(R), \quad \mel{n}{T_{xx}}{n}
+    = - \frac{d}{dR}E_n(R),
+\end{equation}
+and
+\begin{equation}
+  \mel{n}{T_{xy}}{n} = \frac{i}{R}P_n(R).
+\end{equation}
+where it was explicitly indicated that the energy-momentum eigenvalues depend
+on $R$. Of course, in the case of $P_n$, the $R$-dependence is fixed by the
+momentum quantization condition: $P_n(R) = 2\pi p_n /R$, where $p_n$ are
+$R$-independent integers. Thus the expectation value
+\eqref{eq:decompositionformula} can be expressed in terms of the eigenvalues
+$E_n(R), P_n(R)$ as follows
+\begin{equation}
+  \mel{n}{T\bar{T}}{n} = -\frac{\pi}{R}\left(E_n(R)\frac{d}{dR}E_n(R)
+  + \frac{1}{R}P^2_n(R)\right).
+\end{equation}
+\par Suppose that the field theory \eqref{eq:qftaction} is massive, with $M_0$
+being the mass of it's lightest particle. Then for $R>>M_0^{-1}$ the
+ground-state energy $E_0(R)$ approaches its asymptotic linear form with
+exponential accuracy, i.e.
+\begin{equation}
+  E_0(R) = F_0 R + O(e^{-M_0R}),
+\end{equation}
+where $F_0$ is the vacuum energy density in infinite space. In the same limit,
+the first excited state $\ket{1}$ corresponds to the one-particle state with
+zero momentum, hence
+\begin{equation}
+  E_1(R) = F_0 R + M_0 + O(e^{-M_0R})
+\end{equation}
+Then it follows from \eqref{eq:decompositionformula} that (up to terms $\sim
+e^-M_0R$)
+\begin{equation}
+  \frac{1}{\pi^2}\mel{0}{T\bar{T}}{0} = - F^2_0,\quad
+    \frac{1}{\pi^2}\mel{1}{T\bar{T}}{1} = -F^2_0 - \frac{1}{R}F_0M_0.
+\end{equation}
+These expressions can be useful in analysis of subleading singularities in
+statistical systems near criticality, in the situations where the irrelevant
+operator $T\bar{T}$ plays a significant role. This is the case, for instance, for
+the Ising phase transition near the Ising tri-critical point, because the RG
+flow from the tri-critical fixed point (the $c=7/10$ minimal CFT) down to the
+Ising fixed point (the $c=1/2$ minimal CFT) arrives at the  latter along
+a direction the field $T\bar{T}$ as its most significant (i.e. least
+irrelevant) component. [13]. Another example is the Ising field theory with
+pure imaginary magnetic field, taken near the Yang-Lee singularity. In such
+cases the final relations lead to predictions abouth the amplitudes of
+subleading singular terms in the expansions of the free energy and correlation
+length near the critical point.
+\section{$T\bar{T}$ as a TsT transformation}
+\subsection{$T\bar{T}$ deformations and uniform light-cone gauge}
+\subsubsection{Uniform light-cone gauge}
+We consider a non-linear sigma model with metric $G_{\mu\nu}(X)$, where $X$
+collectively denotes all the fields, and B-field $B_{\mu\nu}(X)$. The metric
+part of the action is coupled to a two-dimensional metric
+$\gamma^{\alpha\beta}$, which we take to have unit determinant. By
+construction, the theory is invariant under re-parametrizations at the classic
+level. For the moment, we will be interested in the classical theory, and we
+will not assume that the metric and B-field describe a string background. We
+will however assume that the metric has at least two shift isometries: one for
+a time-like coordinate which we denote by $t, t\rightarrow t+\delta t$, and
+wich yields the  target-space energy $E$, and one for $\phi\rightarrow \phi
++ \delta\phi$, which yields some (angular) momentum $J$. In terms of the
+action, we have
+\begin{equation}
+  S = -\frac{1}{2}\int_{-\infty}^{\infty}\dd\tau\int_{0}^{R}\dd\sigma\left(\gamma^{\alpha\beta}\partial_\alpha
+    X^\mu\partial_\beta X^\nu G_{\mu\nu}(X) + \epsilon^{\alpha\beta}\partial_\alpha
+  X^\mu\partial_\beta X^\nu B_{\mu\nu}(X)\right).
+\end{equation}
+The minus sign takes into account that the world sheet metric has signature
+$(-,+)$. It is convinient to introduce the momenta $p_\mu$, which are
+canonically conjugated to $X^\mu$:
+\begin{equation}
+  p_\mu = \frac{\delta S}{\delta \partial_\tau X^\mu}
+  = -\gamma^{0\beta}\partial_\beta X^\nu G_{\mu\nu}(X) - \dot{X}^\n
+  B_{\mu\nu}(X),
+\end{equation}
+where we have introduced the notation $\dot{X}^\nu \equiv \partial_\sigma
+X^\mu$. By Noether's theorem we immediately get two conserved charges:
+\begin{equation}
+  E = - \int_{0}^{R}\dd\sigma p_t, \quad \mathrm{and}\quad
+  J = \int_{0}^{R}\dd\sigma p_\phi .
+\end{equation}
+An advantage of the first-order formalism is thath the action takes the form
+\begin{equation}
+  S = \int_{-\infty}^{\infty}\dd\tau\int_{0}^{R}\left(p_\mu\dot{X}^\mu
+    + \frac{\gamma^{01}}{\gamma^{00}}\mathcal{C}_1
+  + \frac{1}{2\gamma^{00}}\mathcal{C}_2\right),
+\end{equation}
+where the worldsheet metric takes the  form of a Lagrange multiplier and yields
+the two Virasoro constraints:
+\begin{align}
+  0 &= \mathcal{C}_1 = p_\mu \dot{X}^\mu\nonumber\\
+  0 &= \mathcal{C}_2 = p_\mu p_\nu G^{\mu\nu} + \dot{X}^\mu\dot{X}^\nu
+  G_{\mu\nu} + 2 G^{\mu\nu} B_{\nu\rho} p_\mu \dot{X}^\rho
+  + G^{\mu\nu}B_{\mu\rho}B_{\nu\lambda}\dot{X}^\rho\dot{X}^\lambda,
+\end{align}
+where we  suppressed the dependence of the (inverse) metric and B-field on
+$X^{\mu}$.
+
+
+
+
